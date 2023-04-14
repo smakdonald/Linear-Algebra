@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Consider the subspace <span class="process-math">\(V =\linspan\set{\sin(kx),\cos(kx)\mid 0\leq k\leq n} \of C[0,2\pi]\text{.}\)</span> Let the linear map <span class="process-math">\(D:V\to V\)</span> be the differentiation map <span class="process-math">\(D(f) = f'\text{.}\)</span> I claim that <span class="process-math">\(D^*:V\to V\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D^* = -D.
+\end{equation*}
+</div>
+<div class="para">To prove this we have to show that for all <span class="process-math">\(f\in F_n\)</span> and <span class="process-math">\(g\in F_n\)</span> we have <span class="process-math">\(\ip{D(f),g} = \ip{f,-D(g)}\text{.}\)</span> This is simply integration by parts:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\ip{D(f),g} &amp;= \definite f'(x) g(x) dx0{2\pi} \\
+&amp;= \left. f(x) g(x) \vphantom{\Big(}\right|_0^{2\pi} - \definite f(x) g'(x) dx0{2\pi} \\
+&amp;= -\ip{f,D(g)} = \ip{f,-D(g)}.
+\end{aligned}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-adjoints.html#p-656" class="internal">in-context</a></span>
+</body>
+</html>

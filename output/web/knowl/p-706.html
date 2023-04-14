@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Since <span class="process-math">\(\dim L(V,V) = n^2\)</span> the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\set{I,T,T^2,\dots,T^{n^2}}
+\end{equation*}
+</div>
+<div class="para">is linearly dependent. In other words there are scalars <span class="process-math">\((\mu_i)_{i=0}^k\)</span> with (without loss of generality) <span class="process-math">\(\mu_k=1\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{i=0}^k \mu_i T^i = \0 \in L(V,V).
+\end{equation*}
+</div>
+<div class="para">Consider then the polynomial <span class="process-math">\(p = \sum_{i=0}^k \mu_i X^i \in \C[X]\text{.}\)</span> All monic polynomials (of degree at least <span class="process-math">\(1\)</span>) over <span class="process-math">\(\C\)</span> factor into linear factors; there exist <span class="process-math">\(\l_1,\l_2,\dots,\l_k\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p = (X-\l_1)(X-\l_2)\dots(X-\l_k).
+\end{equation*}
+</div>
+<div class="para">Thus</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p(T) = (T-\l_1 I)(T-\l_2 I)\dots(T-\l_k I) = \0
+\end{equation*}
+</div>
+<div class="para">Now if <span class="process-math">\(\v\)</span> is <em class="emphasis">any</em> non-zero vector in <span class="process-math">\(V\)</span> we have <span class="process-math">\(p(T)\v=\0\text{.}\)</span> Let <span class="process-math">\(j\)</span> be minimal such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\w = (T-\l_{j+1} I)(T-\l_{j+2}I)\dots(T-\l_k I) \v \not= \0.
+\end{equation*}
+</div>
+<div class="para">(Note that we might have <span class="process-math">\(j=k\text{,}\)</span> but certainly <span class="process-math">\(j&gt;0\text{.}\)</span>) Then by the minimality of <span class="process-math">\(j\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(T-\l_{j}I) \w = \0,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(\w\)</span> is an eigenvector of <span class="process-math">\(T\text{,}\)</span> and <span class="process-math">\(\l_{j}\)</span> is the corresponding eigenvalue.</div>
+</div>
+<span class="incontext"><a href="sec-eigen-again.html#p-706" class="internal">in-context</a></span>
+</body>
+</html>

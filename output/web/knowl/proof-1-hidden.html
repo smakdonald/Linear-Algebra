@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">(1) and (2) can be seen from the definition. The third property follows is because we are simply scaling the lengths of <span class="process-math">\(\u\)</span> and <span class="process-math">\(\v\)</span> along the axis by a factor of <span class="process-math">\(\abs{\w}\text{.}\)</span> But since it's additive in <span class="process-math">\(\u\)</span> and symmetric, the dot product must also be additive in <span class="process-math">\(\w\)</span> as claimed in (4).</div> <div class="para logical">
+<div class="para">Why does this help? Because we can split our calculation into small calculations that are trivial to do. Let's pick two vectors of length <span class="process-math">\(1\text{,}\)</span> one along the <span class="process-math">\(x\)</span>-axis and one along the <span class="process-math">\(y\)</span>-axis. The traditional names for these vectors are <span class="process-math">\(\e_1\)</span> and <span class="process-math">\(\e_2\text{.}\)</span> Now suppose that <span class="process-math">\(\u=(a, b)=a\e_1+b\e_2\)</span> and <span class="process-math">\(\w=(c, d) = c\e_1+d\e_2\text{.}\)</span> Then, using additivity, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\u\cdot \w = (a\e_1+b\e_2) \cdot (c\e_1+d\e_2) = ac \, \e_1\cdot\e_1+ ad \, \e_1\cdot\e_2 +bc\,  \e_1\cdot\e_2 + bd \,\e_2\cdot \e_2.
+\end{equation*}
+</div>
+<div class="para">Every term in this final expression is easy to work out geometrically. All lengths are <span class="process-math">\(1\text{,}\)</span> all angles are either <span class="process-math">\(0\)</span> or <span class="process-math">\(90^\circ\text{.}\)</span> We have, for instance <span class="process-math">\(\e_1 \cdot \e_1 = \abs{\e_1}\abs{\e_1} \cos(0) = 1\times1\times1=1\text{.}\)</span> Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\e_1\cdot\e_2 = 1 \qquad \text{and} \qquad \e_1\cdot\e_2 = \e_2\cdot \e_1 = 0.
+\end{equation*}
+</div>
+<div class="para">Altogether we get <span class="process-math">\((a, b)\cdot(c, d) = ac+bd\text{.}\)</span>
+</div>
+</div> <div class="para">To summarize, we have the following definition, that neatly encapsulates both geometry and algebra.</div></article></body>
+</html>

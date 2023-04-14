@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">To show <span class="process-math">\(\v_1,\ldots, \v_{i+1}\)</span> is a ONL we compute by the inductive hypothesis that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle \v_\ell,\v_j\rangle=\begin{cases}
+0 &amp; \text{if } \ell\neq j\\
+1 &amp; \text{if } \ell = j.
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">for <span class="process-math">\(1\leq \ell,j  \leq i\text{.}\)</span> Now for <span class="process-math">\(1\leq j\leq i\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\langle \hat{\v}_{i+1}, \v_j\rangle &amp;=&amp;  \langle \b_{i+1}, \v_j\rangle-\langle \b_{i+1},\v_1\rangle \langle\v_1, \v_j\rangle-\cdots -\langle \b_{i+1},\v_i\rangle \langle\v_i, \v_j\rangle \\
+&amp;=&amp;  \langle \b_{i+1}, \v_j\rangle -  \langle \b_{i+1}, \v_j\rangle \langle \v_j,\v_j\rangle = \langle \b_{i+1}, \v_j\rangle- \langle \b_{i+1}, \v_j\rangle\cdot 1\\
+&amp;=&amp;0.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\hat{\v}_{i+1}=\norm{\hat{\v}_{i+1}}\v_{i+1}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0=\langle \hat{\v}_{i+1}, \v_j\rangle=\langle \norm{\hat{\v}_{i+1}}\v_{i+1}, \v_j\rangle = \norm{\hat{\v}_{i+1}}\langle \v_{i+1},\v_j\rangle.
+\end{equation*}
+</div>
+<div class="para">In view of <span class="process-math">\(\norm{\hat{\v}_{i+1}} \neq 0\)</span> we conclude <span class="process-math">\(\langle \v_{i+1},\v_j\rangle=0\text{.}\)</span> Finally, <span class="process-math">\(\langle \v_{i+1},\v_{i+1}\rangle=1\)</span> by the same argument as in the base case.</div>
+</div>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-622" class="internal">in-context</a></span>
+</body>
+</html>

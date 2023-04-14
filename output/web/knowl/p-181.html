@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">The standard approach to solving such a system, called Gaussian elimination, involves adding or subtracting the equations from one another, possible multiplying some by constants. For instance, we might start the solution process for this system by subtracting the first equation from the second (with the intention of eliminating <span class="process-math">\(x\)</span> from the second equation):</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\veceqn{x+y-2z=-5} \ - \ \veceqn{x+2y-3z = -7} \ =\  \veceqn{-y + z = 2}
+\end{equation*}
+</div>
+<div class="para">We eliminate <span class="process-math">\(x\)</span> from the third equation also, by computing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\veceqn{2x+7y-2z = 8} \ -\ 2\,\veceqn{x+2y-3z = -7} = \veceqn{3y+4z = 22},
+\end{equation*}
+</div>
+<div class="para">and we have made progress on solving our system by deducing that any solution to the original system must also satisfy</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\systeme{-y+z = 2, 3y+4z = 22\rlap{.}}
+\end{equation*}
+</div>
+<div class="para">We continue the process by computing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\veceqn{3y+4z=22} \ +\ 3\,\veceqn{-y+z = 2} = \veceqn{7z=28},
+\end{equation*}
+</div>
+<div class="para">and thereby deduce that <span class="process-math">\(z=4\text{.}\)</span> We could demonstrate this fact quickly by just writing down the linear combination of our equations</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\frac57\,\veceqn{x+2y-3z = -7}\ +\ \frac37\, \veceqn{x+y-2z=-5} \ +\ \frac17 \, \veceqn{2x+7y-2z = 8} \ =\ \veceqn{z=4}.
+\end{equation*}
+</div>
+<div class="para">We certainly don't advocate this as a sensible way to write down the manual solution of systems of linear equations. However, it is clear that what we are doing in Gaussian elimination is taking linear combinations of things—in this case the things are themselves linear equations. This is the first of many examples where we want to form linear combinations of things that aren't just vectors in two or three dimensions. This leads us to the notion of a <em class="emphasis">vector space</em>.</div>
+</div>
+<span class="incontext"><a href="sec-computation.html#p-181" class="internal">in-context</a></span>
+</body>
+</html>

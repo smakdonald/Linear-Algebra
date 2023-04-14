@@ -450,7 +450,13 @@ window.MathJax = {
 \DeclarePairedDelimiterX\setof[2]{\{}{\}}{#1\,|\,#2}
 \newcommand{\vx}{\underline{x}}
 \renewcommand{mod}[1]{\text{(mod }{#1})}
-\newcommand{\Slv}[3]{\sum_{{#2}=1}^{{#3}} {#1}_{{#2}} \v_{{#2}}}
+
+
+\DeclarePairedDelimiterX\setof[2]{\{}{\}}{#1\,:\,#2}
+\DeclareDocumentCommand \Slv { O{\l} O{i} O{n} } { \sum_{{#2}=1}^{{#3}} {#1}_{{#2}} \v_{{#2}} }
+\DeclarePairedDelimiter{\parens}{(}{)}
+\DeclarePairedDelimiter{\abs}{|}{|}
+\NewDocumentCommand\cmat{r[]}{\begin{bmatrix} #1 \end{bmatrix}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -601,13 +607,83 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="ch-determinants.html" class="internal"><span class="codenumber">1</span> <span class="title">Determinants: Revisited</span></a></div></li>
-<li><div class="toc-item"><a href="ch-inner-product-spaces.html" class="internal"><span class="codenumber">2</span> <span class="title">Inner Product Spaces</span></a></div></li>
-<li><div class="toc-item"><a href="ch-change-of-bases.html" class="internal"><span class="codenumber">3</span> <span class="title">Change of Bases</span></a></div></li>
-<li><div class="toc-item"><a href="ch-spectral-theorem.html" class="internal"><span class="codenumber">4</span> <span class="title">The Spectral Theorem</span></a></div></li>
 <li>
-<div class="toc-item"><a href="ch-theory-extras.html" class="internal"><span class="codenumber">5</span> <span class="title">Extras</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-modlues.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Modules</span></a></div></li></ul>
+<div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-algebra.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Algebra</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-geometry.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Geometry</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sec-geometry.html#subsec-dot-products" class="internal"><span class="title">Dot Products</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="sec-computation.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Computation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-vector-spaces.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vector Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-linear-maps.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Linear Maps</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-tying-together.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Tying Things Together</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-tying-together.html#subsec-perspective-1" class="internal"><span class="title">Perspective 1: Intersection of Three Planes</span></a></div></li>
+<li><div class="toc-item"><a href="sec-tying-together.html#subsec-perspective-2" class="internal"><span class="title">Perspective 2: Linear Combinations of Vectors <span class="process-math">\(=\)</span> Range of a Transformation</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-beginnings.html" class="internal"><span class="codenumber">2</span> <span class="title">Beginnings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-fields.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Fields</span></a></div></li>
+<li><div class="toc-item"><a href="sec-vector-spaces-again.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Vector Spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-linear-maps-again.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Linear Maps</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-vector-spaces-linear-maps.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces and Linear Maps: Revisited</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-bases.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Linear Independence, Spanning Sets, and Bases</span></a></div></li>
+<li><div class="toc-item"><a href="sec-lights-out.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Applications: Lights Out</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-rep-linear-maps-matrices.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Representing Linear Maps by Matrices</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-rep-linear-maps-matrices.html#sec-consequences" class="internal"><span class="title">Linear maps are determined by a basis</span></a></div></li>
+<li><div class="toc-item"><a href="sec-rep-linear-maps-matrices.html#linear-maps-are-represented-by-matrices" class="internal"><span class="title">Linear maps are represented by matrices</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-isomorphisms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Isomorphisms</span></a></div></li>
+<li><div class="toc-item"><a href="sec-rank-nullity.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Rank-Nullity</span></a></div></li>
+<li><div class="toc-item"><a href="sec-poly-interpolation.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Application: Polynomial Interpolation</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-constructions.html" class="internal"><span class="codenumber">4</span> <span class="title">Constructions of Vector Spaces</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-direct-sums.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Direct Sum of Vector Spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-direct-sums.html#internal-direct-sum" class="internal"><span class="title">Internal direct sum</span></a></div></li>
+<li><div class="toc-item"><a href="sec-direct-sums.html#external-direct-sum-and-direct-product" class="internal"><span class="title">External direct sum and direct product</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-quotients.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Quotients of Vector Spaces</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-bilinear-quadratic.html" class="internal"><span class="codenumber">5</span> <span class="title">Bilinear and Quadratic Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-clustering.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Application: <span class="process-math">\(k\)</span>-means Clustering</span></a></div></li>
+<li><div class="toc-item"><a href="sec-bilinear-functions.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Bilinear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-quadratic-functions.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Quadratic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-inner-product-ortho.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Inner Product Spaces and Orthogonality</span></a></div></li>
+<li><div class="toc-item"><a href="sec-least-squares.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Application: Least Squares (Linear Regression)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-riesz.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Riesz Representation Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sec-adjoints.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Adjoints</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-eigen-revisited.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-simplest-matrix.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Simplest Matrix of a Linear Transformation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-eigen-again.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div></li>
+<li><div class="toc-item"><a href="sec-spectral.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Self-Adjoint Maps and the Spectral Theorem</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -666,20 +742,55 @@ window.MathJax = {
 <h4 class="heading" title="Chapter 7: Orthogonality">
 <span class="codenumber">7</span><span class="space"> </span><span class="title">Orthogonality</span>
 </h4>
-<h4 class="heading" title="Chapter 1: Determinants: Revisited">
-<span class="codenumber">1</span><span class="space"> </span><span class="title">Determinants: Revisited</span>
+<h4 class="heading" title="Chapter 1: Introduction">
+<span class="codenumber">1</span><span class="space"> </span><span class="title">Introduction</span>
 </h4>
-<h4 class="heading" title="Chapter 2: Inner Product Spaces">
-<span class="codenumber">2</span><span class="space"> </span><span class="title">Inner Product Spaces</span>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-step.html" title="Definition 1.1">Definition 1.1</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-vector-ish.html" title="Definition 1.3">Definition 1.3</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-dot-product.html" title="Definition 1.5">Definition 1.5</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-dot-product-2.html" title="Definition 1.7">Definition 1.7</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-linear-map.html" title="Definition 1.18">Definition 1.18</a> </div>
+<h4 class="heading" title="Chapter 2: Beginnings">
+<span class="codenumber">2</span><span class="space"> </span><span class="title">Beginnings</span>
 </h4>
-<h4 class="heading" title="Chapter 3: Change of Bases">
-<span class="codenumber">3</span><span class="space"> </span><span class="title">Change of Bases</span>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-field.html" title="Definition 2.1">Definition 2.1</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-field-abbreviations.html" title="Definition 2.6">Definition 2.6</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-vector-space.html" title="Definition 2.9">Definition 2.9</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-vector-space-abbreviation.html" title="Definition 2.10">Definition 2.10</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-subspace.html" title="Definition 2.13">Definition 2.13</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-span.html" title="Definition 2.16">Definition 2.16</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-linear-map-2.html" title="Definition 2.23">Definition 2.23</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-lvw.html" title="Definition 2.26">Definition 2.26</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-range-nullspace.html" title="Definition 2.28">Definition 2.28</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-surjective.html" title="Definition 2.33">Definition 2.33</a> </div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-injective.html" title="Definition 2.36">Definition 2.36</a> </div>
+<h4 class="heading" title="Chapter 3: Vector Spaces and Linear Maps: Revisited">
+<span class="codenumber">3</span><span class="space"> </span><span class="title">Vector Spaces and Linear Maps: Revisited</span>
 </h4>
-<h4 class="heading" title="Chapter 4: The Spectral Theorem">
-<span class="codenumber">4</span><span class="space"> </span><span class="title">The Spectral Theorem</span>
+<h4 class="heading" title="Chapter 4: Constructions of Vector Spaces">
+<span class="codenumber">4</span><span class="space"> </span><span class="title">Constructions of Vector Spaces</span>
 </h4>
-<h4 class="heading" title="Chapter 5: Extras">
-<span class="codenumber">5</span><span class="space"> </span><span class="title">Extras</span>
+<h4 class="heading" title="Chapter 5: Bilinear and Quadratic Functions">
+<span class="codenumber">5</span><span class="space"> </span><span class="title">Bilinear and Quadratic Functions</span>
+</h4>
+<h4 class="heading" title="Chapter 6: Eigenvectors and Eigenvalues">
+<span class="codenumber">6</span><span class="space"> </span><span class="title">Eigenvectors and Eigenvalues</span>
 </h4></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="appendix-2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="appendix-list-results.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
