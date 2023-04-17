@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -721,11 +585,11 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-linear-maps"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Linear Maps</span>
 </h2>
-<div class="para" id="p-190">There's one more crucial ingredient to linear algebra that we need to introduce at this point. Geometry isn't just about points and lines and planes—it's also about operations on such things, such as rotations and reflections. The core of linear algebra at this level is the study of vector spaces and <em class="emphasis">linear maps</em>. These are functions between vector spaces that respect addition and scaling of vectors. Let's see some examples.</div>
+<div class="para" id="p-41">There's one more crucial ingredient to linear algebra that we need to introduce at this point. Geometry isn't just about points and lines and planes—it's also about operations on such things, such as rotations and reflections. The core of linear algebra at this level is the study of vector spaces and <em class="emphasis">linear maps</em>. These are functions between vector spaces that respect addition and scaling of vectors. Let's see some examples.</div>
 <article class="example example-like" id="example-8"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.14</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-191">
+<div class="para logical" id="p-42">
 <div class="para">Let's take our first example of adding vectors and apply a rotation to each one. In other words let's define a map <span class="process-math">\(R:\R^2\to \R^2\)</span> that rotates any step by (in this case) <span class="process-math">\(110^\circ\text{.}\)</span> The diagram demonstrating that <span class="process-math">\((3,7)+(2,-3)=(5,4)\)</span> rotates together to give a demonstration that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -735,24 +599,24 @@ R(3,7) + R(2,-3) = R(5,4) = R\parens[\big]{(3,7)+(2,-3)}.
 </div></article><article class="example example-like" id="example-9"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.15</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-192">In (brief) summary: the rotation of a sum is the sum of the rotations. It should be clear that the rotation of a scaling of <span class="process-math">\(\v\)</span> is simply the scaling of the rotation.</div></article><article class="example example-like" id="example-10"><h3 class="heading">
+<div class="para" id="p-43">In (brief) summary: the rotation of a sum is the sum of the rotations. It should be clear that the rotation of a scaling of <span class="process-math">\(\v\)</span> is simply the scaling of the rotation.</div></article><article class="example example-like" id="example-10"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.16</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-193">
+<div class="para logical" id="p-44">
 <div class="para">Now let's apply a reflection through the red line in the diagram (which happens to be the line <span class="process-math">\(5x+y=0\)</span>). We define <span class="process-math">\(T:\R^2\to \R^2\)</span> that reflects any step in this line. The diagram demonstrating that <span class="process-math">\((3,7)+(2,-3)=(5,4)\)</span> reflects together to give a demonstration that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 T(3,7) + T(2,-3) = T(5,4) = T\parens[\big]{(3,7)+(2,-3)}.
 \end{equation*}
 </div>
-</div> <div class="para" id="p-194">The reflection of a sum is the sum of the reflections. Scaling also works.</div></article><article class="example example-like" id="example-11"><h3 class="heading">
+</div> <div class="para" id="p-45">The reflection of a sum is the sum of the reflections. Scaling also works.</div></article><article class="example example-like" id="example-11"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.17</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-195">Given a line <span class="process-math">\(L\text{,}\)</span> the map <span class="process-math">\(P:\R^2\to \R^2\)</span> given by <span class="process-math">\(P(u)=\)</span> the projection of <span class="process-math">\(u\)</span> onto the direction of <span class="process-math">\(L\)</span> is a linear map. According to this map is additive, that is, <span class="process-math">\(P(u+v)=P(u)+P(v)\)</span> and it is not hard to see that <span class="process-math">\(P(\lambda u)=\lambda P(u)\)</span> also holds.</div></article><div class="para" id="p-196">We extract the essence of these three examples into the following definition</div>
+<div class="para" id="p-46">Given a line <span class="process-math">\(L\text{,}\)</span> the map <span class="process-math">\(P:\R^2\to \R^2\)</span> given by <span class="process-math">\(P(u)=\)</span> the projection of <span class="process-math">\(u\)</span> onto the direction of <span class="process-math">\(L\)</span> is a linear map. According to this map is additive, that is, <span class="process-math">\(P(u+v)=P(u)+P(v)\)</span> and it is not hard to see that <span class="process-math">\(P(\lambda u)=\lambda P(u)\)</span> also holds.</div></article><div class="para" id="p-47">We extract the essence of these three examples into the following definition</div>
 <article class="definition definition-like" id="def-linear-map"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.18</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-197">
+<div class="para logical" id="p-48">
 <div class="para">Given two vectors spaces <span class="process-math">\(V\)</span> and <span class="process-math">\(W\)</span> (over <span class="process-math">\(\R\)</span>) we say that a function <span class="process-math">\(T:V\to W\)</span> is a <em class="emphasis">linear map</em> if for all <span class="process-math">\(\v,\v'\in V\)</span> and <span class="process-math">\(\l\in \R\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -765,7 +629,7 @@ T(\l\,\v) &amp;= \l\, T(\v). \qedhere
 </div></article><article class="example example-like" id="example-12"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.19</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-198">
+<div class="para logical" id="p-49">
 <div class="para">Consider the vector space <span class="process-math">\(\R[X]\)</span> of polynomials in a variable <span class="process-math">\(X\)</span> with real coefficients (see ). Consider the map <span class="process-math">\(D:\R[X]\to \R[X]\)</span> defined by <span class="process-math">\(D(p)=p'\text{.}\)</span> In other words <span class="process-math">\(D\)</span> maps every polynomial to its derivative. This is a linear map. That simply means that if <span class="process-math">\(\l\in \R\)</span> and <span class="process-math">\(p, q\in \R[X]\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -776,7 +640,7 @@ T(\l\,\v) &amp;= \l\, T(\v). \qedhere
 </div></article><article class="example example-like" id="example-13"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.20</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-199">
+<div class="para logical" id="p-50">
 <div class="para">Consider the matrix <span class="process-math">\(A\in M_{3\times 3}(\R)\)</span> given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -787,23 +651,23 @@ A = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2].
 <div class="displaymath process-math">
 \begin{equation*}
 \label{eqn:T}
-T((x, y, z)) = A \,  \mat[x\\ y\\ z] = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].
+T((x, y, z)) = A \,  \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].
 \end{equation*}
 </div>
 <div class="para">Standard facts about matrix multiplication tell us that this is a linear map:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
-T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \mat[x\\ y\\ z] + \mat[x'\\ y'\\ z']} = A \mat[x\\ y\\ z] + A \mat[x'\\ y'\\ z'] = 
+T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \begin{bmatrix} x\\ y\\ z \end{bmatrix} + \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix}} = A\begin{bmatrix} x\\ y\\ z \end{bmatrix} + A \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix} = 
 T((x, y, z)) + T((x', y', z')) \\
-T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \mat[x\\ y\\ z]} = \l\, A \mat[x\\ y\\ z] = \l \, T((x, y, z)) .
+T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \begin{bmatrix} x\\ y\\ z \end{bmatrix}} = \l\, A \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \l \, T((x, y, z)) .
 \end{aligned}
 \end{equation*}
 </div>
 <div class="para">Not only that, but this linear map can be viewed as being constructed using linear combinations. We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
+T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
 = x\cmat[1\\1\\2] + y\cmat[2\\1\\7] + z\cmat[-3\\-2\\-2].
 \end{equation*}
 </div>

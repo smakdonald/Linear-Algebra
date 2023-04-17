@@ -13,15 +13,15 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(\set{\us[k]}\)</span> be a basis for <span class="process-math">\(\ker(T)\of V\)</span> and <span class="process-math">\(\set{\ws[\ell]}\)</span> a basis for <span class="process-math">\(\range(T)\of W\text{.}\)</span> By definition there exist vectors <span class="process-math">\(\set{\vs[\ell]}\)</span> such that for each <span class="process-math">\(i\)</span> we have <span class="process-math">\(T(\v_i)=\w_i\text{.}\)</span> We claim that <span class="process-math">\(B = \set{\us[k],\vs[\ell]}\)</span> is a basis for <span class="process-math">\(V\text{,}\)</span> and hence that <span class="process-math">\(V\)</span> has dimension <span class="process-math">\(k+\ell = \dim(\ker(T))+\dim(\range(T))\text{.}\)</span> Let's show first that <span class="process-math">\(B\)</span> is linearly independent. To that end suppose that <span class="process-math">\(\ls[k]\)</span> and <span class="process-math">\(\mus[\ell]\)</span> in <span class="process-math">\(\F\)</span> are such that</div>
+<div class="para">Suppose <span class="process-math">\(V\)</span> is an inner product space and denote the inner product of <span class="process-math">\(\v,\w\in V\)</span> by <span class="process-math">\(\ip{\v,\w}\text{.}\)</span> The corresponding quadratic function can be used as a way of measuring lengths of vectors in <span class="process-math">\(V\text{.}\)</span> We define the <em class="emphasis">norm</em> of a vector <span class="process-math">\(\v\in V\)</span> to be</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_1^k \l_i \u_i + \sum_1^\ell \mu_j \v_j = \0.
+\norm{\v} = \sqrt{\ip{\v,\v}}.
 \end{equation*}
 </div>
-<div class="para">Applying <span class="process-math">\(T\)</span> we get <span class="process-math">\(\sum_1^\ell \mu_j \w_j = \0\)</span> (since each <span class="process-math">\(\u_i\)</span> is in the kernel of <span class="process-math">\(T\)</span>) so by the linear independence of the <span class="process-math">\(\w_j\)</span> we have <span class="process-math">\(\mu_1=\mu_2=\dots=\mu_\ell = 0\text{.}\)</span> This tells us in turn that <span class="process-math">\(\sum_1^k \l_i \u_i = \0\text{,}\)</span> forcing <span class="process-math">\(\l_1=\l_2=\dots=\l_k=0\text{.}\)</span>
+<div class="para">Note that since the inner product is positive definite we have <span class="process-math">\(\norm{\v}\geq 0\)</span> and moreover <span class="process-math">\(\norm{\v}&gt;0\)</span> for all <span class="process-math">\(\v\not=\0\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="sec-rank-nullity.html#p-443" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-443" class="internal">in-context</a></span>
 </body>
 </html>

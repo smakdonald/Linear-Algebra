@@ -12,8 +12,17 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">If the board is in position <span class="process-math">\(M\)</span> then pushing the light at position <span class="process-math">\((i, j)\)</span> produces the position <span class="process-math">\(M+M_{i j}\text{.}\)</span>
+<div class="para logical">
+<div class="para">Fix the representatives <span class="process-math">\(\boldsymbol{\mu}_1,\ldots,\boldsymbol{\mu}_k\text{.}\)</span> The partition that minimizes the objective function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
+= \sum_{i=1}^k \sum_{j \in C_i} \|\mathbf{x}_j - \boldsymbol{\mu}_i\|^2,
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-lights-out.html#p-403" class="internal">in-context</a></span>
+<div class="para">is obtained as follows. For each <span class="process-math">\(j\text{,}\)</span> find the <span class="process-math">\(\boldsymbol{\mu}_i\)</span> that minimizes <span class="process-math">\(\|\mathbf{x}_j - \boldsymbol{\mu}_i\|\)</span> (picking one arbitrarily in the case of ties) and assign <span class="process-math">\(\mathbf{x}_j\)</span> to <span class="process-math">\(C_i\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-clustering.html#p-403" class="internal">in-context</a></span>
 </body>
 </html>

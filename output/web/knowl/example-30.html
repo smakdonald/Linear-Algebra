@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.7</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">If</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \begin{bmatrix} 2&amp;1\\4&amp;-1 \end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">then the map <span class="process-math">\(T=M_A:\R^2\to \R^2\)</span> has an eigenvector of eigenvalue <span class="process-math">\(\l\)</span> exactly if the matrix</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A - \l I = \begin{bmatrix} 2-\l&amp;1\\4&amp;-1-\l \end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">has rank less than <span class="process-math">\(2\text{.}\)</span> We have a quick way of determining (this is a pun) whether the matrix <span class="process-math">\(\begin{bmatrix} a&amp;b\\c&amp;d \end{bmatrix}\)</span> has rank less than <span class="process-math">\(2\text{.}\)</span> This happens precisely when <span class="process-math">\(ad-bc=0\text{.}\)</span> Thus <span class="process-math">\(\l\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> exactly if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(2-\l)(-1-\l) - 4 = \l^2 - \l -6 = (\l-3)(\l+2) = 0.
+\end{equation*}
+</div>
+<div class="para">Thus the eigenvalues of <span class="process-math">\(T\)</span> are precisely <span class="process-math">\(3,-2\text{.}\)</span> To find the corresponding eigenvectors we need to find <span class="process-math">\(\ker(T-\l I)\)</span> for each of <span class="process-math">\(\l=3,-2\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ker(A-3I) = \ker\begin{bmatrix} -1&amp;1\\4&amp;-4 \end{bmatrix} = \Span\{\begin{bmatrix} 1\\1 \end{bmatrix}\} \qquad \ker(A+2I) = \ker\begin{bmatrix} 4&amp;1\\4&amp;1 \end{bmatrix} = \Span\{\begin{bmatrix} 1\\-4 \end{bmatrix}\}.
+\end{equation*}
+</div>
+<div class="para">If we choose the basis <span class="process-math">\(B=\{\v,\w\}\)</span> where <span class="process-math">\(\v=\begin{bmatrix} 1\\1 \end{bmatrix}\)</span> and <span class="process-math">\(\w=\begin{bmatrix} 1\\-4 \end{bmatrix}\)</span> then the matrices of <span class="process-math">\(T\)</span> and <span class="process-math">\(T^n\)</span> with respect to this basis are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[T]_B^B= \begin{bmatrix} 3&amp;0\\0&amp;-2 \end{bmatrix} \qquad \text{and}  \qquad [T^n]_B^B= \begin{bmatrix} 3^n&amp;0\\0&amp;(-2)^n \end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">respectively.</div>
+</div></article><span class="incontext"><a href="sec-eigen-again.html#example-30" class="internal">in-context</a></span>
+</body>
+</html>

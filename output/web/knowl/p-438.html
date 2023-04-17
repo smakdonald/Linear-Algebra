@@ -12,15 +12,20 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">In <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:kerneldim" missing or not unique]</code> we analyzed the linear map</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical"><ol class="decimal">
+<li><div class="para">conjugate-symmetric: for all <span class="process-math">\(\u,\v\in V\)</span> we have <span class="process-math">\(\langle \u,\v\rangle =\overline{\langle \v,\u \rangle}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">linear in the first entry: for all <span class="process-math">\(\u,\u', \v\in V\)</span> and <span class="process-math">\(\l,\mu\in \F\)</span> we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-T:\R^4\to \R^2, T(x_1,x_2,x_3,x_4)=(x_1-2x_3,x_1+x_2+x_4)=\begin{bmatrix} 1 &amp; 0 &amp; -2 &amp; 0\\ 1 &amp; 1 &amp; 0 &amp; 1\end{bmatrix} \begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix}.
+\langle\l \u+\mu \u',\v\rangle =\l \langle \u,\v\rangle+\mu\langle  \u',\v\rangle.
 \end{equation*}
 </div>
-<div class="para">and found <span class="process-math">\(\dim \ker(T)=2\text{.}\)</span> Towards this end it was helpful to put the matrix of this linear transformation in RREF using <em class="emphasis">row operations</em>.</div>
-</div>
-<span class="incontext"><a href="sec-rank-nullity.html#p-438" class="internal">in-context</a></span>
+</div></li>
+<li><div class="para">positive definite for all <span class="process-math">\(\v\in V\)</span> such that <span class="process-math">\(\v\neq \0\)</span> we have <span class="process-math">\(\langle \v,\v\rangle&gt;0\)</span>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-438" class="internal">in-context</a></span>
 </body>
 </html>

@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -721,9 +585,9 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-inner-product-ortho"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Inner Product Spaces and Orthogonality</span>
 </h2>
-<div class="para" id="p-584">All the vector spaces in this section will be vector spaces over one of the fields <span class="process-math">\(\R\)</span> or <span class="process-math">\(\C\text{.}\)</span>
+<div class="para" id="p-434">All the vector spaces in this section will be vector spaces over one of the fields <span class="process-math">\(\R\)</span> or <span class="process-math">\(\C\text{.}\)</span>
 </div>
-<div class="para logical" id="p-585">
+<div class="para logical" id="p-435">
 <div class="para">We will use the <em class="emphasis">complex conjugation</em> operation on <span class="process-math">\(\C\)</span> given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -737,13 +601,13 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-586">Note that <span class="process-math">\(\overline{a}=a\)</span> for any <span class="process-math">\(a\in\R\text{.}\)</span> In fact for <span class="process-math">\(z\in \C\)</span> we have <span class="process-math">\(z=\overline{z}\)</span> if and only if <span class="process-math">\(z\in\R\text{.}\)</span>
+<div class="para" id="p-436">Note that <span class="process-math">\(\overline{a}=a\)</span> for any <span class="process-math">\(a\in\R\text{.}\)</span> In fact for <span class="process-math">\(z\in \C\)</span> we have <span class="process-math">\(z=\overline{z}\)</span> if and only if <span class="process-math">\(z\in\R\text{.}\)</span>
 </div>
-<div class="para" id="p-587">An <em class="emphasis">inner product</em> on vector space <span class="process-math">\(V\)</span> is a function <span class="process-math">\(\langle - , -\rangle: V\times V\to \F\)</span> which is</div>
-<div class="para logical" id="p-588"><ol class="decimal">
-<li id="li-49"><div class="para" id="p-589">conjugate-symmetric: for all <span class="process-math">\(\u,\v\in V\)</span> we have <span class="process-math">\(\langle \u,\v\rangle =\overline{\langle \v,\u \rangle}\)</span>
+<div class="para" id="p-437">An <em class="emphasis">inner product</em> on vector space <span class="process-math">\(V\)</span> is a function <span class="process-math">\(\langle - , -\rangle: V\times V\to \F\)</span> which is</div>
+<div class="para logical" id="p-438"><ol class="decimal">
+<li id="li-49"><div class="para" id="p-439">conjugate-symmetric: for all <span class="process-math">\(\u,\v\in V\)</span> we have <span class="process-math">\(\langle \u,\v\rangle =\overline{\langle \v,\u \rangle}\)</span>
 </div></li>
-<li id="li-50"><div class="para logical" id="p-590">
+<li id="li-50"><div class="para logical" id="p-440">
 <div class="para">linear in the first entry: for all <span class="process-math">\(\u,\u', \v\in V\)</span> and <span class="process-math">\(\l,\mu\in \F\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -751,11 +615,11 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div></li>
-<li id="li-51"><div class="para" id="p-591">positive definite for all <span class="process-math">\(\v\in V\)</span> such that <span class="process-math">\(\v\neq \0\)</span> we have <span class="process-math">\(\langle \v,\v\rangle&gt;0\)</span>
+<li id="li-51"><div class="para" id="p-441">positive definite for all <span class="process-math">\(\v\in V\)</span> such that <span class="process-math">\(\v\neq \0\)</span> we have <span class="process-math">\(\langle \v,\v\rangle&gt;0\)</span>
 </div></li>
 </ol></div>
-<div class="para" id="p-592">The vector space <span class="process-math">\(V\)</span> together with its inner product <span class="process-math">\(\ip{,}\)</span> is called an <em class="emphasis">inner product space</em>. If <span class="process-math">\(V\)</span> is an inner product space over the field of real numbers <span class="process-math">\(\R\)</span> we call <span class="process-math">\(V\)</span> a <em class="emphasis">Euclidean space</em>.</div>
-<div class="para logical" id="p-593">
+<div class="para" id="p-442">The vector space <span class="process-math">\(V\)</span> together with its inner product <span class="process-math">\(\ip{,}\)</span> is called an <em class="emphasis">inner product space</em>. If <span class="process-math">\(V\)</span> is an inner product space over the field of real numbers <span class="process-math">\(\R\)</span> we call <span class="process-math">\(V\)</span> a <em class="emphasis">Euclidean space</em>.</div>
+<div class="para logical" id="p-443">
 <div class="para">Suppose <span class="process-math">\(V\)</span> is an inner product space and denote the inner product of <span class="process-math">\(\v,\w\in V\)</span> by <span class="process-math">\(\ip{\v,\w}\text{.}\)</span> The corresponding quadratic function can be used as a way of measuring lengths of vectors in <span class="process-math">\(V\text{.}\)</span> We define the <em class="emphasis">norm</em> of a vector <span class="process-math">\(\v\in V\)</span> to be</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -765,17 +629,17 @@ window.MathJax = {
 <div class="para">Note that since the inner product is positive definite we have <span class="process-math">\(\norm{\v}\geq 0\)</span> and moreover <span class="process-math">\(\norm{\v}&gt;0\)</span> for all <span class="process-math">\(\v\not=\0\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-594">For all <span class="process-math">\(\u,\v,\v'\in V\)</span> and <span class="process-math">\(\l\in \F\)</span> we have</div>
-<div class="para" id="p-595"><span class="process-math">\(\langle \v,\0\rangle =\langle \0, \v \rangle=0\)</span></div>
-<div class="para" id="p-596"><span class="process-math">\(\langle \v,\u+\u'\rangle= \langle \v,\u\rangle+\langle \v,\u'\rangle\)</span></div>
-<div class="para" id="p-597"><span class="process-math">\(\langle \v,\l \u\rangle=\overline{\l}\langle \v,\u\rangle\)</span></div>
-<div class="para" id="p-598"><span class="process-math">\(\langle \v,\v\rangle \in\R\)</span></div>
-<div class="para" id="p-599"><span class="process-math">\(\norm{\l\v}=|\l|\norm{\v}\text{.}\)</span></div>
-<div class="para" id="p-600">Exercise.</div>
-<div class="para" id="p-601">If <span class="process-math">\(\F=\R\)</span> Properties (b) and (c) of an inner product imply that it is a bilinear function. Thus when <span class="process-math">\(V\)</span> is a Euclidean space, the inner product is a symmetric bilinear function.</div>
-<div class="para" id="p-602">If <span class="process-math">\(\F=\R\)</span> or <span class="process-math">\(\C\text{,}\)</span> the dot product <span class="process-math">\(\langle \v,\w\rangle=v_1\overline{w_1}+v_2\overline{w_2}+\cdots +v_n\overline{w_n}\)</span> is the standard inner product on <span class="process-math">\(\F^n\text{.}\)</span> For this inner product <span class="process-math">\(\norm{\v}\)</span> is just the usual length of <span class="process-math">\(\v\text{.}\)</span>
+<div class="para" id="p-444">For all <span class="process-math">\(\u,\v,\v'\in V\)</span> and <span class="process-math">\(\l\in \F\)</span> we have</div>
+<div class="para" id="p-445"><span class="process-math">\(\langle \v,\0\rangle =\langle \0, \v \rangle=0\)</span></div>
+<div class="para" id="p-446"><span class="process-math">\(\langle \v,\u+\u'\rangle= \langle \v,\u\rangle+\langle \v,\u'\rangle\)</span></div>
+<div class="para" id="p-447"><span class="process-math">\(\langle \v,\l \u\rangle=\overline{\l}\langle \v,\u\rangle\)</span></div>
+<div class="para" id="p-448"><span class="process-math">\(\langle \v,\v\rangle \in\R\)</span></div>
+<div class="para" id="p-449"><span class="process-math">\(\norm{\l\v}=|\l|\norm{\v}\text{.}\)</span></div>
+<div class="para" id="p-450">Exercise.</div>
+<div class="para" id="p-451">If <span class="process-math">\(\F=\R\)</span> Properties (b) and (c) of an inner product imply that it is a bilinear function. Thus when <span class="process-math">\(V\)</span> is a Euclidean space, the inner product is a symmetric bilinear function.</div>
+<div class="para" id="p-452">If <span class="process-math">\(\F=\R\)</span> or <span class="process-math">\(\C\text{,}\)</span> the dot product <span class="process-math">\(\langle \v,\w\rangle=v_1\overline{w_1}+v_2\overline{w_2}+\cdots +v_n\overline{w_n}\)</span> is the standard inner product on <span class="process-math">\(\F^n\text{.}\)</span> For this inner product <span class="process-math">\(\norm{\v}\)</span> is just the usual length of <span class="process-math">\(\v\text{.}\)</span>
 </div>
-<div class="para logical" id="p-603">
+<div class="para logical" id="p-453">
 <div class="para">The following is an inner product on <span class="process-math">\(\mathcal{C}[0,1]\text{,}\)</span> the real vector space of continuous functions <span class="process-math">\(f:[0,1]\to\R\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -785,14 +649,14 @@ window.MathJax = {
 </div>
 <div class="para">Checking the conditions is straightforward.</div>
 </div>
-<div class="para logical" id="p-604"><ul class="disc">
+<div class="para logical" id="p-454"><ul class="disc">
 <li id="li-52">
-<div class="para" id="p-605">
+<div class="para" id="p-455">
 <em class="emphasis">Symmetry</em> means <span class="process-math">\(\ip{p,q} =\ip{q,p}\)</span> for all <span class="process-math">\(p,q\in \mathcal{C}[-1,1]\text{.}\)</span> (Since <span class="process-math">\(\F=\R\)</span> we don't need to conjugate.)</div>
-<div class="para" id="p-606">This holds since multiplication of real numbers is commutative so that <span class="process-math">\(p(x)q(x)= q(x)p(x)\)</span> for all <span class="process-math">\(x\in [0,1]\)</span> and therefore <span class="process-math">\(\definite p(x)q(x) dx{0}1= \definite q(x)p(x) dx{0}1\text{,}\)</span> that is <span class="process-math">\(\ip{p,q} =\ip{q,p}\text{.}\)</span>
+<div class="para" id="p-456">This holds since multiplication of real numbers is commutative so that <span class="process-math">\(p(x)q(x)= q(x)p(x)\)</span> for all <span class="process-math">\(x\in [0,1]\)</span> and therefore <span class="process-math">\(\definite p(x)q(x) dx{0}1= \definite q(x)p(x) dx{0}1\text{,}\)</span> that is <span class="process-math">\(\ip{p,q} =\ip{q,p}\text{.}\)</span>
 </div>
 </li>
-<li id="li-53"><div class="para logical" id="p-607">
+<li id="li-53"><div class="para logical" id="p-457">
 <div class="para">
 <em class="emphasis">Linearity</em> means <span class="process-math">\(\ip{\l p+\mu p',q}=\l \ip{p,q}  +\mu \ip{p',q}\)</span>
 </div>
@@ -808,16 +672,16 @@ window.MathJax = {
 </div>
 </div></li>
 <li id="li-54">
-<div class="para" id="p-608">
+<div class="para" id="p-458">
 <em class="emphasis">Positive definiteness</em> means that <span class="process-math">\(\ip{p,p} &gt;0\)</span> whenever <span class="process-math">\(p\neq \0\text{.}\)</span>
 </div>
-<div class="para" id="p-609">This is a consequence of the fact that <span class="process-math">\(p(x)^2\geq 0\)</span> and so <span class="process-math">\(\ip{p,p}=\definite p(x)^2 dx{-1}1 \geq 0\)</span> for all <span class="process-math">\(p\in\mathcal{C}[-1,1]\text{.}\)</span> Moreover, if <span class="process-math">\(p\neq \0\)</span> there exists <span class="process-math">\(x\in[0,1]\)</span> so that <span class="process-math">\(p(x)^2&gt;0\)</span> and in fact by continuity <span class="process-math">\(p(x)^2&gt;0\)</span> on some interval within <span class="process-math">\([0,1]\text{.}\)</span> This gives that <span class="process-math">\(\ip{p,p}=\definite p(x)^2 dx{-1}1&gt;0\)</span> whenever <span class="process-math">\(p\neq \0\text{.}\)</span>
+<div class="para" id="p-459">This is a consequence of the fact that <span class="process-math">\(p(x)^2\geq 0\)</span> and so <span class="process-math">\(\ip{p,p}=\definite p(x)^2 dx{-1}1 \geq 0\)</span> for all <span class="process-math">\(p\in\mathcal{C}[-1,1]\text{.}\)</span> Moreover, if <span class="process-math">\(p\neq \0\)</span> there exists <span class="process-math">\(x\in[0,1]\)</span> so that <span class="process-math">\(p(x)^2&gt;0\)</span> and in fact by continuity <span class="process-math">\(p(x)^2&gt;0\)</span> on some interval within <span class="process-math">\([0,1]\text{.}\)</span> This gives that <span class="process-math">\(\ip{p,p}=\definite p(x)^2 dx{-1}1&gt;0\)</span> whenever <span class="process-math">\(p\neq \0\text{.}\)</span>
 </div>
 </li>
 </ul></div>
-<div class="para" id="p-610">If <span class="process-math">\(\u,\v\)</span> are elements of an inner product space <span class="process-math">\(V\)</span> we say that <span class="process-math">\(\u\)</span> and <span class="process-math">\(\v\)</span> are othogonal (to each other) if <span class="process-math">\(\langle \u,\v\rangle =0\text{.}\)</span>
+<div class="para" id="p-460">If <span class="process-math">\(\u,\v\)</span> are elements of an inner product space <span class="process-math">\(V\)</span> we say that <span class="process-math">\(\u\)</span> and <span class="process-math">\(\v\)</span> are othogonal (to each other) if <span class="process-math">\(\langle \u,\v\rangle =0\text{.}\)</span>
 </div>
-<div class="para logical" id="p-611">
+<div class="para logical" id="p-461">
 <div class="para">If <span class="process-math">\(V\)</span> is an inner product space then a list of vectors <span class="process-math">\(\v_1, \ldots, \v_n\in V\)</span> is a <em class="emphasis">orthonormal list</em> (ONL) if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -830,13 +694,13 @@ window.MathJax = {
 <div class="para">An <em class="emphasis">orthonormal basis</em> (ONB) is an orthonormal list which is also a basis for <span class="process-math">\(V\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-612">If <span class="process-math">\(\F=\R\)</span> or <span class="process-math">\(\C\)</span> then the standard basis <span class="process-math">\(\e_1,\ldots, \e_n\)</span> of <span class="process-math">\(\F^n\)</span> is a ONB with respect to the standard inner product.</div>
-<div class="para" id="p-613">Any finite dimensional inner product space <span class="process-math">\(V\)</span> has an ONB. Moreover a ONB can be obtained using the following algorithm:</div>
-<div class="para" id="p-614">Start with any basis <span class="process-math">\(\{\b_1,\ldots, \b_n\}\)</span> of <span class="process-math">\(V\)</span>
+<div class="para" id="p-462">If <span class="process-math">\(\F=\R\)</span> or <span class="process-math">\(\C\)</span> then the standard basis <span class="process-math">\(\e_1,\ldots, \e_n\)</span> of <span class="process-math">\(\F^n\)</span> is a ONB with respect to the standard inner product.</div>
+<div class="para" id="p-463">Any finite dimensional inner product space <span class="process-math">\(V\)</span> has an ONB. Moreover a ONB can be obtained using the following algorithm:</div>
+<div class="para" id="p-464">Start with any basis <span class="process-math">\(\{\b_1,\ldots, \b_n\}\)</span> of <span class="process-math">\(V\)</span>
 </div>
-<div class="para" id="p-615">Set <span class="process-math">\(\v_1=\b_1/\norm{\b_1}\text{.}\)</span>
+<div class="para" id="p-465">Set <span class="process-math">\(\v_1=\b_1/\norm{\b_1}\text{.}\)</span>
 </div>
-<div class="para logical" id="p-616">
+<div class="para logical" id="p-466">
 <div class="para">For i from 1 to <span class="process-math">\(n-1\)</span> set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -850,9 +714,9 @@ window.MathJax = {
 <div class="para">Then <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a ONB for <span class="process-math">\(V\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-617">We prove by induction on <span class="process-math">\(i\geq 1\)</span> that <span class="process-math">\(\v_1,\ldots, \v_i\)</span> is a ONL that satisfies <span class="process-math">\(\linspan\{\v_1,\ldots, \v_i\}=\linspan\{\b_1,\ldots, \b_i\}\text{.}\)</span>
+<div class="para" id="p-467">We prove by induction on <span class="process-math">\(i\geq 1\)</span> that <span class="process-math">\(\v_1,\ldots, \v_i\)</span> is a ONL that satisfies <span class="process-math">\(\linspan\{\v_1,\ldots, \v_i\}=\linspan\{\b_1,\ldots, \b_i\}\text{.}\)</span>
 </div>
-<div class="para logical" id="p-618">
+<div class="para logical" id="p-468">
 <div class="para">
 <em class="emphasis">Base case:</em> <span class="process-math">\(i=1\)</span> since <span class="process-math">\(\v_1=\b_1/\norm{\b_1}\)</span> we deduce that <span class="process-math">\(\linspan\{\v_1\}=\linspan\{\b_1\}\text{.}\)</span> Moreover</div>
 <div class="displaymath process-math">
@@ -861,14 +725,14 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-619">
+<div class="para" id="p-469">
 <em class="emphasis">Induction step:</em> assume that <span class="process-math">\(\v_1,\ldots, \v_i\)</span> is a ONL that satisfies <span class="process-math">\(\linspan\{\v_1,\ldots, \v_i\}=\linspan\{\b_1,\ldots, \b_i\}\text{.}\)</span> Therefore <span class="process-math">\(\v_1,\ldots, \v_i\in \linspan\{\b_1,\ldots, \b_i\}\text{.}\)</span> The definition of <span class="process-math">\(\v_{i+1}\)</span> shows that <span class="process-math">\(\v_{i+1}\in \linspan\{\v_1,\ldots, \v_i, \b_{i+1}\}=\linspan\{\b_1,\ldots, \b_i,\b_{i+1}\}\text{.}\)</span> Since <span class="process-math">\(\v_1,\ldots, \v_{i+1}\in \linspan\{\b_1,\ldots, \b_i, \b_{i+1}\}\)</span> we conclude that <span class="process-math">\(\linspan\{\v_1,\ldots, \v_{i+1}\} \subseteq \linspan\{\b_1,\ldots, \b_{i+1}\}\text{.}\)</span>
 </div>
-<div class="para" id="p-620">Conversely the inductive hypothesis gives <span class="process-math">\(\b_1,\ldots, \b_i\in \linspan\{\v_1,\ldots, \v_i\}\text{.}\)</span> Moreover solving for <span class="process-math">\(\b_{i+1}\)</span> from the equation defining <span class="process-math">\(\hat{v}_{i+1}\)</span> shows that <span class="process-math">\(\b_{i+1}\in  \linspan\{\v_1,\ldots, \v_i, \v_{i+1}\}\text{.}\)</span> Since <span class="process-math">\(\b_1,\ldots, \b_{i+1}\in \linspan\{\v_1,\ldots, \v_i, \v_{i+1}\}\)</span> we conclude that <span class="process-math">\(\linspan\{\b_1,\ldots, \b_{i+1}\} \subseteq \linspan\{\v_1,\ldots, \v_{i+1}\}\text{.}\)</span>
+<div class="para" id="p-470">Conversely the inductive hypothesis gives <span class="process-math">\(\b_1,\ldots, \b_i\in \linspan\{\v_1,\ldots, \v_i\}\text{.}\)</span> Moreover solving for <span class="process-math">\(\b_{i+1}\)</span> from the equation defining <span class="process-math">\(\hat{v}_{i+1}\)</span> shows that <span class="process-math">\(\b_{i+1}\in  \linspan\{\v_1,\ldots, \v_i, \v_{i+1}\}\text{.}\)</span> Since <span class="process-math">\(\b_1,\ldots, \b_{i+1}\in \linspan\{\v_1,\ldots, \v_i, \v_{i+1}\}\)</span> we conclude that <span class="process-math">\(\linspan\{\b_1,\ldots, \b_{i+1}\} \subseteq \linspan\{\v_1,\ldots, \v_{i+1}\}\text{.}\)</span>
 </div>
-<div class="para" id="p-621">We may now conclude that <span class="process-math">\(\linspan\{\v_1,\ldots, \v_{i+1}\} = \linspan\{\b_1,\ldots, \b_{i+1}\}\text{.}\)</span>
+<div class="para" id="p-471">We may now conclude that <span class="process-math">\(\linspan\{\v_1,\ldots, \v_{i+1}\} = \linspan\{\b_1,\ldots, \b_{i+1}\}\text{.}\)</span>
 </div>
-<div class="para logical" id="p-622">
+<div class="para logical" id="p-472">
 <div class="para">To show <span class="process-math">\(\v_1,\ldots, \v_{i+1}\)</span> is a ONL we compute by the inductive hypothesis that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -896,11 +760,11 @@ window.MathJax = {
 </div>
 <div class="para">In view of <span class="process-math">\(\norm{\hat{\v}_{i+1}} \neq 0\)</span> we conclude <span class="process-math">\(\langle \v_{i+1},\v_j\rangle=0\text{.}\)</span> Finally, <span class="process-math">\(\langle \v_{i+1},\v_{i+1}\rangle=1\)</span> by the same argument as in the base case.</div>
 </div>
-<div class="para" id="p-623">The case <span class="process-math">\(i=n\)</span> shows that <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a spanning set for <span class="process-math">\(V\text{.}\)</span> Since <span class="process-math">\(\{\b_1,\ldots, \b_n\}\)</span> is a basis of <span class="process-math">\(V\)</span> we know that <span class="process-math">\(\dim V=n\text{.}\)</span> By this implies that <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a basis for <span class="process-math">\(V\text{.}\)</span>
+<div class="para" id="p-473">The case <span class="process-math">\(i=n\)</span> shows that <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a spanning set for <span class="process-math">\(V\text{.}\)</span> Since <span class="process-math">\(\{\b_1,\ldots, \b_n\}\)</span> is a basis of <span class="process-math">\(V\)</span> we know that <span class="process-math">\(\dim V=n\text{.}\)</span> By this implies that <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a basis for <span class="process-math">\(V\text{.}\)</span>
 </div>
-<div class="para" id="p-624">Find a ONB for the Euclidean vector space <span class="process-math">\(V_2=\{a+bX+cX^2\mid a,b,c \in \R\}\)</span> of polynomials of degree at most two with inner product <span class="process-math">\(\langle p,q\rangle = \definite p(x)q(x) dx{0}1.\)</span>
+<div class="para" id="p-474">Find a ONB for the Euclidean vector space <span class="process-math">\(V_2=\{a+bX+cX^2\mid a,b,c \in \R\}\)</span> of polynomials of degree at most two with inner product <span class="process-math">\(\langle p,q\rangle = \definite p(x)q(x) dx{0}1.\)</span>
 </div>
-<div class="para logical" id="p-625">
+<div class="para logical" id="p-475">
 <div class="para">We start with the basis <span class="process-math">\(\b_1=1, \b_2=X, \b_3=X^2\text{.}\)</span> Then we set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -947,8 +811,8 @@ window.MathJax = {
 <div class="para">The desired <span class="process-math">\(ONB\)</span> is <span class="process-math">\(\{1, \sqrt{12}(X-\frac{1}{2}), \sqrt{180}(X^2-X+\frac{1}{6})\}\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-626">Having a ONB presents the advantage that it make it easy to write any vector in <span class="process-math">\(V\)</span> as a linear combination of the ONB. We can even give a closed formula for the coefficients of such a linear combination.</div>
-<div class="para logical" id="p-627">
+<div class="para" id="p-476">Having a ONB presents the advantage that it make it easy to write any vector in <span class="process-math">\(V\)</span> as a linear combination of the ONB. We can even give a closed formula for the coefficients of such a linear combination.</div>
+<div class="para logical" id="p-477">
 <div class="para">If <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a ONB for an inner product space <span class="process-math">\(V\)</span> and <span class="process-math">\(\u\in V\)</span> then the unique way to write <span class="process-math">\(\u\)</span> as a linear combination of the <span class="process-math">\(\v_i\)</span>s is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -956,7 +820,7 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="p-628">
+<div class="para logical" id="p-478">
 <div class="para">Since <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a basis, in particular it spans <span class="process-math">\(V\text{,}\)</span> so there exist <span class="process-math">\(\l_1,\ldots, \l_n\)</span> such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -965,9 +829,9 @@ window.MathJax = {
 </div>
 <div class="para">Substituting gives <span class="process-math">\(\ip{\u,\v_i}=\l_1\ip{\v_1, \v_i}+\cdots + \l_n\ip{\v_n,\v_i}=\l_i\text{,}\)</span> as claimed.</div>
 </div>
-<div class="para" id="p-629">Let <span class="process-math">\(V\)</span> be an inner product space and let <span class="process-math">\(\u, \v\in V\text{.}\)</span> Then the <em class="emphasis">orthogonal projection</em> of <span class="process-math">\(\v\)</span> onto <span class="process-math">\(\u\)</span> is a vector <span class="process-math">\(\vv{p}\)</span> so that <span class="process-math">\(\v=\vv{p}+\w\)</span> with <span class="process-math">\(\vv{p}\in \linspan\{\u\}\)</span> and <span class="process-math">\(\w\)</span> orthogonal to <span class="process-math">\(\u\text{.}\)</span>
+<div class="para" id="p-479">Let <span class="process-math">\(V\)</span> be an inner product space and let <span class="process-math">\(\u, \v\in V\text{.}\)</span> Then the <em class="emphasis">orthogonal projection</em> of <span class="process-math">\(\v\)</span> onto <span class="process-math">\(\u\)</span> is a vector <span class="process-math">\(\vv{p}\)</span> so that <span class="process-math">\(\v=\vv{p}+\w\)</span> with <span class="process-math">\(\vv{p}\in \linspan\{\u\}\)</span> and <span class="process-math">\(\w\)</span> orthogonal to <span class="process-math">\(\u\text{.}\)</span>
 </div>
-<div class="para logical" id="p-630">
+<div class="para logical" id="p-480">
 <div class="para">The orthogonal projection of <span class="process-math">\(\u\)</span> onto <span class="process-math">\(\v\)</span> is unique and is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -975,7 +839,7 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="p-631">
+<div class="para logical" id="p-481">
 <div class="para">If <span class="process-math">\(V\)</span> is an inner product space and <span class="process-math">\(U\of V\)</span> is a subspace then we define the <em class="emphasis">orthogonal complement to <span class="process-math">\(U\)</span></em> to be the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -983,8 +847,8 @@ U\perp = \setof{\x\in V}{\text{$\ip{\x,\u}=0$ for all $\u\in U$}}. \qedhere
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-632">The set <span class="process-math">\(U\perp\)</span> is a subspace of <span class="process-math">\(V\text{;}\)</span> this is a consequence of the linearity of <span class="process-math">\(\ip{,}\)</span> in the first input.</div>
-<div class="para logical" id="p-633">
+<div class="para" id="p-482">The set <span class="process-math">\(U\perp\)</span> is a subspace of <span class="process-math">\(V\text{;}\)</span> this is a consequence of the linearity of <span class="process-math">\(\ip{,}\)</span> in the first input.</div>
+<div class="para logical" id="p-483">
 <div class="para">If <span class="process-math">\(U\)</span> is a subspace of a finite dimensional inner product space <span class="process-math">\(V\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -992,8 +856,8 @@ V = U\oplus U\perp.
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-634">To show that <span class="process-math">\(U+ U\perp\)</span> is a direct sum we use . The fact that <span class="process-math">\(U\)</span> and <span class="process-math">\(U\perp\)</span> have trivial intersection is a consequence of the fact that if <span class="process-math">\(\u \in U\cap U\perp\)</span> then <span class="process-math">\(\ip{\u,\u} = 0\)</span> and hence <span class="process-math">\(\u=0\)</span> by positive definiteness.</div>
-<div class="para logical" id="p-635">
+<div class="para" id="p-484">To show that <span class="process-math">\(U+ U\perp\)</span> is a direct sum we use . The fact that <span class="process-math">\(U\)</span> and <span class="process-math">\(U\perp\)</span> have trivial intersection is a consequence of the fact that if <span class="process-math">\(\u \in U\cap U\perp\)</span> then <span class="process-math">\(\ip{\u,\u} = 0\)</span> and hence <span class="process-math">\(\u=0\)</span> by positive definiteness.</div>
+<div class="para logical" id="p-485">
 <div class="para">To show that <span class="process-math">\(U+U\perp\)</span> is all of <span class="process-math">\(V\text{,}\)</span> start by picking an orthonormal basis <span class="process-math">\(\set{\us[r]}\)</span> for <span class="process-math">\(U\text{.}\)</span> Given <span class="process-math">\(\v\in V\)</span> set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1009,9 +873,9 @@ V = U\oplus U\perp.
 <div class="para">We have shown <span class="process-math">\(\v=\u+\w\)</span> where <span class="process-math">\(\u\in U\)</span> and <span class="process-math">\(\w\in U\perp\text{,}\)</span> so <span class="process-math">\(\v\in U+U\perp\text{.}\)</span> Thus <span class="process-math">\(V\subseteq U+U\perp\text{.}\)</span> Since the opposite containment is true, we conclude <span class="process-math">\(V= U+U\perp\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-636">shows that if <span class="process-math">\(U\)</span> is a subspace of a finite dimensional inner product space <span class="process-math">\(V\text{,}\)</span> then for each <span class="process-math">\(\v\in V\)</span> there exist unique vectors <span class="process-math">\(\u \in U\)</span> and <span class="process-math">\(\w\in U\perp\)</span> (which depend on <span class="process-math">\(\v\)</span>) so that <span class="process-math">\(\v=\u+\w\text{.}\)</span> Then the <em class="emphasis">projection of <span class="process-math">\(\v\)</span> onto <span class="process-math">\(U\)</span></em> is <span class="process-math">\({\proj}_{U}(\v)=\u\)</span> and the <em class="emphasis">projection map</em> from <span class="process-math">\(V\)</span> to <span class="process-math">\(U\)</span> is the function <span class="process-math">\(P:V\to U, P(\v)= {\proj}_{U}(\v)=\u\text{.}\)</span>
+<div class="para" id="p-486">shows that if <span class="process-math">\(U\)</span> is a subspace of a finite dimensional inner product space <span class="process-math">\(V\text{,}\)</span> then for each <span class="process-math">\(\v\in V\)</span> there exist unique vectors <span class="process-math">\(\u \in U\)</span> and <span class="process-math">\(\w\in U\perp\)</span> (which depend on <span class="process-math">\(\v\)</span>) so that <span class="process-math">\(\v=\u+\w\text{.}\)</span> Then the <em class="emphasis">projection of <span class="process-math">\(\v\)</span> onto <span class="process-math">\(U\)</span></em> is <span class="process-math">\({\proj}_{U}(\v)=\u\)</span> and the <em class="emphasis">projection map</em> from <span class="process-math">\(V\)</span> to <span class="process-math">\(U\)</span> is the function <span class="process-math">\(P:V\to U, P(\v)= {\proj}_{U}(\v)=\u\text{.}\)</span>
 </div>
-<div class="para logical" id="p-637">
+<div class="para logical" id="p-487">
 <div class="para">If <span class="process-math">\(\set{\us[r]}\)</span> is an orthonormal basis for <span class="process-math">\(U\)</span> then shows that</div>
 <div class="displaymath process-math">
 \begin{equation*}

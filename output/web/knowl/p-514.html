@@ -13,13 +13,18 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(V\)</span> is finite dimensional and <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(V\)</span> then</div>
+<div class="para">If <span class="process-math">\(V,W\)</span> are finite dimensional inner product spaces and <span class="process-math">\(T\in L(V,W)\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\dim( V/W) = \dim(V) - \dim(W).
+\begin{aligned}
+V &amp;= \ker(T) \odsum \range(T^*) \\
+W &amp;= \range(T) \odsum \ker(T^*).
+\end{aligned}
 \end{equation*}
 </div>
+<div class="para">Moreover <span class="process-math">\(\rank(T) = \rank(T^*)\text{.}\)</span>
 </div>
-<span class="incontext"><a href="sec-quotients.html#p-514" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="sec-adjoints.html#p-514" class="internal">in-context</a></span>
 </body>
 </html>

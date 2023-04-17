@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -722,9 +586,9 @@ window.MathJax = {
 <section class="section" id="sec-clustering"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Application: <span class="process-math">\(k\)</span>-means Clustering</span>
 </h2>
-<div class="para" id="p-516">
+<div class="para" id="p-367">
 <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-7" id="fn-7"><sup> 1 </sup></a> Imagine that you are an evolutionary biologist studying irises and that you have collected measurements on a large number of iris samples. Your goal is to identify different <a class="external" href="https://en.wikipedia.org/wiki/Species" target="_blank">species</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-9" id="fn-9"><sup> 3 </sup></a> within this collection. (<a class="external" href="https://www.w3resource.com/machine-learning/scikit-learn/iris/index.php" target="_blank">Source</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-10" id="fn-10"><sup> 4 </sup></a>)</div>
-<div class="para" id="p-517">Here is a <a class="external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank">classical iris dataset</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-11" id="fn-11"><sup> 5 </sup></a> first analyzed by the statistician <a class="external" href="https://en.wikipedia.org/wiki/Ronald_Fisher" target="_blank">Ronald A. Fisher</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-12" id="fn-12"><sup> 6 </sup></a>. We will upload the data in the form of a data table (similar to a spreadsheet) , where the columns are different measurements (or features) and the rows are different samples. Below, we load the data using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html?highlight=read_csv#" target="_blank"><code class="code-inline tex2jax_ignore">pandas.read_csv</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-13" id="fn-13"><sup> 7 </sup></a> and show the first <span class="process-math">\(5\)</span> lines of the dataset (see <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.head</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-14" id="fn-14"><sup> 8 </sup></a>).</div>
+<div class="para" id="p-368">Here is a <a class="external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank">classical iris dataset</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-11" id="fn-11"><sup> 5 </sup></a> first analyzed by the statistician <a class="external" href="https://en.wikipedia.org/wiki/Ronald_Fisher" target="_blank">Ronald A. Fisher</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-12" id="fn-12"><sup> 6 </sup></a>. We will upload the data in the form of a data table (similar to a spreadsheet) , where the columns are different measurements (or features) and the rows are different samples. Below, we load the data using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html?highlight=read_csv#" target="_blank"><code class="code-inline tex2jax_ignore">pandas.read_csv</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-13" id="fn-13"><sup> 7 </sup></a> and show the first <span class="process-math">\(5\)</span> lines of the dataset (see <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.head.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.head</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-14" id="fn-14"><sup> 8 </sup></a>).</div>
 <pre class="code-block tex2jax_ignore">\PY{c+c1}{\PYZsh{} Python 3}
     \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
     \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
@@ -741,12 +605,12 @@ window.MathJax = {
     3   4            1.5           0.2            4.6           3.1
     4   5            1.4           0.2            5.0           3.6
 </pre>
-<div class="para" id="p-518">There are <span class="process-math">\(150\)</span> samples (as can be seen by using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.shape</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-15" id="fn-15"><sup> 9 </sup></a> which gives the dimensions of the DataFrame as a tuple). Each row in this data set can be seen as a vector (or point) in <span class="process-math">\(\R^4\)</span> since it has four entries which are real numbers.</div>
+<div class="para" id="p-369">There are <span class="process-math">\(150\)</span> samples (as can be seen by using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.shape</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-15" id="fn-15"><sup> 9 </sup></a> which gives the dimensions of the DataFrame as a tuple). Each row in this data set can be seen as a vector (or point) in <span class="process-math">\(\R^4\)</span> since it has four entries which are real numbers.</div>
 <pre class="code-block tex2jax_ignore">\PY{n}{df}\PY{o}{.}\PY{n}{shape}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
 </pre>
 <pre class="code-block tex2jax_ignore">150
 </pre>
-<div class="para" id="p-519">Let's first extract the columns into a Numpy array using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_numpy.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.to_numpy()</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-16" id="fn-16"><sup> 10 </sup></a>, and visualize the petal data. Below, each point is a sample. This is called a <a class="external" href="https://en.wikipedia.org/wiki/Scatter_plot" target="_blank">scatter plot</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-17" id="fn-17"><sup> 11 </sup></a>.</div>
+<div class="para" id="p-370">Let's first extract the columns into a Numpy array using <a class="external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_numpy.html" target="_blank"><code class="code-inline tex2jax_ignore">DataFrame.to_numpy()</code></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-16" id="fn-16"><sup> 10 </sup></a>, and visualize the petal data. Below, each point is a sample. This is called a <a class="external" href="https://en.wikipedia.org/wiki/Scatter_plot" target="_blank">scatter plot</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-17" id="fn-17"><sup> 11 </sup></a>.</div>
 <pre class="code-block tex2jax_ignore">\PY{n}{X} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PetalLengthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PetalWidthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} 
             \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SepalLengthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SepalWidthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{to\PYZus{}numpy}\PY{p}{(}\PY{p}{)}
 </pre>
@@ -756,24 +620,24 @@ window.MathJax = {
     \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 </pre>
 <figure class="figure figure-like" id="figure-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/scater1.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.1<span class="period">.</span></span><span class="space"> </span>image</figcaption></figure><div class="para" id="p-520">We observe a clear cluster of samples on the bottom left. What is a <a class="external" href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">cluster</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 12 </sup></a>? Intuitively, it is a group of samples that are close to each other, but far from every other sample. In this case, it may be an indication that these samples come from a separate species.</div>
-<div class="para" id="p-521">Now let's look at the full dataset. Visualizing the full <span class="process-math">\(4\)</span>-dimensional data is not straightforward. One way to do this is to consider all pairwise scatter plots.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.1<span class="period">.</span></span><span class="space"> </span>image</figcaption></figure><div class="para" id="p-371">We observe a clear cluster of samples on the bottom left. What is a <a class="external" href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">cluster</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 12 </sup></a>? Intuitively, it is a group of samples that are close to each other, but far from every other sample. In this case, it may be an indication that these samples come from a separate species.</div>
+<div class="para" id="p-372">Now let's look at the full dataset. Visualizing the full <span class="process-math">\(4\)</span>-dimensional data is not straightforward. One way to do this is to consider all pairwise scatter plots.</div>
 <pre class="code-block tex2jax_ignore">\PY{n}{sns}\PY{o}{.}\PY{n}{pairplot}\PY{p}{(}\PY{n}{df}\PY{p}{,} \PY{n+nb}{vars}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PetalLengthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PetalWidthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SepalLengthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SepalWidthCm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{height}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
     \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 </pre>
 <figure class="figure figure-like" id="figure-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/scater2.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.2<span class="period">.</span></span><span class="space"> </span>image</figcaption></figure><div class="para" id="p-522"></div>
-<div class="para" id="p-523">What would be useful is a method that <em class="emphasis">automatically</em> identifies clusters <em class="emphasis">whatever the dimension of the data</em>. In this chapter, we will discuss a standard way to do this: <span class="process-math">\(k\)</span>-means clustering.</div>
-<div class="para" id="p-524">Clustering is the following fundamental problem in data science: we are given <span class="process-math">\(n\)</span> vectors <span class="process-math">\(\mathbf{x}_1,\ldots,\mathbf{x}_n\)</span> in <span class="process-math">\(\mathbb{R}^d\text{.}\)</span> and we want to partition these data points into <span class="process-math">\(k\)</span> disjoint subsets - or clusters - with small pairwise distances within clusters and large pairwise distances across clusters.</div>
-<div class="para" id="p-525">Fix a number of clusters <span class="process-math">\(k\text{.}\)</span> Formally, we define a clustering as a partition.</div>
-<div class="para" id="p-526">A partition of <span class="process-math">\([n] = \{1,\ldots,n\}\)</span> of size <span class="process-math">\(k\)</span> is a collection of non-empty subsets <span class="process-math">\(C_1,\ldots,C_k \subseteq [n]\)</span> that:</div>
-<div class="para" id="p-527">are pairwise disjoint, i.e., <span class="process-math">\(C_i \cap C_j = \emptyset\text{,}\)</span> <span class="process-math">\(\forall i \neq j\)</span> and</div>
-<div class="para" id="p-528">cover all of <span class="process-math">\([n]\text{,}\)</span> i.e., <span class="process-math">\(\cup_{i=1}^k C_i = [n]\text{.}\)</span>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.2<span class="period">.</span></span><span class="space"> </span>image</figcaption></figure><div class="para" id="p-373"></div>
+<div class="para" id="p-374">What would be useful is a method that <em class="emphasis">automatically</em> identifies clusters <em class="emphasis">whatever the dimension of the data</em>. In this chapter, we will discuss a standard way to do this: <span class="process-math">\(k\)</span>-means clustering.</div>
+<div class="para" id="p-375">Clustering is the following fundamental problem in data science: we are given <span class="process-math">\(n\)</span> vectors <span class="process-math">\(\mathbf{x}_1,\ldots,\mathbf{x}_n\)</span> in <span class="process-math">\(\mathbb{R}^d\text{.}\)</span> and we want to partition these data points into <span class="process-math">\(k\)</span> disjoint subsets - or clusters - with small pairwise distances within clusters and large pairwise distances across clusters.</div>
+<div class="para" id="p-376">Fix a number of clusters <span class="process-math">\(k\text{.}\)</span> Formally, we define a clustering as a partition.</div>
+<div class="para" id="p-377">A partition of <span class="process-math">\([n] = \{1,\ldots,n\}\)</span> of size <span class="process-math">\(k\)</span> is a collection of non-empty subsets <span class="process-math">\(C_1,\ldots,C_k \subseteq [n]\)</span> that:</div>
+<div class="para" id="p-378">are pairwise disjoint, i.e., <span class="process-math">\(C_i \cap C_j = \emptyset\text{,}\)</span> <span class="process-math">\(\forall i \neq j\)</span> and</div>
+<div class="para" id="p-379">cover all of <span class="process-math">\([n]\text{,}\)</span> i.e., <span class="process-math">\(\cup_{i=1}^k C_i = [n]\text{.}\)</span>
 </div>
-<div class="para" id="p-529">We number the clusters <span class="process-math">\(C_1,\ldots,C_k\)</span> for notational convenience, but their order is meaningless. Two partitions are the same if they are the same family of subsets.</div>
-<div class="para" id="p-530">For each cluster we pick a representative or center <span class="process-math">\(\boldsymbol{\mu}_i \in \mathbb{R}^d\)</span> of the cluster <span class="process-math">\(C_i\text{.}\)</span> Note that <span class="process-math">\(\boldsymbol{\mu}_i\)</span> need not be one of the <span class="process-math">\(\mathbf{x}_j\)</span>'s. Intuitively, clusters must posses the property that each of the points <span class="process-math">\(\x_j\)</span> in the cluster <span class="process-math">\(C_i\)</span> must be close in Euclidean distance to the center of the cluster, <span class="process-math">\(\boldsymbol{\mu}_i\text{.}\)</span>
+<div class="para" id="p-380">We number the clusters <span class="process-math">\(C_1,\ldots,C_k\)</span> for notational convenience, but their order is meaningless. Two partitions are the same if they are the same family of subsets.</div>
+<div class="para" id="p-381">For each cluster we pick a representative or center <span class="process-math">\(\boldsymbol{\mu}_i \in \mathbb{R}^d\)</span> of the cluster <span class="process-math">\(C_i\text{.}\)</span> Note that <span class="process-math">\(\boldsymbol{\mu}_i\)</span> need not be one of the <span class="process-math">\(\mathbf{x}_j\)</span>'s. Intuitively, clusters must posses the property that each of the points <span class="process-math">\(\x_j\)</span> in the cluster <span class="process-math">\(C_i\)</span> must be close in Euclidean distance to the center of the cluster, <span class="process-math">\(\boldsymbol{\mu}_i\text{.}\)</span>
 </div>
-<div class="para logical" id="p-531">
+<div class="para logical" id="p-382">
 <div class="para">Let <span class="process-math">\(\v=(v_1, \ldots, v_d)\)</span> be a vector in <span class="process-math">\(\R^d\text{.}\)</span> Then the <em class="emphasis">Euclidean norm</em> of <span class="process-math">\(\v\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -787,8 +651,8 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-532">The aggregate of the distances of the points <span class="process-math">\(\x_j\)</span> in our data sets to the centers of the clusters is defined below.</div>
-<div class="para logical" id="p-533">
+<div class="para" id="p-383">The aggregate of the distances of the points <span class="process-math">\(\x_j\)</span> in our data sets to the centers of the clusters is defined below.</div>
+<div class="para logical" id="p-384">
 <div class="para">Fix vectors <span class="process-math">\(\x_1, \ldots, \x_n\in \R^d\text{.}\)</span> For a partition <span class="process-math">\(C_1,\ldots,C_k\)</span> of <span class="process-math">\([n]\)</span> and cluster representatives <span class="process-math">\(\boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k\in \R^d\)</span> the <em class="emphasis"><span class="process-math">\(k\)</span>-means objective function</em> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -797,10 +661,10 @@ G(C_1,\ldots,C_k, \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k) =\sum_{i=1}^k 
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-534">Our goal is to find a partition <span class="process-math">\(C_1,\ldots,C_k\)</span> and also the cluster representetives <span class="process-math">\(\boldsymbol{\mu}_i\)</span> that minimize <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:kmeans" missing or not unique]</code>. The <span class="process-math">\(k\)</span>-means algorithm is a popular <em class="emphasis">heuristic</em> to solve this problem. It is based on the idea that the following two sub-problems are easy to solve:</div>
-<div class="para" id="p-535">finding the optimal cluster representatives for a fixed partition;</div>
-<div class="para" id="p-536">finding the optimal partition for a fixed set of cluster representatives.</div>
-<div class="para logical" id="p-537">
+<div class="para" id="p-385">Our goal is to find a partition <span class="process-math">\(C_1,\ldots,C_k\)</span> and also the cluster representetives <span class="process-math">\(\boldsymbol{\mu}_i\)</span> that minimize <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:kmeans" missing or not unique]</code>. The <span class="process-math">\(k\)</span>-means algorithm is a popular <em class="emphasis">heuristic</em> to solve this problem. It is based on the idea that the following two sub-problems are easy to solve:</div>
+<div class="para" id="p-386">finding the optimal cluster representatives for a fixed partition;</div>
+<div class="para" id="p-387">finding the optimal partition for a fixed set of cluster representatives.</div>
+<div class="para logical" id="p-388">
 <div class="para">The <span class="process-math">\(k\)</span>-means algorithm then alternates between the two steps until progress falls below a given tolerance. This is reasonable since our goal as stated above is to solve the minimization problem</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -811,10 +675,10 @@ G(C_1,\ldots,C_k, \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k) =\sum_{i=1}^k 
 </div>
 <div class="para">where <span class="process-math">\(C_1,\ldots,C_k\)</span> ranges over all partitions of <span class="process-math">\([n]\)</span> of size <span class="process-math">\(k\text{.}\)</span> Fixing partition <span class="process-math">\(C_1,\ldots,C_k\)</span> and miniminizing over <span class="process-math">\(\boldsymbol{\mu}_1,\ldots,\boldsymbol{\mu}_k \in \mathbb{R}^d\)</span> corresponds to solving the first problem above, while fixing <span class="process-math">\(\boldsymbol{\mu}_1,\ldots,\boldsymbol{\mu}_k \in \mathbb{R}^d\)</span> and miniminizing over partitions <span class="process-math">\(C_1,\ldots,C_k\)</span> corresponds to solving the second problem.</div>
 </div>
-<div class="para" id="p-538">To elaborate on the first step above, we review an elementary fact about quadratic functions.</div>
-<div class="para" id="p-539">Let <span class="process-math">\(q(x) = a x^2 + b x + c\)</span> where <span class="process-math">\(a &gt; 0\)</span> and <span class="process-math">\(x \in \mathbb{R}\text{.}\)</span> The unique global minimum of <span class="process-math">\(q\)</span> is attained at <span class="process-math">\(x^* = -\frac{b}{2a}.\)</span>
+<div class="para" id="p-389">To elaborate on the first step above, we review an elementary fact about quadratic functions.</div>
+<div class="para" id="p-390">Let <span class="process-math">\(q(x) = a x^2 + b x + c\)</span> where <span class="process-math">\(a &gt; 0\)</span> and <span class="process-math">\(x \in \mathbb{R}\text{.}\)</span> The unique global minimum of <span class="process-math">\(q\)</span> is attained at <span class="process-math">\(x^* = -\frac{b}{2a}.\)</span>
 </div>
-<div class="para logical" id="p-540">
+<div class="para logical" id="p-391">
 <div class="para">We rewrite <span class="process-math">\(q\)</span> as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -827,16 +691,16 @@ q(x)
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-541">Since <span class="process-math">\((x - x^*)^2\geq 0\)</span> we see that this quantity is minimized when <span class="process-math">\(x=x^*\)</span> and any other <span class="process-math">\(x\)</span> gives a higher value for <span class="process-math">\(q\text{.}\)</span> The step on the second line above is called <a class="external" href="https://en.wikipedia.org/wiki/Completing_the_square" target="_blank"><em class="emphasis">Completing the Square</em></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 13 </sup></a>. <span class="process-math">\(\square\)</span>
+<div class="para" id="p-392">Since <span class="process-math">\((x - x^*)^2\geq 0\)</span> we see that this quantity is minimized when <span class="process-math">\(x=x^*\)</span> and any other <span class="process-math">\(x\)</span> gives a higher value for <span class="process-math">\(q\text{.}\)</span> The step on the second line above is called <a class="external" href="https://en.wikipedia.org/wiki/Completing_the_square" target="_blank"><em class="emphasis">Completing the Square</em></a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 13 </sup></a>. <span class="process-math">\(\square\)</span>
 </div>
-<div class="para" id="p-542">Fix a partition <span class="process-math">\(C_1,\ldots,C_k\text{.}\)</span> The representatives <span class="process-math">\(\boldsymbol{\mu}_i\)</span> which minimize the objective function</div>
-<div class="para logical" id="p-543"><div class="displaymath process-math">
+<div class="para" id="p-393">Fix a partition <span class="process-math">\(C_1,\ldots,C_k\text{.}\)</span> The representatives <span class="process-math">\(\boldsymbol{\mu}_i\)</span> which minimize the objective function</div>
+<div class="para logical" id="p-394"><div class="displaymath process-math">
 \begin{equation*}
 G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
 = \sum_{i=1}^k \sum_{j \in C_i} \|\mathbf{x}_j - \boldsymbol{\mu}_i\|^2,
 \end{equation*}
 </div></div>
-<div class="para logical" id="p-544">
+<div class="para logical" id="p-395">
 <div class="para">are the centroids</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -844,8 +708,8 @@ G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-545">Using the notation <span class="process-math">\(\mathbf{x}_j = (x_{j1},\ldots,x_{jd})^T\)</span> and similarly for <span class="process-math">\(\boldsymbol{\mu}_i\text{,}\)</span> note that we can expand the <span class="process-math">\(k\)</span>-means objective as</div>
-<div class="para logical" id="p-546"><div class="displaymath process-math">
+<div class="para" id="p-396">Using the notation <span class="process-math">\(\mathbf{x}_j = (x_{j1},\ldots,x_{jd})^T\)</span> and similarly for <span class="process-math">\(\boldsymbol{\mu}_i\text{,}\)</span> note that we can expand the <span class="process-math">\(k\)</span>-means objective as</div>
+<div class="para logical" id="p-397"><div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
 \sum_{i=1}^k \sum_{j \in C_i} \|\mathbf{x}_j - \boldsymbol{\mu}_i\|^2
@@ -854,25 +718,25 @@ G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
 \end{aligned}
 \end{equation*}
 </div></div>
-<div class="para" id="p-547">The expression in square brackets is a quadratic function in <span class="process-math">\(\mu_{im}\)</span>
+<div class="para" id="p-398">The expression in square brackets is a quadratic function in <span class="process-math">\(\mu_{im}\)</span>
 </div>
-<div class="para logical" id="p-548"><div class="displaymath process-math">
+<div class="para logical" id="p-399"><div class="displaymath process-math">
 \begin{equation*}
 q_{im}(\mu_{im})
 = \left\{\sum_{j \in C_i} x_{jm}^2\right\} + \left\{- 2 \sum_{j \in C_i} x_{jm}\right\} \mu_{im}  + \left\{|C_i| \right\} \mu_{im}^2,
 \end{equation*}
 </div></div>
-<div class="para" id="p-549">and therefore, by <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "lem:minquadratic" missing or not unique]</code> is minimized at</div>
-<div class="para logical" id="p-550"><div class="displaymath process-math">
+<div class="para" id="p-400">and therefore, by <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "lem:minquadratic" missing or not unique]</code> is minimized at</div>
+<div class="para logical" id="p-401"><div class="displaymath process-math">
 \begin{equation*}
 \mu_{im}^* 
 = - \frac{- 2 \sum_{j \in C_i} x_{jm}}{2 |C_i|}
 = \frac{1}{|C_i|} \sum_{j \in C_i} x_{jm}.
 \end{equation*}
 </div></div>
-<div class="para" id="p-551">Since each term <span class="process-math">\(q_{im}(\mu_{im})\)</span> in the sum over <span class="process-math">\(i, m\)</span> making up the objective function <span class="process-math">\(G\)</span> is strictly minimized at <span class="process-math">\(\boldsymbol{\mu}_1^*,\ldots, \boldsymbol{\mu}_k^*\text{,}\)</span> so is <span class="process-math">\(G\text{.}\)</span>
+<div class="para" id="p-402">Since each term <span class="process-math">\(q_{im}(\mu_{im})\)</span> in the sum over <span class="process-math">\(i, m\)</span> making up the objective function <span class="process-math">\(G\)</span> is strictly minimized at <span class="process-math">\(\boldsymbol{\mu}_1^*,\ldots, \boldsymbol{\mu}_k^*\text{,}\)</span> so is <span class="process-math">\(G\text{.}\)</span>
 </div>
-<div class="para logical" id="p-552">
+<div class="para logical" id="p-403">
 <div class="para">Fix the representatives <span class="process-math">\(\boldsymbol{\mu}_1,\ldots,\boldsymbol{\mu}_k\text{.}\)</span> The partition that minimizes the objective function</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -883,7 +747,7 @@ G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
 <div class="para">is obtained as follows. For each <span class="process-math">\(j\text{,}\)</span> find the <span class="process-math">\(\boldsymbol{\mu}_i\)</span> that minimizes <span class="process-math">\(\|\mathbf{x}_j - \boldsymbol{\mu}_i\|\)</span> (picking one arbitrarily in the case of ties) and assign <span class="process-math">\(\mathbf{x}_j\)</span> to <span class="process-math">\(C_i\text{.}\)</span>
 </div>
 </div>
-<div class="para logical" id="p-553">
+<div class="para logical" id="p-404">
 <div class="para">If <span class="process-math">\(c\)</span> is the cluster assignment associated to <span class="process-math">\(C_1,\ldots,C_k\text{,}\)</span> then we can re-write the objective as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -893,10 +757,10 @@ G(C_1,\ldots,C_k; \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_k)
 </div>
 <div class="para">By definition, when the <span class="process-math">\(\boldsymbol{\mu}_i\)</span>'s are fixed, each term in the sum on the right-hand side is minimized separately by the assignment in the statement. Hence so is the sum itself. Note that we used the fact that the square root is non-decreasing to conclude that minimizing <span class="process-math">\(\|\mathbf{x}_j - \boldsymbol{\mu}_i\|^2\)</span> or its square root <span class="process-math">\(\|\mathbf{x}_j - \boldsymbol{\mu}_i\|\)</span> are equivalent.</div>
 </div>
-<div class="para" id="p-554">We now see that the <span class="process-math">\(k\)</span>-means algorithm approaches a (local) solution to the problem <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:minkmeans" missing or not unique]</code>.</div>
-<div class="para" id="p-555">The sequence of objective function values produced by the <span class="process-math">\(k\)</span>-means algorithm is weakly decreasing and hence converges to a (local) minimum of the function <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:kmeans" missing or not unique]</code>.</div>
-<div class="para" id="p-556">By the Optimal Representatives and Optimal Clustering lemmas, each step does not increase the objective. A sequence of real numbers that is weakly decreasing and bounded below (in our case by 0, as the distances are all non-negative) converges.</div>
-<div class="para" id="p-557">The <span class="process-math">\(k\)</span>-means algorithm is only a heuristic. In particular, it is not guaranteed to find the global minimum of the <span class="process-math">\(k\)</span>-means objective. However, it is guaranteed to improve the objective at every iteration, or more precisely, not to make it worse.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-7"><div class="fn">Adapted from notes by Sebastien Roch <a class="external" href="https://people.math.wisc.edu/~roch/mmids/notes.html" target="_blank">https://people.math.wisc.edu/<span class="process-math">\(\sim\)</span>roch/mmids/notes.html</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-8" id="fn-8"><sup> 2 </sup></a>
+<div class="para" id="p-405">We now see that the <span class="process-math">\(k\)</span>-means algorithm approaches a (local) solution to the problem <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:minkmeans" missing or not unique]</code>.</div>
+<div class="para" id="p-406">The sequence of objective function values produced by the <span class="process-math">\(k\)</span>-means algorithm is weakly decreasing and hence converges to a (local) minimum of the function <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:kmeans" missing or not unique]</code>.</div>
+<div class="para" id="p-407">By the Optimal Representatives and Optimal Clustering lemmas, each step does not increase the objective. A sequence of real numbers that is weakly decreasing and bounded below (in our case by 0, as the distances are all non-negative) converges.</div>
+<div class="para" id="p-408">The <span class="process-math">\(k\)</span>-means algorithm is only a heuristic. In particular, it is not guaranteed to find the global minimum of the <span class="process-math">\(k\)</span>-means objective. However, it is guaranteed to improve the objective at every iteration, or more precisely, not to make it worse.</div></section><div class="hidden-content tex2jax_ignore" id="hk-fn-7"><div class="fn">Adapted from notes by Sebastien Roch <a class="external" href="https://people.math.wisc.edu/~roch/mmids/notes.html" target="_blank">https://people.math.wisc.edu/<span class="process-math">\(\sim\)</span>roch/mmids/notes.html</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-8" id="fn-8"><sup> 2 </sup></a>
 </div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-8"><div class="fn"><code class="code-inline tex2jax_ignore">people.math.wisc.edu/~roch/mmids/notes.html</code></div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-9"><div class="fn"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Species</code></div></div>

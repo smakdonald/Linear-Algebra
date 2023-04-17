@@ -11,9 +11,22 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">If <span class="process-math">\(A\in M_{m\by n}(\F)\)</span> the kernel of the linear map <span class="process-math">\(M_A:\F^n\to \F^m, M_A(\v) = A\v\)</span> is the set of solutions <span class="process-math">\(\x\)</span> to the <em class="emphasis">homogeneous</em> system of equations <span class="process-math">\(A\x=\0\text{.}\)</span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">The <em class="emphasis">Lagrange basis</em> for the vector space <span class="process-math">\(V_{n-1}\)</span> with respect to the nodes <span class="process-math">\(x_1,\ldots,x_n\in \F\)</span> consists of the polynomials</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ell_i(x)=\prod_{1\leq j\leq n, j\neq i} \frac{x-x_j}{x_i-x_j}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-linear-maps-again.html#p-310" class="internal">in-context</a></span>
+<div class="para">which satisfy</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\label{eq:lagrange}
+\ell_i(x_j)=\begin{cases} 0 &amp; i\neq j\\ 1 &amp; i=j. \end{cases}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-poly-interpolation.html#p-310" class="internal">in-context</a></span>
 </body>
 </html>

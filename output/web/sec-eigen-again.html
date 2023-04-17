@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -721,16 +585,26 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-eigen-again"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">Eigenvectors and Eigenvalues</span>
 </h2>
-<div class="para" id="p-678">The most general tool we have to help us understand high powers of linear maps is the of eigenvectors.</div>
-<div class="para" id="p-679">For a vector space <span class="process-math">\(V\)</span> we denote <span class="process-math">\(L(V,V)\)</span> the vector space of linear maps <span class="process-math">\(T:V\to V\text{.}\)</span> We call such a map a linear <em class="emphasis">operator</em> on <span class="process-math">\(V\text{.}\)</span>
-</div>
-<div class="para" id="p-680">The identity map <span class="process-math">\(I:V\to V\text{,}\)</span> <span class="process-math">\(I(v)=v, \forall v\in V\)</span> is an element of <span class="process-math">\(L(V,V)\text{.}\)</span>
-</div>
-<div class="para" id="p-681">If <span class="process-math">\(V\)</span> is a vector space and <span class="process-math">\(T\in L(V,V)\)</span> then we say that <span class="process-math">\(\v\in V\wo\set{\0}\)</span> is an <em class="emphasis">eigenvector</em> of <span class="process-math">\(T\)</span> if <span class="process-math">\(T\v=\l \v\)</span> for some scalar <span class="process-math">\(\l\in\F\text{.}\)</span> If <span class="process-math">\(\v\)</span> is an eigenvector and <span class="process-math">\(T\v=\l\v\)</span> we say that <span class="process-math">\(\l\)</span> is the <em class="emphasis">eigenvalue</em> associated to <span class="process-math">\(\v\text{.}\)</span>
-</div>
-<div class="para" id="p-682">If <span class="process-math">\(V\)</span> is the vector space of infinitely differentiable functions from <span class="process-math">\(\R\to \R\)</span> and <span class="process-math">\(D:V\to V\)</span> mapping <span class="process-math">\(f\)</span> to <span class="process-math">\(f'\)</span> is the differentiation map then any exponential function <span class="process-math">\(f(x) = Ab^x\)</span> is an eigenvector of <span class="process-math">\(D\)</span> with eigenvalue <span class="process-math">\(\ln(b)\text{.}\)</span>
-</div>
-<div class="para logical" id="p-683">
+<div class="para" id="p-527">The most general tool we have to help us understand high powers of linear maps is the of eigenvectors.</div>
+<article class="definition definition-like" id="def-linear-operator"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-528">For a vector space <span class="process-math">\(V\)</span> we denote <span class="process-math">\(L(V,V)\)</span> the vector space of linear maps <span class="process-math">\(T:V\to V\text{.}\)</span> We call such a map a linear <em class="emphasis">operator</em> on <span class="process-math">\(V\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-identity-operator"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-529">The identity map <span class="process-math">\(I:V\to V\text{,}\)</span> <span class="process-math">\(I(v)=v, \forall v\in V\)</span> is an element of <span class="process-math">\(L(V,V)\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-eigen"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.4</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-530">If <span class="process-math">\(V\)</span> is a vector space and <span class="process-math">\(T\in L(V,V)\)</span> then we say that <span class="process-math">\(\v\in V\wo\set{\0}\)</span> is an <em class="emphasis">eigenvector</em> of <span class="process-math">\(T\)</span> if <span class="process-math">\(T\v=\l \v\)</span> for some scalar <span class="process-math">\(\l\in\F\text{.}\)</span> If <span class="process-math">\(\v\)</span> is an eigenvector and <span class="process-math">\(T\v=\l\v\)</span> we say that <span class="process-math">\(\l\)</span> is the <em class="emphasis">eigenvalue</em> associated to <span class="process-math">\(\v\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-eigen-example"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.5</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-531"><ol class="decimal">
+<li id="li-55"><div class="para" id="p-532">If <span class="process-math">\(V\)</span> is the vector space of infinitely differentiable functions from <span class="process-math">\(\R\to \R\)</span> and <span class="process-math">\(D:V\to V\)</span> mapping <span class="process-math">\(f\)</span> to <span class="process-math">\(f'\)</span> is the differentiation map then any exponential function <span class="process-math">\(f(x) = Ab^x\)</span> is an eigenvector of <span class="process-math">\(D\)</span> with eigenvalue <span class="process-math">\(\ln(b)\text{.}\)</span>
+</div></li>
+<li id="li-56"><div class="para logical" id="p-533">
 <div class="para">Consider the <em class="emphasis">left shift map</em> on <span class="process-math">\(\R^\N\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -742,21 +616,30 @@ L \colon \R^\N &amp;\to \R^\N \\
 </div>
 <div class="para">Again we have that exponential sequences are eigenvectors: if <span class="process-math">\(a_i = Ab^{i-1}\)</span> then <span class="process-math">\((a_i)_1^\infty\)</span> is an eigenvector with eigenvalue <span class="process-math">\(b\text{.}\)</span> Even <span class="process-math">\(b=0\)</span> gives an eigenvector; <span class="process-math">\((1,0,0,\dots)\in \ker(L)\)</span> and is thus an eigenvector with eigenvalue <span class="process-math">\(0\text{.}\)</span>
 </div>
-</div>
-<div class="para" id="p-684">The following simple observation is surprisingly important in finding eigenvectors. It shifts the focus of attention away from the eigenvector onto the eigenvalue.</div>
-<div class="para" id="p-685">For a linear map <span class="process-math">\(T\in L(V,V)\text{,}\)</span> the following are equivalent:</div>
-<div class="para" id="p-686">
+</div></li>
+</ol></div></article><div class="para" id="p-534">The following simple observation is surprisingly important in finding eigenvectors. It shifts the focus of attention away from the eigenvector onto the eigenvalue.</div>
+<article class="lemma theorem-like" id="lem-eigen-equivalencies"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.6</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-535">
+<div class="para">For a linear map <span class="process-math">\(T\in L(V,V)\text{,}\)</span> the following are equivalent:</div>
+<ol class="decimal">
+<li id="li-57"><div class="para" id="p-536">
 <span class="process-math">\(T\)</span> has an eigenvector with eigenvalue <span class="process-math">\(\l\in \F\)</span>
-</div>
-<div class="para" id="p-687"><span class="process-math">\(\ker(T-\l I) \not=\set{\0}\)</span></div>
-<div class="para" id="p-688">
-<span class="process-math">\(T-\l I\)</span> is not injective.</div>
-<div class="para" id="p-689">If the vector space <span class="process-math">\(V\)</span> is finite dimensional then the statements above are further equivalent to</div>
-<div class="para" id="p-690">
-<span class="process-math">\(T-\l I\)</span> is not injective,</div>
-<div class="para" id="p-691">
-<span class="process-math">\(T-\l I\)</span> is not surjective.</div>
-<div class="para logical" id="p-692">
+</div></li>
+<li id="li-58"><div class="para" id="p-537"><span class="process-math">\(\displaystyle \ker(T-\l I) \not=\set{\0}\)</span></div></li>
+<li id="li-59"><div class="para" id="p-538">
+<span class="process-math">\(T-\l I\)</span> is not injective.</div></li>
+</ol>
+</div> <div class="para logical" id="p-539">
+<div class="para">If the vector space <span class="process-math">\(V\)</span> is finite dimensional then the statements above are further equivalent to</div>
+<ol class="decimal">
+<li id="li-60"><div class="para" id="p-540">
+<span class="process-math">\(T-\l I\)</span> is not injective,</div></li>
+<li id="li-61"><div class="para" id="p-541">
+<span class="process-math">\(T-\l I\)</span> is not surjective.</div></li>
+</ol>
+</div></article><article class="hiddenproof" id="proof-12"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><div class="para logical" id="p-542">
 <div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -764,21 +647,24 @@ T\v = \l\v \quad\iff\quad T\v-\l \v = \0 \quad\iff\quad (T-\l I)\v  = \0 \quad\i
 \end{equation*}
 </div>
 <div class="para">This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .</div>
-</div>
-<div class="para logical" id="p-693">
+</div></article></div>
+<article class="example example-like" id="ex-eigen-example-1"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.7</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-543">
 <div class="para">If</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A = \mat[2&amp;1\\4&amp;-1]
+A = \begin{bmatrix} 2&amp;1\\4&amp;-1 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">then the map <span class="process-math">\(T=M_A:\R^2\to \R^2\)</span> has an eigenvector of eigenvalue <span class="process-math">\(\l\)</span> exactly if the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A - \l I = \mat[2-\l&amp;1\\4&amp;-1-\l]
+A - \l I = \begin{bmatrix} 2-\l&amp;1\\4&amp;-1-\l \end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">has rank less than <span class="process-math">\(2\text{.}\)</span> We have a quick way of determining (this is a pun) whether the matrix <span class="process-math">\(\mat[a&amp;b\\c&amp;d]\)</span> has rank less than <span class="process-math">\(2\text{.}\)</span> This happens precisely when <span class="process-math">\(ad-bc=0\text{.}\)</span> Thus <span class="process-math">\(\l\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> exactly if</div>
+<div class="para">has rank less than <span class="process-math">\(2\text{.}\)</span> We have a quick way of determining (this is a pun) whether the matrix <span class="process-math">\(\begin{bmatrix} a&amp;b\\c&amp;d \end{bmatrix}\)</span> has rank less than <span class="process-math">\(2\text{.}\)</span> This happens precisely when <span class="process-math">\(ad-bc=0\text{.}\)</span> Thus <span class="process-math">\(\l\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> exactly if</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (2-\l)(-1-\l) - 4 = \l^2 - \l -6 = (\l-3)(\l+2) = 0.
@@ -787,18 +673,23 @@ A - \l I = \mat[2-\l&amp;1\\4&amp;-1-\l]
 <div class="para">Thus the eigenvalues of <span class="process-math">\(T\)</span> are precisely <span class="process-math">\(3,-2\text{.}\)</span> To find the corresponding eigenvectors we need to find <span class="process-math">\(\ker(T-\l I)\)</span> for each of <span class="process-math">\(\l=3,-2\text{.}\)</span> We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\ker(A-3I) = \ker\mat[-1&amp;1\\4&amp;-4] = \linspan\set{\col{1\\1}} \qquad \ker(A+2I) = \ker\mat[4&amp;1\\4&amp;1] = \linspan\set{\col{1\\-4}}.
+\begin{aligned}
+\ker(A-3I) &amp;= \ker\begin{bmatrix} -1&amp;1\\4&amp;-4 \end{bmatrix} = \Span\left\{\begin{bmatrix} 1\\1 \end{bmatrix}\right\} \\
+\ker(A+2I) &amp;= \ker\begin{bmatrix} 4&amp;1\\4&amp;1 \end{bmatrix} = \Span\left\{\begin{bmatrix} 1\\-4 \end{bmatrix}\right\}.
+\end{aligned}
 \end{equation*}
 </div>
-<div class="para">If we choose the basis <span class="process-math">\(B=\{\v,\w\}\)</span> where <span class="process-math">\(\v=\col{1\\1}\)</span> and <span class="process-math">\(\w=\col{1\\-4}\)</span> then the matrices of <span class="process-math">\(T\)</span> and <span class="process-math">\(T^n\)</span> with respect to this basis are</div>
+<div class="para">If we choose the basis <span class="process-math">\(B=\{\v,\w\}\)</span> where <span class="process-math">\(\v=\begin{bmatrix} 1\\1 \end{bmatrix}\)</span> and <span class="process-math">\(\w=\begin{bmatrix} 1\\-4 \end{bmatrix}\)</span> then the matrices of <span class="process-math">\(T\)</span> and <span class="process-math">\(T^n\)</span> with respect to this basis are</div>
 <div class="displaymath process-math">
 \begin{equation*}
-[T]_B^B=    \mat[3&amp;0\\0&amp;-2] \qquad \text{and}  \qquad [T^n]_B^B= \mat[3^n&amp;0\\0&amp;(-2)^n]
+[T]_B^B= \begin{bmatrix} 3&amp;0\\0&amp;-2 \end{bmatrix} \qquad \text{and}  \qquad [T^n]_B^B= \begin{bmatrix} 3^n&amp;0\\0&amp;(-2)^n \end{bmatrix}
 \end{equation*}
 </div>
 <div class="para">respectively.</div>
-</div>
-<div class="para logical" id="p-694">
+</div></article><article class="example example-like" id="ex-right-shift"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.8</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-544">
 <div class="para">Consider the <em class="emphasis">right shift map</em> on <span class="process-math">\(\R^\N\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -819,46 +710,55 @@ a_{i-1} &amp; i \ge 2 \\
 </div>
 <div class="para">This contradiction establishes that <span class="process-math">\(\v=\0\text{,}\)</span> or in other words that <span class="process-math">\(\l\)</span> is not a eigenvalue of <span class="process-math">\(R\text{.}\)</span> On the other hand if <span class="process-math">\(\l=0\)</span> we'd be looking for <span class="process-math">\(\v\in \ker(R)\text{.}\)</span> It is clear however that <span class="process-math">\(\ker(R)=\set{\0}\text{;}\)</span> if <span class="process-math">\(\v=(v_i)_{i=1}^\infty\)</span> has <span class="process-math">\(v_i\not=0\)</span> then <span class="process-math">\((R\v)_{i+1} \not= 0\text{.}\)</span>
 </div>
-</div>
-<div class="para" id="p-695">To compute eigenvalues it is very helpful to endow the vector space <span class="process-math">\(L(V,V)\)</span> with extra structure.</div>
-<div class="para logical" id="p-696">
+</div></article><div class="para" id="p-545">To compute eigenvalues it is very helpful to endow the vector space <span class="process-math">\(L(V,V)\)</span> with extra structure.</div>
+<article class="proposition theorem-like" id="proposition-4"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.9</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-546">
 <div class="para">Given a vector space <span class="process-math">\(V\)</span> over a field <span class="process-math">\(\F\text{,}\)</span> the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
 L(V,V)=\{T:V\to V \mid T \text{ linear} \}
 \end{equation*}
 </div>
-<div class="para">endowed with the operations of addition <span class="process-math">\((T+S)(\v)=T(\v)+S(\v)\text{,}\)</span> scalar multiplication <span class="process-math">\((\l T)(\v)=\lT(\v)\text{,}\)</span> and composition <span class="process-math">\((T\circ S)(\v)=T(S(\v))\)</span> (written from now on as multiplication <span class="process-math">\(TS\)</span>) is a <span class="process-math">\(\F\)</span>-<em class="emphasis">algebra</em> meaning that it satisfies:</div>
-</div>
-<div class="para" id="p-697">
-<span class="process-math">\(L(V,V)\)</span> with its addition and scalar multiplication is a <span class="process-math">\(\F\)</span>-vector space</div>
-<div class="para" id="p-698">Composition is associative: <span class="process-math">\(A (B C) = (AB)C\)</span> for all <span class="process-math">\(A, B,C\in L(V,V)\)</span>
-</div>
-<div class="para" id="p-699">Composition distributes over addition: <span class="process-math">\(A(B+C) = AB+AC\)</span> and <span class="process-math">\((A+B)C = AC+BC\)</span> for all <span class="process-math">\(A,B,C\in L(V,V)\)</span>
-</div>
-<div class="para" id="p-700">Composition respects scalar multiplication: <span class="process-math">\((\l A)(\mu B) = (\l\mu) AB\)</span> for all <span class="process-math">\(\l,\mu\in \F\text{,}\)</span> <span class="process-math">\(A,B\in L(V,V)\text{.}\)</span>
-</div>
-<div class="para logical" id="p-701">
+<div class="para">endowed with the operations of addition <span class="process-math">\((T+S)(\v)=T(\v)+S(\v)\text{,}\)</span> scalar multiplication <span class="process-math">\((\l T)(\v)=\l T(\v)\text{,}\)</span> and composition <span class="process-math">\((T\circ S)(\v)=T(S(\v))\)</span> (written from now on as multiplication <span class="process-math">\(TS\)</span>) is a <span class="process-math">\(\F\)</span>-<em class="emphasis">algebra</em> meaning that it satisfies:</div>
+<ol class="decimal">
+<li id="li-62"><div class="para" id="p-547">
+<span class="process-math">\(L(V,V)\)</span> with its addition and scalar multiplication is a <span class="process-math">\(\F\)</span>-vector space</div></li>
+<li id="li-63"><div class="para" id="p-548">Composition is associative: <span class="process-math">\(A (B C) = (AB)C\)</span> for all <span class="process-math">\(A, B,C\in L(V,V)\)</span>
+</div></li>
+<li id="li-64"><div class="para" id="p-549">Composition distributes over addition: <span class="process-math">\(A(B+C) = AB+AC\)</span> and <span class="process-math">\((A+B)C = AC+BC\)</span> for all <span class="process-math">\(A,B,C\in L(V,V)\)</span>
+</div></li>
+<li id="li-65"><div class="para" id="p-550">Composition respects scalar multiplication: <span class="process-math">\((\l A)(\mu B) = (\l\mu) AB\)</span> for all <span class="process-math">\(\l,\mu\in \F\text{,}\)</span> <span class="process-math">\(A,B\in L(V,V)\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><article class="definition definition-like" id="definition-19"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.10</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-551">
 <div class="para">Given any <span class="process-math">\(T\in L(V,V)\)</span> and any polynomial <span class="process-math">\(p\in \F[X], p(x)=a_0+a_1X+a_2X^2+\cdots a_dX^d\)</span> we can sensibly define <span class="process-math">\(p(T)\in L(V,V)\)</span> in the following way: for <span class="process-math">\(n\geq 0\)</span> set <span class="process-math">\(T^n=T\circ T\circ \cdots \circ T\)</span> (<span class="process-math">\(n\)</span> times) and define</div>
 <div class="displaymath process-math">
 \begin{equation*}
 p(T)=a_0+a_1T+a_2T^2+\cdots a_dT^d.
 \end{equation*}
 </div>
-</div>
-<div class="para" id="p-702">A very important fact about polynomials in <span class="process-math">\(\C[X]\)</span> is the following.</div>
-<div class="para logical" id="p-703">
+</div></article><div class="para" id="p-552">A very important fact about polynomials in <span class="process-math">\(\C[X]\)</span> is the following.</div>
+<article class="theorem theorem-like" id="thm-fta"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.11</span><span class="period">.</span><span class="space"> </span><span class="title">The Fundamental Theorem of Algebra.</span>
+</h3>
+<div class="para logical" id="p-553">
 <div class="para">Any monic polynomial <span class="process-math">\(p(X)\in \C[X]\)</span> of degree <span class="process-math">\(k\geq 1\)</span> factors into linear factors; there exist <span class="process-math">\(\l_1, \l_2, \ldots, \l_k\)</span> such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 p(X) = (X -\l_1)(X - \l_2) \cdots (X - \l_k).
 \end{equation*}
 </div>
+</div></article><div class="para" id="p-554">The following theorem begins to explore the connection between eigenvalues of <span class="process-math">\(T\)</span> and polynomials satisfied by <span class="process-math">\(T\text{.}\)</span>
 </div>
-<div class="para" id="p-704">The following theorem begins to explore the connection between eigenvalues of <span class="process-math">\(T\)</span> and polynomials satisfied by <span class="process-math">\(T\text{.}\)</span>
-</div>
-<div class="para" id="p-705">If <span class="process-math">\(V\)</span> is an <span class="process-math">\(n\)</span>-dimensional <span class="process-math">\(\C\)</span>-vector space and <span class="process-math">\(T\in L(V,V)\)</span> then <span class="process-math">\(T\)</span> has an eigenvector.</div>
-<div class="para logical" id="p-706">
+<article class="theorem theorem-like" id="thm-C-evec"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.12</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-555">If <span class="process-math">\(V\)</span> is an <span class="process-math">\(n\)</span>-dimensional <span class="process-math">\(\C\)</span>-vector space and <span class="process-math">\(T\in L(V,V)\)</span> then <span class="process-math">\(T\)</span> has an eigenvector.</div></article><article class="hiddenproof" id="proof-13"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-13"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><div class="para logical" id="p-556">
 <div class="para">Since <span class="process-math">\(\dim L(V,V) = n^2\)</span> the set</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -896,9 +796,12 @@ p(T) = (T-\l_1 I)(T-\l_2 I)\dots(T-\l_k I) = \0
 \end{equation*}
 </div>
 <div class="para">so <span class="process-math">\(\w\)</span> is an eigenvector of <span class="process-math">\(T\text{,}\)</span> and <span class="process-math">\(\l_{j}\)</span> is the corresponding eigenvalue.</div>
-</div>
-<div class="para" id="p-707">It is quite possible, as the following example shows, to have an operator on <span class="process-math">\(\C^n\)</span> with only one eigenvector (up to scalar multiples).</div>
-<div class="para logical" id="p-708">
+</div></article></div>
+<div class="para" id="p-557">It is quite possible, as the following example shows, to have an operator on <span class="process-math">\(\C^n\)</span> with only one eigenvector (up to scalar multiples).</div>
+<article class="example example-like" id="ex-nilpotent"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.13</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-558">
 <div class="para">Consider the map (whose matrix with respect to the usual basis has <span class="process-math">\(1\)</span>s on the diagonal immediately above the main diagonal and <span class="process-math">\(0\)</span>s everywhere else)</div>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
@@ -907,7 +810,7 @@ S \colon \C^n &amp;\to \C^n \\
 (a_i)_1^{n} &amp;\mapsto \left( \begin{cases}
 a_{i+1} &amp; i &lt; n \\
 0 &amp; i=n .
-\end{cases} \right)_{i=1}^n
+\end{cases} \right)_{i=1}^n   
 \end{aligned}
 \end{equation*}
 </div>
@@ -919,10 +822,11 @@ a_{i+1} &amp; i &lt; n \\
 </div>
 <div class="para">Clearly <span class="process-math">\(\e_1=(1,0,\dots,0)\)</span> is an eigenvector with eigenvalue <span class="process-math">\(0\text{.}\)</span> The only eigenvectors of <span class="process-math">\(S\)</span> are multiples of <span class="process-math">\(\e_1\text{.}\)</span> To see this note that, by an argument precisely analogous to that in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:right_shift" missing or not unique]</code>, there are no non-zero eigenvalues. If <span class="process-math">\(\v=(v_i)_1^n\in \ker(S)\)</span> then <span class="process-math">\(S\v = \0\)</span> implies <span class="process-math">\(v_2=v_3=\dots=v_n=0\text{;}\)</span> in other words <span class="process-math">\(\ker(S)=\linspan(\e_1)\text{.}\)</span>
 </div>
-</div>
-<div class="para" id="p-709">We are not able, in light of <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:nilpotent" missing or not unique]</code>, to prove that every linear map <span class="process-math">\(T:V\to V\)</span> on a finite dimensional <span class="process-math">\(\C\)</span>-vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.</div>
-<div class="para" id="p-710">If <span class="process-math">\(V\)</span> is a finite-dimensional <span class="process-math">\(\C\)</span>-vector space and <span class="process-math">\(T\in L(V,V)\)</span> then <span class="process-math">\(V\)</span> has a basis <span class="process-math">\(\set{\vs}\)</span> with respect to which the matrix of <span class="process-math">\(T\)</span> is upper triangular.</div>
-<div class="para logical" id="p-711">
+</div></article><div class="para" id="p-559">We are not able, in light of <a href="" class="xref" data-knowl="./knowl/ex-nilpotent.html" title="Example 6.13">Example 6.13</a>, to prove that every linear map <span class="process-math">\(T:V\to V\)</span> on a finite dimensional <span class="process-math">\(\C\)</span>-vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.</div>
+<article class="theorem theorem-like" id="theorem-5"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.14</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-560">If <span class="process-math">\(V\)</span> is a finite-dimensional <span class="process-math">\(\C\)</span>-vector space and <span class="process-math">\(T\in L(V,V)\)</span> then <span class="process-math">\(V\)</span> has a basis <span class="process-math">\(\set{\vs}\)</span> with respect to which the matrix of <span class="process-math">\(T\)</span> is upper triangular.</div></article><article class="hiddenproof" id="proof-14"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-14"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-14"><article class="hiddenproof"><div class="para logical" id="p-561">
 <div class="para">The result is trivially true for <span class="process-math">\(\dim(V)=1\text{.}\)</span> Suppose then that <span class="process-math">\(\dim(V)&gt;1\text{.}\)</span> Let <span class="process-math">\(\v_1\)</span> be an eigenvector of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(\l\)</span> and set <span class="process-math">\(W=\linspan\set{\v_1}\text{.}\)</span> Consider the map</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -949,9 +853,11 @@ T\v_j &amp;= a_{1j}\v_1 + \sum_{i=2}^n a_{ij} \v_i.
 \end{equation*}
 </div>
 <div class="para">Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of <span class="process-math">\(\tilde{T}\)</span> is upper triangular, we have that the matrix of <span class="process-math">\(T\)</span> is upper triangular.</div>
-</div>
-<div class="para" id="p-712">If <span class="process-math">\(T:V\to V\)</span> is linear and <span class="process-math">\(\vs[k]\)</span> are eigenvectors with corresponding distinct eigenvalues <span class="process-math">\(\ls[k]\)</span> then the <span class="process-math">\(\v_i\)</span> are linearly independent.</div>
-<div class="para logical" id="p-713">
+</div></article></div>
+<article class="theorem theorem-like" id="thm-distinct"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.15</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-562">If <span class="process-math">\(T:V\to V\)</span> is linear and <span class="process-math">\(\vs[k]\)</span> are eigenvectors with corresponding distinct eigenvalues <span class="process-math">\(\ls[k]\)</span> then the <span class="process-math">\(\v_i\)</span> are linearly independent.</div></article><article class="hiddenproof" id="proof-15"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><div class="para logical" id="p-563">
 <div class="para">If there are non-trivial linear combinations of the <span class="process-math">\(\v_i\)</span> that are zero take one, say <span class="process-math">\(\sum_1^k \mu_i \v_i = \0\text{,}\)</span> with the fewest possible non-zero coefficients. Without loss of generality we may suppose that <span class="process-math">\(\mu_1\not=0\text{.}\)</span> Now apply the linear map <span class="process-math">\(T-\l_1I\text{.}\)</span> We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -959,11 +865,13 @@ T\v_j &amp;= a_{1j}\v_1 + \sum_{i=2}^n a_{ij} \v_i.
 \end{equation*}
 </div>
 <div class="para">This linear combination of the <span class="process-math">\(\v_i\)</span> has fewer non-zero coefficients than the original (since the coefficient of <span class="process-math">\(\v_1\)</span> is now <span class="process-math">\(0\)</span>) so all the coefficients must be <span class="process-math">\(0\text{.}\)</span> But then all of the original coefficients must have been <span class="process-math">\(0\)</span> except <span class="process-math">\(\mu_1\text{.}\)</span> But <span class="process-math">\(\mu_1\v_1\not= \0\)</span> since <span class="process-math">\(\mu_1\not=0\)</span> and <span class="process-math">\(\v_1\not=\0\)</span> (it is an eigenvector). This contradiction proves that the <span class="process-math">\(\v_i\)</span> are linearly independent.</div>
-</div>
-<div class="para" id="p-714">The following corollary says that sometimes this is enough to show that <span class="process-math">\(T\)</span> is diagonalizable.</div>
-<div class="para" id="p-715">Suppose that <span class="process-math">\(T:V\to V\)</span> is linear and that <span class="process-math">\(V\)</span> has dimensional <span class="process-math">\(n&lt;\infty\text{.}\)</span> If <span class="process-math">\(T\)</span> has <span class="process-math">\(n\)</span> distinct eigenvalues <span class="process-math">\(\ls\)</span> then <span class="process-math">\(T\)</span> is diagonalizable.</div>
-<div class="para" id="p-716">Let <span class="process-math">\(B = \set{\vs}\)</span> where each <span class="process-math">\(\v_i\)</span> is an eigenvector with eigenvalue <span class="process-math">\(\l_i\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:distinct" missing or not unique]</code> we know <span class="process-math">\(B\)</span> is linearly independent, and since it has the correct size it must be a basis.</div>
-<div class="para" id="p-717">We have seen a few ways of looking for eigenvalues. Considering <span class="process-math">\(ad-bc\)</span> worked well for <span class="process-math">\(2\by 2\)</span> matrices. We can find eigenvalues for <span class="process-math">\(T:\C^n\to \C^n\)</span> also by solving polynomial equations. We will turn now to an alternative avenue.</div></section></div>
+</div></article></div>
+<div class="para" id="p-564">The following corollary says that sometimes this is enough to show that <span class="process-math">\(T\)</span> is diagonalizable.</div>
+<article class="corollary theorem-like" id="corollary-1"><h3 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">6.16</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-565">Suppose that <span class="process-math">\(T:V\to V\)</span> is linear and that <span class="process-math">\(V\)</span> has dimensional <span class="process-math">\(n&lt;\infty\text{.}\)</span> If <span class="process-math">\(T\)</span> has <span class="process-math">\(n\)</span> distinct eigenvalues <span class="process-math">\(\ls\)</span> then <span class="process-math">\(T\)</span> is diagonalizable.</div></article><article class="hiddenproof" id="proof-16"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-16"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="para" id="p-566">Let <span class="process-math">\(B = \set{\vs}\)</span> where each <span class="process-math">\(\v_i\)</span> is an eigenvector with eigenvalue <span class="process-math">\(\l_i\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:distinct" missing or not unique]</code> we know <span class="process-math">\(B\)</span> is linearly independent, and since it has the correct size it must be a basis.</div></article></div>
+<div class="para" id="p-567">We have seen a few ways of looking for eigenvalues. Considering <span class="process-math">\(ad-bc\)</span> worked well for <span class="process-math">\(2\by 2\)</span> matrices. We can find eigenvalues for <span class="process-math">\(T:\C^n\to \C^n\)</span> also by solving polynomial equations. We will turn now to an alternative avenue.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-simplest-matrix.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-spectral.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

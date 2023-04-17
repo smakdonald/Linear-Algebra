@@ -12,7 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">For <span class="process-math">\(x, y\in\F\)</span> and <span class="process-math">\(\v\in V\)</span> we have</div>
-<span class="incontext"><a href="sec-vector-spaces-again.html#p-262" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Suppose <span class="process-math">\(V,W\)</span> are finite dimensional vector spaces over <span class="process-math">\(\F\)</span> and <span class="process-math">\(T:V\to W\)</span> is linear. Given (ordered) bases <span class="process-math">\(B = \set{\vs}, B'=\set{\ws[m]}\)</span> for <span class="process-math">\(V\)</span> and <span class="process-math">\(W\)</span> respectively then <em class="emphasis">the matrix of <span class="process-math">\(T\)</span> with respect to <span class="process-math">\(B,B'\)</span></em> is the matrix <span class="process-math">\([T]_B^{B'}=A = [a_{ij}]_{i=1}^m\vphantom{[]}_{j=1}^n\)</span> such that for all <span class="process-math">\(i\in [n]\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T(\v_i) = \sum_1^m a_{ji} \w_j.
+\end{equation*}
+</div>
+<div class="para">Note that this determines the <span class="process-math">\(a_{ij}\)</span> since <span class="process-math">\(T(\v_i)\)</span> has a unique expression as a linear combination from <span class="process-math">\(B'\text{.}\)</span> Note that once we've picked the basis <span class="process-math">\(B\)</span> every vector in <span class="process-math">\(v\)</span> can be thought of as specified by its coefficients with respect to <span class="process-math">\(B\text{.}\)</span> If <span class="process-math">\(\v=\Slv\)</span> then we can think of <span class="process-math">\(\v\)</span> as corresponding to the column vector <span class="process-math">\(\begin{bmatrix} \l_1\\\l_2\\\vdots\\\l_n \end{bmatrix}\text{.}\)</span> Similarly the image <span class="process-math">\(T(\v)\)</span> can be thought of a a column vector <span class="process-math">\(\begin{bmatrix} \mu_1\\\mu_2\\\vdots\\\mu_m \end{bmatrix}\)</span> if <span class="process-math">\(T(\v) = \sum_1^m \mu_j \w_j\text{.}\)</span> The matrix <span class="process-math">\(A\)</span> is chosen so that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} \mu_1\\\mu_2\\\vdots\\\mu_m \end{bmatrix} = A \begin{bmatrix} \l_1 \\ \l_2 \\ \vdots \\ \l_n \end{bmatrix}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-rep-linear-maps-matrices.html#p-262" class="internal">in-context</a></span>
 </body>
 </html>

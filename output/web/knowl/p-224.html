@@ -11,9 +11,34 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">There are multiplicative inverse for non-zero numbers: for all <span class="process-math">\(x\in \F\wo\set{0}\)</span> there is an element that we denote <span class="process-math">\(x\inv\)</span> such that <span class="process-math">\(xx\inv=1\)</span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(I\)</span> be a maximal linearly independent subset of <span class="process-math">\(V\)</span> and let <span class="process-math">\(\v\in V\text{.}\)</span> If <span class="process-math">\(\v\in I\)</span> then certainly <span class="process-math">\(\v\in \linspan(I)\text{.}\)</span> Otherwise <span class="process-math">\(T=I\cup \set{\v}\)</span> is a strict superset of <span class="process-math">\(I\)</span> and is therefore not linearly independent. So there is some non-trivial linear combination of vectors from <span class="process-math">\(I\cup \set{\v}\)</span> that is <span class="process-math">\(\0\text{.}\)</span> It cannot be that all the vectors involved in this linear combination come from <span class="process-math">\(I\text{,}\)</span> else <span class="process-math">\(I\)</span> would not be linearly independent. Thus for some <span class="process-math">\(\l\not=0\)</span> and some <span class="process-math">\(\vs\in I\text{,}\)</span> <span class="process-math">\(\ls\in \F\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\l\v + \Slv = \0
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-fields.html#p-224" class="internal">in-context</a></span>
+<div class="para">and hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\v = -\frac1\l \Slv \in \linspan(I).
+\end{equation*}
+</div>
+<div class="para">For the second part suppose that <span class="process-math">\(T\)</span> is a minimal spanning set and <span class="process-math">\(\Slv = \0\)</span> is a non-trivial linear combination from <span class="process-math">\(T\)</span> with, without loss of generality, <span class="process-math">\(\l_1\not=0\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\v_1 = -\frac1{\l_1} \sum_{i=2}^n \v_i \in \linspan(T\wo\set{\v_1})
+\end{equation*}
+</div>
+<div class="para">and hence (by part <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "part:SUT" missing or not unique]</code>) of the spanning lemma applied to <span class="process-math">\(S=T\wo\set{\v_1}\)</span>)</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\linspan(T\wo\set{\v_1}) = \linspan(T) = V.
+\end{equation*}
+</div>
+<div class="para">This contradicts the minimality of <span class="process-math">\(T\text{,}\)</span> so no such linear combination can exist.</div>
+</div>
+<span class="incontext"><a href="sec-bases.html#p-224" class="internal">in-context</a></span>
 </body>
 </html>

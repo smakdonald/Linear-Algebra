@@ -12,8 +12,27 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">
-<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "lem:LI" missing or not unique]</code> leaves open the possibility that when we enlarge a linearly independent set by adding any vector it could become linearly dependent. Likewise <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "lem:SP" missing or not unique]</code> leaves open the possibility that when we take out any vector from a spanning set, the remaining set could no longer be spanning. We give names to these situations.</div>
-<span class="incontext"><a href="sec-bases.html#p-366" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">It is definitely possible to give a rather long but very direct proof of this, but to illustrate the power of the Rank-Nullity Theorem (<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:ranknullity" missing or not unique]</code>) we'll give a shorter proof. Consider the (linear) map</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
+\begin{equation*}
+\begin{aligned}
+\pi \colon V &amp;\to V/W \\
+\v &amp;\mapsto \v + W.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(\pi\)</span> is clearly surjective since for any <span class="process-math">\(\v+W\in V/W\)</span> we have <span class="process-math">\(\pi(\v) = \v+W\text{.}\)</span> Similarly the kernel of <span class="process-math">\(\pi\)</span> is the set of <span class="process-math">\(\v\in V\)</span> such that <span class="process-math">\(\v+W = W\text{.}\)</span> This happens exactly when <span class="process-math">\(\v\in W-W=W\text{,}\)</span> so <span class="process-math">\(\ker(\pi)=W\text{.}\)</span> Thus <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:ranknullity" missing or not unique]</code> gives us</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
+\begin{equation*}
+\begin{aligned}
+\dim(V) &amp;= \dim(V/W) + \dim(W), \\
+\shortintertext{i.e.,}
+\dim(V/W) &amp;= \dim(V) - \dim(W). \qedhere
+\end{aligned}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-quotients.html#p-366" class="internal">in-context</a></span>
 </body>
 </html>

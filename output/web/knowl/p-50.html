@@ -11,8 +11,41 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Coming soon to an OER near you!</div>
-<span class="incontext"><a href="sec-vector-space-basics.html#p-50" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Consider the matrix <span class="process-math">\(A\in M_{3\times 3}(\R)\)</span> given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2].
+\end{equation*}
+</div>
+<div class="para">Define a function <span class="process-math">\(T: \R^3 \to \R^3\)</span> by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\label{eqn:T}
+T((x, y, z)) = A \,  \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].
+\end{equation*}
+</div>
+<div class="para">Standard facts about matrix multiplication tell us that this is a linear map:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \begin{bmatrix} x\\ y\\ z \end{bmatrix} + \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix}} = A\begin{bmatrix} x\\ y\\ z \end{bmatrix} + A \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix} = 
+T((x, y, z)) + T((x', y', z')) \\
+T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \begin{bmatrix} x\\ y\\ z \end{bmatrix}} = \l\, A \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \l \, T((x, y, z)) .
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Not only that, but this linear map can be viewed as being constructed using linear combinations. We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
+= x\cmat[1\\1\\2] + y\cmat[2\\1\\7] + z\cmat[-3\\-2\\-2].
+\end{equation*}
+</div>
+<div class="para">The result of computing <span class="process-math">\(T((x, y, z))\)</span> is the linear combination, using coefficients <span class="process-math">\(x, y\text{,}\)</span> and <span class="process-math">\(z\text{,}\)</span> of the <em class="emphasis">columns</em> of <span class="process-math">\(A\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-linear-maps.html#p-50" class="internal">in-context</a></span>
 </body>
 </html>

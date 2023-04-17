@@ -12,7 +12,50 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Let <span class="process-math">\(T:U\to V\)</span> and <span class="process-math">\(S:V\to W\)</span> be linear maps and let <span class="process-math">\(B, B', B''\)</span> be bases for <span class="process-math">\(U, V, W\)</span> respectively. Then</div>
-<span class="incontext"><a href="sec-isomorphisms.html#p-431" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">We prove the result by induction on <span class="process-math">\(\dim(V)\text{.}\)</span> If <span class="process-math">\(\dim(V)\le 1\)</span> then the result is trivial since all matrices are diagonal. If <span class="process-math">\(\dim(V)&gt;1\)</span> and <span class="process-math">\(B \equiv 0\)</span> then we can pick any basis and our matrix will be the zero matrix, and in particular diagonal. Suppose then that <span class="process-math">\(\dim(V)&gt;1\)</span> and <span class="process-math">\(B\)</span> is not identically <span class="process-math">\(0\text{.}\)</span> Let <span class="process-math">\(Q\)</span> be the associated quadratic form. If <span class="process-math">\(Q\)</span> were identically <span class="process-math">\(0\)</span> then so also <span class="process-math">\(B\)</span> would be, so there exists <span class="process-math">\(\v\in V\)</span> such that <span class="process-math">\(Q(\v)=B(\v,\v)=\l_1\neq 0\text{.}\)</span> Define</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U = \setof{\w\in V}{B(\v,\w)=0}.
+\end{equation*}
+</div>
+<div class="para">The bilinearity of <span class="process-math">\(B\)</span> allows us to check that <span class="process-math">\(U\)</span> is a subspace of <span class="process-math">\(V\text{.}\)</span> In fact we have <span class="process-math">\(V = \linspan(\v) \dsum U\text{.}\)</span> To prove this note first that if <span class="process-math">\(\w\in \linspan(\v) \cap U\)</span> then <span class="process-math">\(\w=\l\v\)</span> for some <span class="process-math">\(\l\)</span> and also</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B(\v,\w)= B(\v,\l\v) = \l B(\v,\v) = 0,
+\end{equation*}
+</div>
+<div class="para">which implies that <span class="process-math">\(\l=0\)</span> (since <span class="process-math">\(B(\v,\v)\not=0\)</span>). Now consider an arbitrary <span class="process-math">\(\w\in V\text{.}\)</span> If we set <span class="process-math">\(\w'=\w- \left(B(\v,\w)/B(\v,\v)\right)\cdot\v\)</span> and <span class="process-math">\(\l=B(\v,\w)/B(\v,\v)\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B(\v,\w') = B(\v,\w) - \left(B(\v,\w)/B(\v,\v) \right)B(\v,\l\v)=0,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(\w'\in U\text{.}\)</span> Thus <span class="process-math">\(\w= \l\v + \w' \in \linspan(\v)+U\text{.}\)</span> Now we know that <span class="process-math">\(\dim(U) &lt; n\text{,}\)</span> so by induction there is a basis <span class="process-math">\(D'=\{\v_2,\ldots,\v_n\}\)</span> of <span class="process-math">\(U\)</span> with respect to which the matrix of <span class="process-math">\(B\)</span> (restricted to <span class="process-math">\(U\)</span>) is diagonal, say</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[B\mid_U]_{D'}=\begin{bmatrix}
+\l_2 &amp; 0 &amp;\cdots &amp; 0\\
+0 &amp; \l_3 &amp;\cdots &amp; 0\\
+\vdots &amp; \vdots &amp;\cdots &amp; \vdots\\
+0 &amp; 0 &amp;\cdots &amp; \l_n\\
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">By we get that <span class="process-math">\(D = \set{\v} \cup D'\)</span> is a basis for <span class="process-math">\(V\)</span> with respect to which the matrix of <span class="process-math">\(B\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[B\mid_U]_{D'}=\begin{bmatrix}
+\l_1 &amp; 0 &amp; 0 &amp;\cdots &amp; 0\\
+0 &amp; \l_2 &amp; 0 &amp; \cdots &amp; 0\\
+0 &amp; 0 &amp; \l_3 &amp;  \cdots &amp; 0\\
+\vdots &amp; \vdots &amp;\cdots &amp; \vdots\\
+0 &amp; 0 &amp; 0&amp; \cdots &amp; \l_n\\
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">and the result is proved.</div>
+</div>
+<span class="incontext"><a href="sec-quadratic-functions.html#p-431" class="internal">in-context</a></span>
 </body>
 </html>

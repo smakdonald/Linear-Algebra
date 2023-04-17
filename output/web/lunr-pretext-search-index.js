@@ -10,553 +10,13 @@ var ptx_lunr_docs = [
   "body": "   smakdonald.github   https:\/\/smakdonald.github.io\/index.html   copyright  "
 },
 {
-  "id": "sec-linear-systems-matrix-equations",
-  "level": "1",
-  "url": "sec-linear-systems-matrix-equations.html",
-  "type": "Section",
-  "number": "1.1",
-  "title": "Linear Systems and Matrix Equations",
-  "body": " Linear Systems and Matrix Equations           Matrix Basics  Coming soon to an OER near you!    Encoding Linear Systems  Coming soon to an OER near you!     Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-1",
-  "level": "2",
-  "url": "sec-linear-systems-matrix-equations.html#exercise-1",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-2",
-  "level": "2",
-  "url": "sec-linear-systems-matrix-equations.html#exercise-2",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-matrix-arithmetic",
-  "level": "1",
-  "url": "sec-matrix-arithmetic.html",
-  "type": "Section",
-  "number": "1.2",
-  "title": "Matrix Arithmetic",
-  "body": " Matrix Arithmetic           Addition and Scalar Multiplication  Coming soon to an OER near you!    Matrix Multiplication  Coming soon to an OER near you!    Invertibility of Square Matrices  Coming soon to an OER near you!     Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-3",
-  "level": "2",
-  "url": "sec-matrix-arithmetic.html#exercise-3",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-4",
-  "level": "2",
-  "url": "sec-matrix-arithmetic.html#exercise-4",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-solving-linear-systems",
-  "level": "1",
-  "url": "sec-solving-linear-systems.html",
-  "type": "Section",
-  "number": "1.3",
-  "title": "Solving Linear Systems",
-  "body": " Solving Linear Systems           Gaussian Elimination  Coming soon to an OER near you!    Solving Homogeneous Linear Systems  Coming soon to an OER near you!    Solving Inhomogeneous Linear Systems  Coming soon to an OER near you!     Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-5",
-  "level": "2",
-  "url": "sec-solving-linear-systems.html#exercise-5",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-6",
-  "level": "2",
-  "url": "sec-solving-linear-systems.html#exercise-6",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-computing-dets",
-  "level": "1",
-  "url": "sec-computing-dets.html",
-  "type": "Section",
-  "number": "2.1",
-  "title": "Computing Determinants",
-  "body": " Computing Determinants          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-7",
-  "level": "2",
-  "url": "sec-computing-dets.html#exercise-7",
-  "type": "Exercise",
-  "number": "2.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-8",
-  "level": "2",
-  "url": "sec-computing-dets.html#exercise-8",
-  "type": "Exercise",
-  "number": "2.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-det-properties",
-  "level": "1",
-  "url": "sec-det-properties.html",
-  "type": "Section",
-  "number": "2.2",
-  "title": "Properties of Determinants",
-  "body": " Properties of Determinants          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-9",
-  "level": "2",
-  "url": "sec-det-properties.html#exercise-9",
-  "type": "Exercise",
-  "number": "2.2.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-10",
-  "level": "2",
-  "url": "sec-det-properties.html#exercise-10",
-  "type": "Exercise",
-  "number": "2.2.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-vector-space-basics",
-  "level": "1",
-  "url": "sec-vector-space-basics.html",
-  "type": "Section",
-  "number": "3.1",
-  "title": "Vector Space Basics",
-  "body": " Vector Space Basics          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-11",
-  "level": "2",
-  "url": "sec-vector-space-basics.html#exercise-11",
-  "type": "Exercise",
-  "number": "3.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-12",
-  "level": "2",
-  "url": "sec-vector-space-basics.html#exercise-12",
-  "type": "Exercise",
-  "number": "3.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-subspaces",
-  "level": "1",
-  "url": "sec-subspaces.html",
-  "type": "Section",
-  "number": "3.2",
-  "title": "Subspaces, Sums, and Direct Products",
-  "body": " Subspaces, Sums, and Direct Products          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-13",
-  "level": "2",
-  "url": "sec-subspaces.html#exercise-13",
-  "type": "Exercise",
-  "number": "3.2.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-14",
-  "level": "2",
-  "url": "sec-subspaces.html#exercise-14",
-  "type": "Exercise",
-  "number": "3.2.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-span",
-  "level": "1",
-  "url": "sec-span.html",
-  "type": "Section",
-  "number": "4.1",
-  "title": "Span",
-  "body": " Span          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-15",
-  "level": "2",
-  "url": "sec-span.html#exercise-15",
-  "type": "Exercise",
-  "number": "4.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-16",
-  "level": "2",
-  "url": "sec-span.html#exercise-16",
-  "type": "Exercise",
-  "number": "4.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "linear-independence",
-  "level": "1",
-  "url": "linear-independence.html",
-  "type": "Section",
-  "number": "4.2",
-  "title": "Linear Independence",
-  "body": " Linear Independence          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-17",
-  "level": "2",
-  "url": "linear-independence.html#exercise-17",
-  "type": "Exercise",
-  "number": "4.2.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-18",
-  "level": "2",
-  "url": "linear-independence.html#exercise-18",
-  "type": "Exercise",
-  "number": "4.2.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "basis-basics",
-  "level": "1",
-  "url": "basis-basics.html",
-  "type": "Section",
-  "number": "4.3",
-  "title": "Basis Basics",
-  "body": " Basis Basics          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-19",
-  "level": "2",
-  "url": "basis-basics.html#exercise-19",
-  "type": "Exercise",
-  "number": "4.3.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-20",
-  "level": "2",
-  "url": "basis-basics.html#exercise-20",
-  "type": "Exercise",
-  "number": "4.3.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "vs-dim",
-  "level": "1",
-  "url": "vs-dim.html",
-  "type": "Section",
-  "number": "4.4",
-  "title": "Dimension of Vector Spaces",
-  "body": " Dimension of Vector Spaces          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-21",
-  "level": "2",
-  "url": "vs-dim.html#exercise-21",
-  "type": "Exercise",
-  "number": "4.4.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-22",
-  "level": "2",
-  "url": "vs-dim.html#exercise-22",
-  "type": "Exercise",
-  "number": "4.4.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-linear-map-basics",
-  "level": "1",
-  "url": "sec-linear-map-basics.html",
-  "type": "Section",
-  "number": "5.1",
-  "title": "Linear Map Basics",
-  "body": " Linear Map Basics          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-23",
-  "level": "2",
-  "url": "sec-linear-map-basics.html#exercise-23",
-  "type": "Exercise",
-  "number": "5.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-24",
-  "level": "2",
-  "url": "sec-linear-map-basics.html#exercise-24",
-  "type": "Exercise",
-  "number": "5.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "nullspace-and-range",
-  "level": "1",
-  "url": "nullspace-and-range.html",
-  "type": "Section",
-  "number": "5.2",
-  "title": "Nullspace and Range",
-  "body": " Nullspace and Range           Nullspace  Coming soon to an OER near you!    Range  Coming soon to an OER near you!     Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-25",
-  "level": "2",
-  "url": "nullspace-and-range.html#exercise-25",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-26",
-  "level": "2",
-  "url": "nullspace-and-range.html#exercise-26",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "rank-nullity",
-  "level": "1",
-  "url": "rank-nullity.html",
-  "type": "Section",
-  "number": "5.3",
-  "title": "The Rank-Nullity Theorem",
-  "body": " The Rank-Nullity Theorem          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-27",
-  "level": "2",
-  "url": "rank-nullity.html#exercise-27",
-  "type": "Exercise",
-  "number": "5.3.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-28",
-  "level": "2",
-  "url": "rank-nullity.html#exercise-28",
-  "type": "Exercise",
-  "number": "5.3.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-eigen",
-  "level": "1",
-  "url": "sec-eigen.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Eigenvectors and Eigenvalues",
-  "body": " Eigenvectors and Eigenvalues          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-29",
-  "level": "2",
-  "url": "sec-eigen.html#exercise-29",
-  "type": "Exercise",
-  "number": "6.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-30",
-  "level": "2",
-  "url": "sec-eigen.html#exercise-30",
-  "type": "Exercise",
-  "number": "6.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-charpoly",
-  "level": "1",
-  "url": "sec-charpoly.html",
-  "type": "Section",
-  "number": "6.2",
-  "title": "The Characteristic Polynomial",
-  "body": " The Characteristic Polynomial          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-31",
-  "level": "2",
-  "url": "sec-charpoly.html#exercise-31",
-  "type": "Exercise",
-  "number": "6.2.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-32",
-  "level": "2",
-  "url": "sec-charpoly.html#exercise-32",
-  "type": "Exercise",
-  "number": "6.2.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-diagonal-matrices",
-  "level": "1",
-  "url": "sec-diagonal-matrices.html",
-  "type": "Section",
-  "number": "6.3",
-  "title": "Diagonal Matrices",
-  "body": " Diagonal Matrices          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-33",
-  "level": "2",
-  "url": "sec-diagonal-matrices.html#exercise-33",
-  "type": "Exercise",
-  "number": "6.3.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-34",
-  "level": "2",
-  "url": "sec-diagonal-matrices.html#exercise-34",
-  "type": "Exercise",
-  "number": "6.3.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-inner-products",
-  "level": "1",
-  "url": "sec-inner-products.html",
-  "type": "Section",
-  "number": "7.1",
-  "title": "Inner Products",
-  "body": " Inner Products          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-35",
-  "level": "2",
-  "url": "sec-inner-products.html#exercise-35",
-  "type": "Exercise",
-  "number": "7.1.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-36",
-  "level": "2",
-  "url": "sec-inner-products.html#exercise-36",
-  "type": "Exercise",
-  "number": "7.1.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-orthogonal-sets-projections",
-  "level": "1",
-  "url": "sec-orthogonal-sets-projections.html",
-  "type": "Section",
-  "number": "7.2",
-  "title": "Orthogonal Sets and Projections",
-  "body": " Orthogonal Sets and Projections          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-37",
-  "level": "2",
-  "url": "sec-orthogonal-sets-projections.html#exercise-37",
-  "type": "Exercise",
-  "number": "7.2.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-38",
-  "level": "2",
-  "url": "sec-orthogonal-sets-projections.html#exercise-38",
-  "type": "Exercise",
-  "number": "7.2.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "sec-gram-shcmidt-least-squares",
-  "level": "1",
-  "url": "sec-gram-shcmidt-least-squares.html",
-  "type": "Section",
-  "number": "7.3",
-  "title": "Gram Schmidt and Least Squares",
-  "body": " Gram Schmidt and Least Squares          Computations       Coming soon to an OER near you!   Coming soon to an OER near you!     Formal Proofs       Coming soon to an OER near you!   Coming soon to an OER near you!     "
-},
-{
-  "id": "exercise-39",
-  "level": "2",
-  "url": "sec-gram-shcmidt-least-squares.html#exercise-39",
-  "type": "Exercise",
-  "number": "7.3.1",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
-  "id": "exercise-40",
-  "level": "2",
-  "url": "sec-gram-shcmidt-least-squares.html#exercise-40",
-  "type": "Exercise",
-  "number": "7.3.2",
-  "title": "",
-  "body": " Coming soon to an OER near you!   Coming soon to an OER near you!  "
-},
-{
   "id": "sec-algebra",
   "level": "1",
   "url": "sec-algebra.html",
   "type": "Section",
   "number": "1.1",
   "title": "Algebra",
-  "body": " Algebra  One of the first examples of vectors people encountered were displacement vectors , or as we'll call them, steps . A step in the plane is the process of moving a certain distance in a certain direction. For instance is the action of moving units right and unit down. So, using a bit of trigonometry, we see that the step moves you a distance in the direction in polar coordinates. (See )  One important thing to notice is that the step might occur when moving from the point to the point , or when moving from the point to the point , or many other possibilities. An apology is necessary here for using the same notation for steps and for points in the plane. It is (as mathematicians have discovered from long experience) both a blessing and a curse to do this. In other words, steps don't have a fixed position, but do have a length and a direction.  The effect of doing the step and then the step is identical with the effect of doing the step . Moreover, this operation feels a lot like adding the steps together. Similarly, adding to itself gives us a step that we very naturally think of as twice , or . It seems natural to think of this operation as that of multiplying the step by the number . (See )  These definitions are clearly natural geometrically—it is a very pleasant fact that when we write down the algebraic version of these definitions they are also very natural.    We consider the set of all steps in the plane, thought of as ordered pairs of real numbers: Given steps and in and a number we define     This is the first appearance of algebra in linear algebra. We define algebraic operations—addition of steps and multiplication of steps by numbers—and think about the way that these operations behave and interact. The following definition is a central one.   If and are steps in and then we say that is a linear combination of and .     More generally if we have steps and numbers then we get a linear combination     From here on out we will switch to using the more conventional name of vector for these steps, but you should be warned that we will end up using vector to refer to many different things. If we can take linear combinations of some objects, we'll call them vectors.  "
+  "body": " Algebra  One of the first examples of vectors people encountered were displacement vectors , or as we'll call them, steps . A step in the plane is the process of moving a certain distance in a certain direction. For instance is the action of moving units right and unit down. So, using a bit of trigonometry, we see that the step moves you a distance in the direction in polar coordinates. (See )  \\begin{figure}[ht] \\begin{center} \\begin{tikzpicture}[x=1.5cm, y=1.5cm] \\draw[help lines, step=1] (-1,-1) grid (4,4); \\draw[vector] (1,3) node[vx] --(3,2) node[midlabel] {$(2,-1)$} node[vx]; \\path (2,1) coordinate (A) (0,1) coordinate (O) (2,0) coordinate (B); \\draw[very thick,red] (O) to[above] node{$2$} (A) to[right] node{$1$} (B); \\draw[vector] (O) to[sloped, below] node{$(2,-1)$} (B); \\draw pic[draw, \"$\\theta$\", angle eccentricity=0.8, angle radius=1.2cm] {angle=B--O--A}; \\end{tikzpicture} \\end{center} \\caption{The step $(2,-1)$ in several places.} % Always put the caption before the label! It's \\caption that incrememnts the counter \\label{fig:firststep} \\end{figure}  One important thing to notice is that the step might occur when moving from the point to the point , or when moving from the point to the point , or many other possibilities. An apology is necessary here for using the same notation for steps and for points in the plane. It is (as mathematicians have discovered from long experience) both a blessing and a curse to do this. In other words, steps don't have a fixed position, but do have a length and a direction.  The effect of doing the step and then the step is identical with the effect of doing the step . Moreover, this operation feels a lot like adding the steps together. Similarly, adding to itself gives us a step that we very naturally think of as twice , or . It seems natural to think of this operation as that of multiplying the step by the number . (See )  These definitions are clearly natural geometrically—it is a very pleasant fact that when we write down the algebraic version of these definitions they are also very natural.    We consider the set of all steps in the plane, thought of as ordered pairs of real numbers: Given steps and in and a number we define     This is the first appearance of algebra in linear algebra. We define algebraic operations—addition of steps and multiplication of steps by numbers—and think about the way that these operations behave and interact. The following definition is a central one.   If and are steps in and then we say that is a linear combination of and .     More generally if we have steps and numbers then we get a linear combination     From here on out we will switch to using the more conventional name of vector for these steps, but you should be warned that we will end up using vector to refer to many different things. If we can take linear combinations of some objects, we'll call them vectors.  "
 },
 {
   "id": "def-step",
@@ -784,9 +244,9 @@ var ptx_lunr_docs = [
   "body": " Tying Things Together   The previous sections discussed issues that had connections and commonalities between them. In this final section we'll think about from the higher vantage point permitted by our other discussions.  We considered the following system of linear equations give us two very important perspectives on this linear system.    Perspective 1: Intersection of Three Planes     In we alluded to the fact that the solutions to a linear equation in form a plane. In we'll see why this is so. Once we know that each equation defines a plane in , we see the set of solutions to the system is the set of all points lying on all three planes, that is, the intersection of the three planes. We anticipate that unless there is something special about these planes (such as two of them being parallel) the three planes should have exactly one common point.    The set of solutions to the equation , where are not all zero, form a plane in 3-space.    Note that the equation can be written using dot product as Let's consider a particular solution to the above equation. For example, if I could pick and similarly if and . Then we have and subtracting this from the above equation gives This means is perpendicular to (or 0). Thinking of as a step with head at and tail at we see it is perpendicular to . There is a unique plane that passes through the point and is perpendicular to and we have just seen that is a solution if and only if it lies in this plane.      Perspective 2: Linear Combinations of Vectors Range of a Transformation     We can rewrite the system as Thus the system is asking which coefficients we can use in a linear combination of three vectors on the left hand side to obtain the vector on the right hand side.  This in turn, as we saw in , can be rephrase in the language of linear transformations. Using the function defined in we can write the system as This can be rephrased as understanding whether the vector on the right hand side is a value of (we will soon phrase this as whether the vector on the right hand side is in the range of ) and if so, which inputs give this value. In other words we are looking for the preimage of the vector on the right hand side with respect to .  To summarize, if we consider the coefficient matrix of the system the perspective of planes consider the dot products of with the rows of , while the perspective of linear combinations considers linear combinations of the columns of with undetermined coefficients. We will see throughout that being able to see such things from alternative viewpoints allows us a much more interesting view of the world of linear algebra around us.   "
 },
 {
-  "id": "p-202",
+  "id": "p-53",
   "level": "2",
-  "url": "sec-tying-together.html#p-202",
+  "url": "sec-tying-together.html#p-53",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -802,9 +262,9 @@ var ptx_lunr_docs = [
   "body": "  The set of solutions to the equation , where are not all zero, form a plane in 3-space.    Note that the equation can be written using dot product as Let's consider a particular solution to the above equation. For example, if I could pick and similarly if and . Then we have and subtracting this from the above equation gives This means is perpendicular to (or 0). Thinking of as a step with head at and tail at we see it is perpendicular to . There is a unique plane that passes through the point and is perpendicular to and we have just seen that is a solution if and only if it lies in this plane.   "
 },
 {
-  "id": "p-206",
+  "id": "p-57",
   "level": "2",
-  "url": "sec-tying-together.html#p-206",
+  "url": "sec-tying-together.html#p-57",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1189,9 +649,9 @@ var ptx_lunr_docs = [
   "body": " Linear Independence, Spanning Sets, and Bases  We now introduce three related notions that you are probably familiar with from a previous course; linear independence, spanning sets, and bases.  Linear independence has to do with whether one can write the same vector as a linear combination of vectors in in two different ways This leads to considering an equation of the form .   If is a vector space over and then is linearly independent if every linear combination of (distinct) vectors from equaling has all its coefficients equal to . In other words for all , with for we have   We note that the definition applies when (and indeed 0). If then is not linear independent since we can take and and have while .    The set is linearly independent since Similarly is linearly independent.  In the vectors and are linearly independent. Indeed, if and only if which yields .   is linearly independent since if (the right hand side here is the 0 function) then in particular and .   is linearly independent when we think of as a vector space over . Suppose satisfy . If we have . On the other hand if then which we know is impossible.  The set is linearly independent. A linear combination from equaling the function would be a finite sequence such that for all . In other words the polynomial would satisfy for all . Thus every value of would have to be a root of . We know that takes infinitely many values and the only polynomial with infinitely many roots is the polynomial, so our original linear combination must have been trivial.   If is a vector space over and then is linearly dependent if is not linearly independent.    A single vector is linearly dependent if and only if .  Two vectors form a linearly dependent set if and only if one of the vectors is a scalar multiple of the other.  If three vectors form a linearly dependent set it does not follow that one of them must be a scalar multiple of another. For example the set is linearly dependent since but no vector from this set is a scalar multiple of another.  We now show how the property of being linearly independent passes from a set to its subsets.   Let be a vector space over .   If and is linearly independent then is linearly independent.  If is linearly independent then for all there is a unique way of writing as a linear combination from in the following sense: for all there is a unique finite subset and unique corresponding coefficients such that .   The first part is immediate since any linear combination from is also a linear combination from , so any linear combination from equaling is also a linear combination from equaling , so is, by hypothesis, trivial. For the second part suppose that some vector can be represented in two ways: (We've thrown all the vectors used in either representation into the set .) Subtracting the right hand side from the left we have and thus, since is linearly independent, for all . Now, eliminating those for which from the set gives the claimed uniqueness.   Let be a vector space over . Prove that if and is linearly dependent then is linearly dependent.   A subset of a vector space is called spanning (or a spanning set ) if .    The set is a spanning set for .  The set is a spanning set for .  The set of matrices that have all entries equal to 0 except for the entry in row and column which is 1 is a spanning set for .  If is a vector space, then is a (rather large) spanning set for .   Let be a vector space.   If then . In particular if is spanning then so is .  For a subset and a vector we have .   The first is very straightforward. It boils down to observing that if then linear combinations from are in fact linear combinations from .  Now suppose spans then This shows that .  For the second claim, first note that one inclusion, , always holds, by part (a) since . Now that . By definition of span, there exist and so that Since we also have and so that Plugging in to the equation above gives , that is, . We have shown that which completes the proof that .   leaves open the possibility that when we enlarge a linearly independent set by adding any vector it could become linearly dependent. Likewise leaves open the possibility that when we take out any vector from a spanning set, the remaining set could no longer be spanning. We give names to these situations.   A set is maximal linearly independent if is linearly independent and every strict superset is not linearly independent.   A set is minimal spanning if is a spanning set and every strict subset is not spanning.  There are two crucial facts that relate the notions of linear independence and spanning, that are recorded in the following lemma.   Let be subsets of a vector space .   If is a maximal linearly independent set then it spans .  If is a minimal spanning set for then it is linearly independent.   Let be a maximal linearly independent subset of and let . If then certainly . Otherwise is a strict superset of and is therefore not linearly independent. So there is some non-trivial linear combination of vectors from that is . It cannot be that all the vectors involved in this linear combination come from , else would not be linearly independent. Thus for some and some , we have and hence For the second part suppose that is a minimal spanning set and is a non-trivial linear combination from with, without loss of generality, . Then and hence (by part ) of the spanning lemma applied to ) This contradicts the minimality of , so no such linear combination can exist.  The Interaction Lemma allows us to make the following definition.   A basis is a linearly independent spanning set.   The Interaction suggests how to find a basis for a vector space : start with a spanning set and remove vectors until one arrives at a minimal spanning set, which will be a basis. Alternatively start with a linearly independent set and add vectors until one arrives at a maximal linearly independent set. However this process involves choices (not all of which will work). So there can be more than one basis for .   For example, consider the following spanning set for : The following subsets are still spanning (in fact minimal spanning) sets for  Thus all of the above sets are bases for . However the subset of is not a spanning set for since any vector in has the last coordinate equal to 0.  The following theorem comes at the heart of the study of linear independence in vector spaces. It is called a lemma because of its ubiquity. It generalizes .   If is a vector space, is a spanning set, and is a finite linearly independent set then there exists a spanning set with and .   We prove the result by induction on . If then and we can take . Otherwise . Pick and set . By induction there exists a spanning set with with . If then there is nothing further to do; we can take . Otherwise, our plan now is to insert into and kick out one element of , but not an element of , so that the result is still spanning. Since is spanning we have some , such that I claim that for some we have , for otherwise would be a non-trivial linear combination of vectors from equalling , a contradiction to the linearly independence of . Now note that so Thus we can take . It is spanning, and it is easy to check that it satisfies the other conditions.  We define the crucial notion of finite dimensionality and then draw some fundamental conclusions from the Steinitz exchange lemma in the theorem following.   If is a vector space with a finite spanning set then we say is finite dimensional .   Let be a finite dimensional vector space.   All bases of have the same size.  Any spanning set of contains a basis.  Any linearly independent set is contained in a basis.   For a) suppose that and are bases of . By symmetry it suffices to prove that . Since is (in particular) linearly independent, and is spanning, the Steinitz exchange lemma tells us that there exists a spanning set with and . We thus have .  For b), let be spanning. By induction on it is easy to prove that contains a minimal spanning set. [If then itself is clearly minimal; if then either is minimal or it contains a strict subset that is spanning. By induction contains a minimal spanning set, which is a minimal spanning set contained in .] Minimal spanning sets are bases by the Interaction Lemma.  Finally, let be linearly independent and let be a finite spanning set for . (Such an exists by the definition of finite dimensionality.) By part b) there is a basis contained in . By the Steinitz exchange property there is a spanning set with and . By b) we know that contains a basis, but unless that basis is exactly then we would have found a basis for strictly smaller than , contradicting a). Thus is a basis containing .   Let be a finite dimensional vector space with . Then   any spanning set of such that has elements is a basis of   any linearly independent set of such that has elements is a basis of    Suppose a spanning set of has elements. By (2), contains a basis and by (1) has elements. Since has elements the only subset of that has elements is itself so . Thus is a basis since was.  Suppose a lienarly set of has elements. By (3), is contained a basis and by (1) has elements. Since has elements the only subset of that has elements is itself so . Thus is a basis since was.   Let be a finite dimensional vector space and let be a subspace of . Then is a finite dimensional vector space and .   Let be a basis of . Then is a linearly independent subset of and hence also of since . By (3) has a basis so that . Since is finite, so is and moreover .   A basis for is given by the vectors , ehere and has its unique entry equal to 1 in position . This is called the standard basis . Thus .   A basis for as a vector space over is so that . A basis for as a vector space over is so that .   Let's find a basis for the following subspace of : We know that is a subspace since it is the kernel of the linear map By the kernels (nullspaces) are subspaces.  The system is equivalent to the following system in reduced row echelon form in which the variables are dependent (correspond to pivots) and the variables are free. The general solution to this system is By the work above the vectors span and are linearly independent so they form a basis for . In particular, .  "
 },
 {
-  "id": "p-397",
+  "id": "p-248",
   "level": "2",
-  "url": "sec-bases.html#p-397",
+  "url": "sec-bases.html#p-248",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1225,27 +685,27 @@ var ptx_lunr_docs = [
   "body": " Isomorphisms  There is a sense in which the vector space of polynomials of degree at most and are similar: each polynomial is determined by its coefficient vector . More formally, as we have seen in , there is a linear transformation  This linear map has the property that for every there exists a unique (the vector of coefficients of ) so that . This makes a bijection.   A function not necessarily linear is called a bijection if it is both injective and surjective.   It is a standard fact that a function is a bijection if and only if there exists a function termed the inverse of which satisfies for all and for all .   Let , be vector spaces over the same field and let be a linear map. We say that is an isomorphism if there exists a linear map so that for all and for all .  We say that vector spaces , are isomorphic and write if there exists an isomorphism  or .  It turns out (it's a small miracle) that a linear function being an isomorphism is the same as being a bijection.   Let , be vector spaces over the same field and let be a linear map. Then is invertible if and only if is a bijection.   By Remark  is a bijection if and only if there exists a function which satisfies for all and for all . To conclude that is an isomorphism we still have to show that the inverse of , is a linear map. Consider and . Then Since is injective we conclude that so is a linear map.  We have seen a lot of example of vector spaces. It turns out that up to isomorphism finite-dimensional vectors spaces are quite simple. Moreover, the isomorphism class of a finite dimensional vector space is completely determined by its dimension.   If is a finite dimensional vector space over , of dimension say, then .   Let be a basis for . Define by This is clearly a linear map. The kernel of is , since if then by the linear independence of the all of the scalars must be . Thus is injective by . Similarly since every vector in can be expressed as a linear combination of the . Thus, by , is invertible, meaning exactly that and are isomorphic.   If are finite dimensional vector spaces over the same field then if and only if .   Homework.  Earlier we have seen that linear maps between vector spaces are represented by matrices. More formally we have:   Let , be vector spaces over the same field with . Then there is a vector space isomorphism     Proof Idea. Fix bases for and respectively. The map that takes a linear map to the matrix of with respect to is an isomorphism (check!).  We can say more about how the isomorphism above interacts with composition of maps.   Let and be linear maps and let be bases for respectively. Then   The function given by is a linear map.  If are the matrices representing and with respect to the given bases then    If you know about rings: the set is actually a ring with respect to the operations of addition of functions and composition of functions . The above lemma says that the map defined in the proof of is also a ring isomorphism .   If you know about commutative diagrams: We may put together Remarks and in the following way: fix bases for and for and let and be the maps constructed as in based on and . Then the following diagram commutes     "
 },
 {
-  "id": "p-415",
+  "id": "p-266",
   "level": "2",
-  "url": "sec-isomorphisms.html#p-415",
+  "url": "sec-isomorphisms.html#p-266",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "bijection "
 },
 {
-  "id": "p-417",
+  "id": "p-268",
   "level": "2",
-  "url": "sec-isomorphisms.html#p-417",
+  "url": "sec-isomorphisms.html#p-268",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "isomorphism "
 },
 {
-  "id": "p-418",
+  "id": "p-269",
   "level": "2",
-  "url": "sec-isomorphisms.html#p-418",
+  "url": "sec-isomorphisms.html#p-269",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1330,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Quadratic Functions",
-  "body": " Quadratic Functions  We are now in a position to define what we mean by a quadratic function on a vector space. It's what you get from a bilinear function by plugging in the same thing for both arguments. More formally:   A quadratic function on a vector space is a function such that there exists a bilinear function with for all . We say that is the quadratic function determined by .   If is a field in which then for any quadratic function there is a unique symmetric bilinear function such that is the quadratic function determined by .   We show uniqueness first: assume there exists a symmetric bilinear function such that . Then we have, for , Hence is determined by the values of .  For existence, define to be given by the rule One checks that this rule defines a function that is bilinear and symmetric and that .   Consider the matrix As in we may construct a bilinear form which determines a quadratic function by the formula for all . The matrix of with respect to the standard basis is . Let . Then   We can complete the square to get   This procedure of completing the square allows us to express any quadratic function on as a linear combination of squares of linear expressions. What this amounts to is that if we had taken a different basis for with the property that then that basis    would have the property that . For the purposes of understanding this would be a much better basis. By choosing a different basis we changed the matrix of to With respect to the basis we have the matrix   We now see that for any symmetric bilinear form one can find a basis for which the matrix representing the form is a diagonal matrix.   If is a symmetric bilinear form on a finite dimensional vector space over a field in which then has a basis with respect to which the matrix is diagonal. Moreover there exist scalars so that the quadratic form defined by satisfies    We prove the result by induction on . If then the result is trivial since all matrices are diagonal. If and then we can pick any basis and our matrix will be the zero matrix, and in particular diagonal. Suppose then that and is not identically . Let be the associated quadratic form. If were identically then so also would be, so there exists such that . Define The bilinearity of allows us to check that is a subspace of . In fact we have . To prove this note first that if then for some and also which implies that (since ). Now consider an arbitrary . If we set and then so . Thus . Now we know that , so by induction there is a basis of with respect to which the matrix of (restricted to ) is diagonal, say By we get that is a basis for with respect to which the matrix of is and the result is proved.   It is natural to turn the proof of into an algorithm that starts with a basis for and converts it into a basis such that has a diagonal matrix. One step of the algorithm is the following Unfortunately this process only works if you can guarantee that at least one of the has . Sadly there are examples where but . For instance if then , but is not identically on . One situation where this algorithm does work is when (or equivalently B) is positive definite , meaning that for all we have . In this context this algorithm is known as the Gram-Schmidt algorithm.   A bilinear form on a real vector space is called positive definite if the associated quadratic function satisfies for all with .  "
+  "body": " Quadratic Functions  We are now in a position to define what we mean by a quadratic function on a vector space. It's what you get from a bilinear function by plugging in the same thing for both arguments. More formally:   A quadratic function on a vector space is a function such that there exists a bilinear function with for all . We say that is the quadratic function determined by .   If is a field in which then for any quadratic function there is a unique symmetric bilinear function such that is the quadratic function determined by .   We show uniqueness first: assume there exists a symmetric bilinear function such that . Then we have, for , Hence is determined by the values of .  For existence, define to be given by the rule One checks that this rule defines a function that is bilinear and symmetric and that .   Consider the matrix As in we may construct a bilinear form which determines a quadratic function by the formula for all . The matrix of with respect to the standard basis is . Let . Then   We can complete the square to get   This procedure of completing the square allows us to express any quadratic function on as a linear combination of squares of linear expressions. What this amounts to is that if we had taken a different basis for with the property that then that basis   would have the property that . For the purposes of understanding this would be a much better basis. By choosing a different basis we changed the matrix of to With respect to the basis we have the matrix   We now see that for any symmetric bilinear form one can find a basis for which the matrix representing the form is a diagonal matrix.   If is a symmetric bilinear form on a finite dimensional vector space over a field in which then has a basis with respect to which the matrix is diagonal. Moreover there exist scalars so that the quadratic form defined by satisfies    We prove the result by induction on . If then the result is trivial since all matrices are diagonal. If and then we can pick any basis and our matrix will be the zero matrix, and in particular diagonal. Suppose then that and is not identically . Let be the associated quadratic form. If were identically then so also would be, so there exists such that . Define The bilinearity of allows us to check that is a subspace of . In fact we have . To prove this note first that if then for some and also which implies that (since ). Now consider an arbitrary . If we set and then so . Thus . Now we know that , so by induction there is a basis of with respect to which the matrix of (restricted to ) is diagonal, say By we get that is a basis for with respect to which the matrix of is and the result is proved.   It is natural to turn the proof of into an algorithm that starts with a basis for and converts it into a basis such that has a diagonal matrix. One step of the algorithm is the following Unfortunately this process only works if you can guarantee that at least one of the has . Sadly there are examples where but . For instance if then , but is not identically on . One situation where this algorithm does work is when (or equivalently B) is positive definite , meaning that for all we have . In this context this algorithm is known as the Gram-Schmidt algorithm.   A bilinear form on a real vector space is called positive definite if the associated quadratic function satisfies for all with .  "
 },
 {
   "id": "sec-inner-product-ortho",
@@ -1384,7 +844,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Simplest Matrix of a Linear Transformation",
-  "body": " Simplest Matrix of a Linear Transformation  Here is a theorem we could have proved a long time ago.   If are finite dimensional and is linear then there are bases for respectively such that the matrix of has the form where all entries are except for  s on the main diagonal, where    We already know the appropriate bases; they are those used in Theorem . There we took a basis for , a basis for and picked preimages such that for . Extend (arbitrarily) to a basis of , and set . With respect to these bases the matrix of has the form above. The fact that gives the first columns and the fact the gives the next .  Though this theorem appears to completely answer the question of the simplest form of the matrix of an linear map (and in a beautiful way) it is actually substantially less valuable than it appears at first sight. The most natural cases of linear maps come from ; linear maps from a space to itself. For these we want to think about only one basis for , that is, we want to have , and use that basis to express both the input vector and the output vector . It turns out the simple form in cannot always be achieved for . This leads us into deeper waters, which we explore in this chapter.  "
+  "body": " Simplest Matrix of a Linear Transformation  Here is a theorem we could have proved a long time ago.    If are finite dimensional and is linear then there are bases for respectively such that the matrix of has the form where all entries are except for  s on the main diagonal, where     We already know the appropriate bases; they are those used in Theorem . There we took a basis for , a basis for and picked preimages such that for . Extend (arbitrarily) to a basis of , and set . With respect to these bases the matrix of has the form above. The fact that gives the first columns and the fact the gives the next .    "
+},
+{
+  "id": "thm-simple-basis",
+  "level": "2",
+  "url": "sec-simplest-matrix.html#thm-simple-basis",
+  "type": "Theorem",
+  "number": "6.1",
+  "title": "",
+  "body": "  If are finite dimensional and is linear then there are bases for respectively such that the matrix of has the form where all entries are except for  s on the main diagonal, where     We already know the appropriate bases; they are those used in Theorem . There we took a basis for , a basis for and picked preimages such that for . Extend (arbitrarily) to a basis of , and set . With respect to these bases the matrix of has the form above. The fact that gives the first columns and the fact the gives the next .   "
 },
 {
   "id": "sec-eigen-again",
@@ -1393,7 +862,142 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Eigenvectors and Eigenvalues",
-  "body": " Eigenvectors and Eigenvalues  The most general tool we have to help us understand high powers of linear maps is the of eigenvectors.   For a vector space we denote the vector space of linear maps . We call such a map a linear operator on .   The identity map , is an element of .   If is a vector space and then we say that is an eigenvector of if for some scalar . If is an eigenvector and we say that is the eigenvalue associated to .    If is the vector space of infinitely differentiable functions from and mapping to is the differentiation map then any exponential function is an eigenvector of with eigenvalue .  Consider the left shift map on defined by Again we have that exponential sequences are eigenvectors: if then is an eigenvector with eigenvalue . Even gives an eigenvector; and is thus an eigenvector with eigenvalue .  The following simple observation is surprisingly important in finding eigenvectors. It shifts the focus of attention away from the eigenvector onto the eigenvalue.   For a linear map , the following are equivalent:    has an eigenvector with eigenvalue       is not injective.  If the vector space is finite dimensional then the statements above are further equivalent to    is not injective,   is not surjective.   We have This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .   If then the map has an eigenvector of eigenvalue exactly if the matrix has rank less than . We have a quick way of determining (this is a pun) whether the matrix has rank less than . This happens precisely when . Thus is an eigenvalue of exactly if Thus the eigenvalues of are precisely . To find the corresponding eigenvectors we need to find for each of . We have If we choose the basis where and then the matrices of and with respect to this basis are respectively.   Consider the right shift map on defined by This map has no eigenvectors. First consider and a solution to . If then let be minimal such . We have This contradiction establishes that , or in other words that is not a eigenvalue of . On the other hand if we'd be looking for . It is clear however that ; if has then .  To compute eigenvalues it is very helpful to endow the vector space with extra structure.   Given a vector space over a field , the set endowed with the operations of addition , scalar multiplication , and composition (written from now on as multiplication ) is a - algebra meaning that it satisfies:    with its addition and scalar multiplication is a -vector space  Composition is associative: for all   Composition distributes over addition: and for all   Composition respects scalar multiplication: for all , .   Given any and any polynomial we can sensibly define in the following way: for set ( times) and define   A very important fact about polynomials in is the following.   Any monic polynomial of degree factors into linear factors; there exist such that   The following theorem begins to explore the connection between eigenvalues of and polynomials satisfied by .   If is an -dimensional -vector space and then has an eigenvector.   Since the set is linearly dependent. In other words there are scalars with (without loss of generality) such that Consider then the polynomial . All monic polynomials (of degree at least ) over factor into linear factors; there exist such that Thus Now if is any non-zero vector in we have . Let be minimal such that (Note that we might have , but certainly .) Then by the minimality of we have so is an eigenvector of , and is the corresponding eigenvalue.  It is quite possible, as the following example shows, to have an operator on with only one eigenvector (up to scalar multiples).   Consider the map (whose matrix with respect to the usual basis has s on the diagonal immediately above the main diagonal and s everywhere else) The action of on the basis vectors is to map Clearly is an eigenvector with eigenvalue . The only eigenvectors of are multiples of . To see this note that, by an argument precisely analogous to that in , there are no non-zero eigenvalues. If then implies ; in other words .  We are not able, in light of , to prove that every linear map on a finite dimensional -vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.   If is a finite-dimensional -vector space and then has a basis with respect to which the matrix of is upper triangular.   The result is trivially true for . Suppose then that . Let be an eigenvector of with eigenvalue and set . Consider the map This map is well defined since whenever there is some such that . Thus thus . Pick such that is a basis for with respect to which the basis of is upper triangular. Now consider the basis of . With respect to this basis the matrix of with respect to appears in the lower right hand corner. This is because if Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of is upper triangular, we have that the matrix of is upper triangular.   If is linear and are eigenvectors with corresponding distinct eigenvalues then the are linearly independent.   If there are non-trivial linear combinations of the that are zero take one, say , with the fewest possible non-zero coefficients. Without loss of generality we may suppose that . Now apply the linear map . We have This linear combination of the has fewer non-zero coefficients than the original (since the coefficient of is now ) so all the coefficients must be . But then all of the original coefficients must have been except . But since and (it is an eigenvector). This contradiction proves that the are linearly independent.  The following corollary says that sometimes this is enough to show that is diagonalizable.   Suppose that is linear and that has dimensional . If has distinct eigenvalues then is diagonalizable.   Let where each is an eigenvector with eigenvalue . By we know is linearly independent, and since it has the correct size it must be a basis.  We have seen a few ways of looking for eigenvalues. Considering worked well for matrices. We can find eigenvalues for also by solving polynomial equations. We will turn now to an alternative avenue.  "
+  "body": " Eigenvectors and Eigenvalues  The most general tool we have to help us understand high powers of linear maps is the of eigenvectors.    For a vector space we denote the vector space of linear maps . We call such a map a linear operator on .     The identity map , is an element of .     If is a vector space and then we say that is an eigenvector of if for some scalar . If is an eigenvector and we say that is the eigenvalue associated to .        If is the vector space of infinitely differentiable functions from and mapping to is the differentiation map then any exponential function is an eigenvector of with eigenvalue .    Consider the left shift map on defined by Again we have that exponential sequences are eigenvectors: if then is an eigenvector with eigenvalue . Even gives an eigenvector; and is thus an eigenvector with eigenvalue .      The following simple observation is surprisingly important in finding eigenvectors. It shifts the focus of attention away from the eigenvector onto the eigenvalue.    For a linear map , the following are equivalent:    has an eigenvector with eigenvalue           is not injective.     If the vector space is finite dimensional then the statements above are further equivalent to    is not injective,     is not surjective.       We have This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .     If then the map has an eigenvector of eigenvalue exactly if the matrix has rank less than . We have a quick way of determining (this is a pun) whether the matrix has rank less than . This happens precisely when . Thus is an eigenvalue of exactly if Thus the eigenvalues of are precisely . To find the corresponding eigenvectors we need to find for each of . We have If we choose the basis where and then the matrices of and with respect to this basis are respectively.    Consider the right shift map on defined by This map has no eigenvectors. First consider and a solution to . If then let be minimal such . We have This contradiction establishes that , or in other words that is not a eigenvalue of . On the other hand if we'd be looking for . It is clear however that ; if has then .   To compute eigenvalues it is very helpful to endow the vector space with extra structure.    Given a vector space over a field , the set endowed with the operations of addition , scalar multiplication , and composition (written from now on as multiplication ) is a - algebra meaning that it satisfies:    with its addition and scalar multiplication is a -vector space    Composition is associative: for all     Composition distributes over addition: and for all     Composition respects scalar multiplication: for all , .         Given any and any polynomial we can sensibly define in the following way: for set ( times) and define     A very important fact about polynomials in is the following.   The Fundamental Theorem of Algebra   Any monic polynomial of degree factors into linear factors; there exist such that     The following theorem begins to explore the connection between eigenvalues of and polynomials satisfied by .    If is an -dimensional -vector space and then has an eigenvector.    Since the set is linearly dependent. In other words there are scalars with (without loss of generality) such that Consider then the polynomial . All monic polynomials (of degree at least ) over factor into linear factors; there exist such that Thus Now if is any non-zero vector in we have . Let be minimal such that (Note that we might have , but certainly .) Then by the minimality of we have so is an eigenvector of , and is the corresponding eigenvalue.    It is quite possible, as the following example shows, to have an operator on with only one eigenvector (up to scalar multiples).   Consider the map (whose matrix with respect to the usual basis has s on the diagonal immediately above the main diagonal and s everywhere else) The action of on the basis vectors is to map Clearly is an eigenvector with eigenvalue . The only eigenvectors of are multiples of . To see this note that, by an argument precisely analogous to that in , there are no non-zero eigenvalues. If then implies ; in other words .   We are not able, in light of , to prove that every linear map on a finite dimensional -vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.    If is a finite-dimensional -vector space and then has a basis with respect to which the matrix of is upper triangular.    The result is trivially true for . Suppose then that . Let be an eigenvector of with eigenvalue and set . Consider the map This map is well defined since whenever there is some such that . Thus thus . Pick such that is a basis for with respect to which the basis of is upper triangular. Now consider the basis of . With respect to this basis the matrix of with respect to appears in the lower right hand corner. This is because if Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of is upper triangular, we have that the matrix of is upper triangular.      If is linear and are eigenvectors with corresponding distinct eigenvalues then the are linearly independent.    If there are non-trivial linear combinations of the that are zero take one, say , with the fewest possible non-zero coefficients. Without loss of generality we may suppose that . Now apply the linear map . We have This linear combination of the has fewer non-zero coefficients than the original (since the coefficient of is now ) so all the coefficients must be . But then all of the original coefficients must have been except . But since and (it is an eigenvector). This contradiction proves that the are linearly independent.    The following corollary says that sometimes this is enough to show that is diagonalizable.    Suppose that is linear and that has dimensional . If has distinct eigenvalues then is diagonalizable.    Let where each is an eigenvector with eigenvalue . By we know is linearly independent, and since it has the correct size it must be a basis.    We have seen a few ways of looking for eigenvalues. Considering worked well for matrices. We can find eigenvalues for also by solving polynomial equations. We will turn now to an alternative avenue.  "
+},
+{
+  "id": "def-linear-operator",
+  "level": "2",
+  "url": "sec-eigen-again.html#def-linear-operator",
+  "type": "Definition",
+  "number": "6.2",
+  "title": "",
+  "body": "  For a vector space we denote the vector space of linear maps . We call such a map a linear operator on .   "
+},
+{
+  "id": "ex-identity-operator",
+  "level": "2",
+  "url": "sec-eigen-again.html#ex-identity-operator",
+  "type": "Example",
+  "number": "6.3",
+  "title": "",
+  "body": " The identity map , is an element of .  "
+},
+{
+  "id": "def-eigen",
+  "level": "2",
+  "url": "sec-eigen-again.html#def-eigen",
+  "type": "Definition",
+  "number": "6.4",
+  "title": "",
+  "body": "  If is a vector space and then we say that is an eigenvector of if for some scalar . If is an eigenvector and we say that is the eigenvalue associated to .   "
+},
+{
+  "id": "ex-eigen-example",
+  "level": "2",
+  "url": "sec-eigen-again.html#ex-eigen-example",
+  "type": "Example",
+  "number": "6.5",
+  "title": "",
+  "body": "    If is the vector space of infinitely differentiable functions from and mapping to is the differentiation map then any exponential function is an eigenvector of with eigenvalue .    Consider the left shift map on defined by Again we have that exponential sequences are eigenvectors: if then is an eigenvector with eigenvalue . Even gives an eigenvector; and is thus an eigenvector with eigenvalue .     "
+},
+{
+  "id": "lem-eigen-equivalencies",
+  "level": "2",
+  "url": "sec-eigen-again.html#lem-eigen-equivalencies",
+  "type": "Lemma",
+  "number": "6.6",
+  "title": "",
+  "body": "  For a linear map , the following are equivalent:    has an eigenvector with eigenvalue           is not injective.     If the vector space is finite dimensional then the statements above are further equivalent to    is not injective,     is not surjective.       We have This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .   "
+},
+{
+  "id": "ex-eigen-example-1",
+  "level": "2",
+  "url": "sec-eigen-again.html#ex-eigen-example-1",
+  "type": "Example",
+  "number": "6.7",
+  "title": "",
+  "body": " If then the map has an eigenvector of eigenvalue exactly if the matrix has rank less than . We have a quick way of determining (this is a pun) whether the matrix has rank less than . This happens precisely when . Thus is an eigenvalue of exactly if Thus the eigenvalues of are precisely . To find the corresponding eigenvectors we need to find for each of . We have If we choose the basis where and then the matrices of and with respect to this basis are respectively.  "
+},
+{
+  "id": "ex-right-shift",
+  "level": "2",
+  "url": "sec-eigen-again.html#ex-right-shift",
+  "type": "Example",
+  "number": "6.8",
+  "title": "",
+  "body": " Consider the right shift map on defined by This map has no eigenvectors. First consider and a solution to . If then let be minimal such . We have This contradiction establishes that , or in other words that is not a eigenvalue of . On the other hand if we'd be looking for . It is clear however that ; if has then .  "
+},
+{
+  "id": "proposition-4",
+  "level": "2",
+  "url": "sec-eigen-again.html#proposition-4",
+  "type": "Proposition",
+  "number": "6.9",
+  "title": "",
+  "body": "  Given a vector space over a field , the set endowed with the operations of addition , scalar multiplication , and composition (written from now on as multiplication ) is a - algebra meaning that it satisfies:    with its addition and scalar multiplication is a -vector space    Composition is associative: for all     Composition distributes over addition: and for all     Composition respects scalar multiplication: for all , .      "
+},
+{
+  "id": "definition-19",
+  "level": "2",
+  "url": "sec-eigen-again.html#definition-19",
+  "type": "Definition",
+  "number": "6.10",
+  "title": "",
+  "body": "  Given any and any polynomial we can sensibly define in the following way: for set ( times) and define    "
+},
+{
+  "id": "thm-fta",
+  "level": "2",
+  "url": "sec-eigen-again.html#thm-fta",
+  "type": "Theorem",
+  "number": "6.11",
+  "title": "The Fundamental Theorem of Algebra.",
+  "body": " The Fundamental Theorem of Algebra   Any monic polynomial of degree factors into linear factors; there exist such that    "
+},
+{
+  "id": "thm-C-evec",
+  "level": "2",
+  "url": "sec-eigen-again.html#thm-C-evec",
+  "type": "Theorem",
+  "number": "6.12",
+  "title": "",
+  "body": "  If is an -dimensional -vector space and then has an eigenvector.    Since the set is linearly dependent. In other words there are scalars with (without loss of generality) such that Consider then the polynomial . All monic polynomials (of degree at least ) over factor into linear factors; there exist such that Thus Now if is any non-zero vector in we have . Let be minimal such that (Note that we might have , but certainly .) Then by the minimality of we have so is an eigenvector of , and is the corresponding eigenvalue.   "
+},
+{
+  "id": "ex-nilpotent",
+  "level": "2",
+  "url": "sec-eigen-again.html#ex-nilpotent",
+  "type": "Example",
+  "number": "6.13",
+  "title": "",
+  "body": " Consider the map (whose matrix with respect to the usual basis has s on the diagonal immediately above the main diagonal and s everywhere else) The action of on the basis vectors is to map Clearly is an eigenvector with eigenvalue . The only eigenvectors of are multiples of . To see this note that, by an argument precisely analogous to that in , there are no non-zero eigenvalues. If then implies ; in other words .  "
+},
+{
+  "id": "theorem-5",
+  "level": "2",
+  "url": "sec-eigen-again.html#theorem-5",
+  "type": "Theorem",
+  "number": "6.14",
+  "title": "",
+  "body": "  If is a finite-dimensional -vector space and then has a basis with respect to which the matrix of is upper triangular.    The result is trivially true for . Suppose then that . Let be an eigenvector of with eigenvalue and set . Consider the map This map is well defined since whenever there is some such that . Thus thus . Pick such that is a basis for with respect to which the basis of is upper triangular. Now consider the basis of . With respect to this basis the matrix of with respect to appears in the lower right hand corner. This is because if Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of is upper triangular, we have that the matrix of is upper triangular.   "
+},
+{
+  "id": "thm-distinct",
+  "level": "2",
+  "url": "sec-eigen-again.html#thm-distinct",
+  "type": "Theorem",
+  "number": "6.15",
+  "title": "",
+  "body": "  If is linear and are eigenvectors with corresponding distinct eigenvalues then the are linearly independent.    If there are non-trivial linear combinations of the that are zero take one, say , with the fewest possible non-zero coefficients. Without loss of generality we may suppose that . Now apply the linear map . We have This linear combination of the has fewer non-zero coefficients than the original (since the coefficient of is now ) so all the coefficients must be . But then all of the original coefficients must have been except . But since and (it is an eigenvector). This contradiction proves that the are linearly independent.   "
+},
+{
+  "id": "corollary-1",
+  "level": "2",
+  "url": "sec-eigen-again.html#corollary-1",
+  "type": "Corollary",
+  "number": "6.16",
+  "title": "",
+  "body": "  Suppose that is linear and that has dimensional . If has distinct eigenvalues then is diagonalizable.    Let where each is an eigenvector with eigenvalue . By we know is linearly independent, and since it has the correct size it must be a basis.   "
 },
 {
   "id": "sec-spectral",

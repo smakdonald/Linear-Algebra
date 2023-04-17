@@ -11,9 +11,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Closure under addition: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x+y\in \F\text{.}\)</span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">We prove the result by induction on <span class="process-math">\(\abs{I}\text{.}\)</span> If <span class="process-math">\(\abs{I}=0\)</span> then <span class="process-math">\(I=\emptyset\)</span> and we can take <span class="process-math">\(T=S\text{.}\)</span> Otherwise <span class="process-math">\(\abs{I}&gt;0\text{.}\)</span> Pick <span class="process-math">\(\v\in I\)</span> and set <span class="process-math">\(I' = I\wo\set{\v}\text{.}\)</span> By induction there exists a spanning set <span class="process-math">\(T'\)</span> with <span class="process-math">\(I' \of T' \of I'\cup S\)</span> with <span class="process-math">\(\abs{T'}\le \abs{S}\text{.}\)</span> If <span class="process-math">\(\v\in T'\)</span> then there is nothing further to do; we can take <span class="process-math">\(T=T'\text{.}\)</span> Otherwise, our plan now is to insert <span class="process-math">\(\v\)</span> into <span class="process-math">\(T'\)</span> and kick out one element of <span class="process-math">\(T'\text{,}\)</span> <em class="emphasis">but not an element of <span class="process-math">\(I\)</span></em>, so that the result is still spanning. Since <span class="process-math">\(T'\)</span> is spanning we have some <span class="process-math">\(\vs\in T'\text{,}\)</span> <span class="process-math">\(\ls\in \F\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\v = \Slv.
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-fields.html#p-231" class="internal">in-context</a></span>
+<div class="para">I claim that for some <span class="process-math">\(\v_i\in T'\wo I'\)</span> we have <span class="process-math">\(\l_i\not =0\text{,}\)</span> for otherwise <span class="process-math">\(\v-\Slv=\0\)</span> would be a non-trivial linear combination of vectors from <span class="process-math">\(I\)</span> equalling <span class="process-math">\(\0\text{,}\)</span> a contradiction to the linearly independence of <span class="process-math">\(I\text{.}\)</span> Now note that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\v_i = \frac1{\l_i}\parens[\Big]{\v - \sum_{j\not=i} \l_j\v_j} \in \linspan(T' \cup \set{\v} \wo \set{\v_i}),
+\end{equation*}
+</div>
+<div class="para">so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\linspan(T'  \cup \set{\v} \wo \set{\v_i}) = \linspan(T'\cup\set{\v}) = V.
+\end{equation*}
+</div>
+<div class="para">Thus we can take <span class="process-math">\(T= T'  \cup \set{\v} \wo \set{\v_i}\text{.}\)</span> It is spanning, and it is easy to check that it satisfies the other conditions.</div>
+</div>
+<span class="incontext"><a href="sec-bases.html#p-231" class="internal">in-context</a></span>
 </body>
 </html>

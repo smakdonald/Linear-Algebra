@@ -11,28 +11,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let's consider the derivative map. Denote this by <span class="process-math">\(V_{10}\)</span> the vector space of polynomials of degree <span class="process-math">\(\leq 10\)</span> and let <span class="process-math">\(D:V_{10}\to V_{10}\)</span> be the derivative map <span class="process-math">\(D(p)=p'\text{.}\)</span> Then a basis for <span class="process-math">\(R_{\leq 10}\)</span> is <span class="process-math">\(B=\{1,X, X^2, \ldots, X^{10}\}\)</span> and the matrix of <span class="process-math">\(D\)</span> with respect to this basis is</div>
+<div class="para">Applying linear maps to vectors (evaluating linear maps) is a bilinear function:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-[D]_B^B=
-\begin{bmatrix} 
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
-0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 6 &amp; 0 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 7 &amp; 0 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8 &amp; 0&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 9&amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0&amp; 10\\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
-\end{bmatrix}.
+\begin{aligned}
+e \colon L(V,W)\times V &amp;\to W \\
+(T,\v) &amp;\mapsto T(\v)
+\end{aligned}
 \end{equation*}
 </div>
+<div class="para">is bilinear since <span class="process-math">\(T(\l\u+\mu\v)=\l T(\u)+\mu T(\v)\)</span> and also <span class="process-math">\((\l T+\mu S)(\v) = \l T(\v)+\mu S(\v)\text{.}\)</span>
 </div>
-<span class="incontext"><a href="sec-rep-linear-maps-matrices.html#p-413" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="sec-bilinear-functions.html#p-413" class="internal">in-context</a></span>
 </body>
 </html>

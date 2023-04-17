@@ -11,18 +11,29 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The multiplication function <span class="process-math">\(m:\R^2\to \R, m((x,y))=xy\)</span> is not linear since, for instance, <span class="process-math">\(m((2,3)+(1,5)) = 24 \not= m(2,3)+m(1,5)\text{.}\)</span> However the definition of a field requires that <span class="process-math">\(m\)</span> be linear in each argument:</div>
-<div class="displaymath process-math">
+<div class="para">Consider the map (whose matrix with respect to the usual basis has <span class="process-math">\(1\)</span>s on the diagonal immediately above the main diagonal and <span class="process-math">\(0\)</span>s everywhere else)</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{aligned}
-m(\lambda x+\mu x',y)&amp;=\lambda \,m(x,y)+\mu \, m(x',y),\\
-m(x,\lambda y+\mu y')&amp;=\lambda \,m(x,y)+\mu \, m(x,y').
+S \colon \C^n &amp;\to \C^n \\
+(a_i)_1^{n} &amp;\mapsto \left( \begin{cases}
+a_{i+1} &amp; i &lt; n \\
+0 &amp; i=n .
+\end{cases} \right)_{i=1}^n   
 \end{aligned}
 \end{equation*}
 </div>
+<div class="para">The action of <span class="process-math">\(S\)</span> on the basis vectors <span class="process-math">\(\e_1,\e_2,\dots,\e_n\)</span> is to map</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\e_n\mapsto \e_{n-1} \mapsto \e_{n-2} \mapsto \dots \mapsto \e_2 \mapsto \e_1 \mapsto \0.
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-bilinear-functions.html#p-558" class="internal">in-context</a></span>
+<div class="para">Clearly <span class="process-math">\(\e_1=(1,0,\dots,0)\)</span> is an eigenvector with eigenvalue <span class="process-math">\(0\text{.}\)</span> The only eigenvectors of <span class="process-math">\(S\)</span> are multiples of <span class="process-math">\(\e_1\text{.}\)</span> To see this note that, by an argument precisely analogous to that in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:right_shift" missing or not unique]</code>, there are no non-zero eigenvalues. If <span class="process-math">\(\v=(v_i)_1^n\in \ker(S)\)</span> then <span class="process-math">\(S\v = \0\)</span> implies <span class="process-math">\(v_2=v_3=\dots=v_n=0\text{;}\)</span> in other words <span class="process-math">\(\ker(S)=\linspan(\e_1)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-eigen-again.html#p-558" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,17 +11,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Now suppose <span class="process-math">\(\w\in U\cap V\text{.}\)</span> Then <span class="process-math">\(\w=\l_1\b_1+\cdots+\l_t\b_t\)</span> for some <span class="process-math">\(\b_1,\ldots, b_t\in B_U\)</span> and also <span class="process-math">\(\w=\l_1\b_{t+1}+\cdots+\l_n\b_n\)</span> for some <span class="process-math">\(\b_{t+1},\ldots, b_n\in B_V\text{.}\)</span> Therefore we have</div>
+<div class="para">To show that <span class="process-math">\(U+U\perp\)</span> is all of <span class="process-math">\(V\text{,}\)</span> start by picking an orthonormal basis <span class="process-math">\(\set{\us[r]}\)</span> for <span class="process-math">\(U\text{.}\)</span> Given <span class="process-math">\(\v\in V\)</span> set</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\l_1\b_1+\cdots+\l_t\b_t-\l_{t+1}\b_{t+1}-\cdots -\l_n\b_n=\0
+\w = \v - \sum_{i=1}^r \ip{\v,\u_i} \u_i.
 \end{equation*}
 </div>
-<div class="para">with <span class="process-math">\(\b_1,\ldots, \b_n\in B\)</span> distinct. Since <span class="process-math">\(B\)</span> is linearly independent we conclude <span class="process-math">\(\l_i=0\)</span> for all <span class="process-math">\(1\leq i\leq n\)</span> whence <span class="process-math">\(\w=\0\text{.}\)</span> We have shown that <span class="process-math">\(U\cap V=\{\0\}\)</span> and it follows from that <span class="process-math">\(W=U\oplus V\text{.}\)</span>
+<div class="para">Note that <span class="process-math">\(\u:=\v-\w= \sum_{i=1}^r \ip{\v,\u_i} \u_i \in U\)</span> so it suffices to show that <span class="process-math">\(\w\in U\perp\text{.}\)</span> For this in turn it suffices to show that <span class="process-math">\(\ip{\w,\u_j}=0\)</span> for <span class="process-math">\(j=1,2\dots,r\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ip{\w,\u_j} = \ip{\v,\u_j} - \sum_{i=1}^r \ip{\v,\u_i}\ip{\u_i,\u_j} = \ip{\v,\u_j} - \ip{\v,\u_j} = 0.
+\end{equation*}
+</div>
+<div class="para">We have shown <span class="process-math">\(\v=\u+\w\)</span> where <span class="process-math">\(\u\in U\)</span> and <span class="process-math">\(\w\in U\perp\text{,}\)</span> so <span class="process-math">\(\v\in U+U\perp\text{.}\)</span> Thus <span class="process-math">\(V\subseteq U+U\perp\text{.}\)</span> Since the opposite containment is true, we conclude <span class="process-math">\(V= U+U\perp\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="sec-direct-sums.html#p-485" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-485" class="internal">in-context</a></span>
 </body>
 </html>

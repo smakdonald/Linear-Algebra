@@ -11,29 +11,35 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">We define</div>
+<div class="para">Often people want to solve linear equations that can't be solved. For instance given a large collection of points <span class="process-math">\(\set{(x_i,y_i)}_{i=1}^n\)</span> they want to find a straight line that goes through the points. Suppose the straight line has equation <span class="process-math">\(y=\alpha x+\beta\)</span> for some real numbers <span class="process-math">\(\alpha, \beta\text{.}\)</span> Then we want to solve for <span class="process-math">\(\alpha,\beta\)</span> in the equations</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\Dsum_{i\in I} V_i = \setof{(\v_i)_{i\in I}}{\text{$\forall i\in I,\v_i\in V_i$ and only finitely many of the $\v_i$ are non-zero}}.
+\begin{aligned}
+\begin{cases}
+\alpha x_1 + \beta &amp;= y_1 \\
+\alpha x_2 +  \beta &amp;= y_2 \\
+&amp;\vdots \\
+\alpha x_n +  \beta &amp;= y_n.
+\end{cases}
+\end{aligned}
 \end{equation*}
 </div>
-<div class="para">This is the <em class="emphasis">external direct sum</em> of the <span class="process-math">\(V_i\text{.}\)</span> The operations are performed coordinate-wise:</div>
+<div class="para">If we write <span class="process-math">\(M\)</span> for the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(\v_i)_{i\in I}+(\w_i)_{i\in I} = (\v_i+\w_i)_{i\in I},
+M=  \begin{bmatrix} x_1&amp;1\\x_2&amp;1\\\vdots&amp;\vdots\\x_N&amp;1 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">and similarly for scalar multiplication by <span class="process-math">\(\l\in \F\)</span>
-</div>
+<div class="para">we can write the system above in matrix form as given below</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\l(\v_i)_{i\in I}= (\l \v_i)_{i\in I},
+\label{eq:regression}
+M\begin{bmatrix} \alpha \\ \beta \end{bmatrix}= \begin{bmatrix} y_1\\ \vdots \\ y_n \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="para">It is easy to check that with these operations <span class="process-math">\(\Dsum_{i\in I} V_i\)</span> is a vector space.</div>
 </div>
-<span class="incontext"><a href="sec-direct-sums.html#p-488" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-least-squares.html#p-488" class="internal">in-context</a></span>
 </body>
 </html>

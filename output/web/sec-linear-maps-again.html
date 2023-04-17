@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -721,11 +585,11 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-linear-maps-again"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Linear Maps</span>
 </h2>
-<div class="para" id="p-294">We don't need a rough idea of what a linear map is—it's just what we defined it to be earlier.</div>
+<div class="para" id="p-145">We don't need a rough idea of what a linear map is—it's just what we defined it to be earlier.</div>
 <article class="definition definition-like" id="def-linear-map-2"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-295">
+<div class="para logical" id="p-146">
 <div class="para">If <span class="process-math">\(V,W\)</span> are vector spaces over <span class="process-math">\(\F\)</span> then we say that a function <span class="process-math">\(T:V\to W\)</span> is <em class="emphasis">linear</em> if it preserves linear combinations. That is to say, for all <span class="process-math">\(\u,\v\in V\)</span> and <span class="process-math">\(\l,\mu\in \F\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -735,15 +599,15 @@ T(\l\u+\mu\v) = \l T(\u) + \mu T(\v).
 </div></article><article class="question example-like" id="question-2"><h3 class="heading">
 <span class="type">Question</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-296">Prove that Definition <a href="" class="xref" data-knowl="./knowl/def-linear-map-2.html" title="Definition 2.23">Definition 2.23</a> is equivalent to requiring that for all <span class="process-math">\(\u,\v\in V\)</span> and <span class="process-math">\(\l \in \F\)</span> we have <span class="process-math">\(T(\u+\v) = T(\u) + T(\v)\)</span> and <span class="process-math">\(T(\l\v)=\l T(\v)\text{.}\)</span>
+<div class="para" id="p-147">Prove that Definition <a href="" class="xref" data-knowl="./knowl/def-linear-map-2.html" title="Definition 2.23">Definition 2.23</a> is equivalent to requiring that for all <span class="process-math">\(\u,\v\in V\)</span> and <span class="process-math">\(\l \in \F\)</span> we have <span class="process-math">\(T(\u+\v) = T(\u) + T(\v)\)</span> and <span class="process-math">\(T(\l\v)=\l T(\v)\text{.}\)</span>
 </div></article><article class="example example-like" id="example-22"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-297"><ol class="decimal">
-<li id="li-40"><div class="para" id="p-298">
+<div class="para logical" id="p-148"><ol class="decimal">
+<li id="li-40"><div class="para" id="p-149">
 <span class="process-math">\(T:\R^3\to \R\)</span> given by <span class="process-math">\(T((x, y, z)) = 3x+2y+z\text{.}\)</span>
 </div></li>
-<li id="li-41"><div class="para logical" id="p-299">
+<li id="li-41"><div class="para logical" id="p-150">
 <div class="para">If <span class="process-math">\(A\in M_{m\by n}(\F)\)</span> then we can define a linear map <span class="process-math">\(M_A:\F^n\to \F^m\)</span> by doing matrix multiplication. To be completely explicit we define, for <span class="process-math">\(\v=(v_1,v_2,\dots,v_n)\in \F^n\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -754,11 +618,11 @@ M_A(\v) = A\v = \parens[\Big]{\sum_{j=1}^n A_{i j} v_j }_{i=1}^m.
 <div class="para">It is a fact, that we will prove soon, that <em class="emphasis">every</em> linear map from <span class="process-math">\(\F^n\)</span> to <span class="process-math">\(\F^m\)</span> is of the form <span class="process-math">\(M_A\)</span> for some matrix <span class="process-math">\(A\in M_{m\by n}(\F)\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-42"><div class="para" id="p-300">Let <span class="process-math">\(C[0,1]=\{f:[0,1]\to\R : f\)</span> is continuous<span class="process-math">\(\}\text{.}\)</span> Define <span class="process-math">\(I:C[0,1]\to \R\)</span> by <span class="process-math">\(\displaystyle I(f) = \int_{0}^1 f(x) \, dx\text{.}\)</span> Then <span class="process-math">\(I\)</span> is linear by standard facts about integration.</div></li>
+<li id="li-42"><div class="para" id="p-151">Let <span class="process-math">\(C[0,1]=\{f:[0,1]\to\R : f\)</span> is continuous<span class="process-math">\(\}\text{.}\)</span> Define <span class="process-math">\(I:C[0,1]\to \R\)</span> by <span class="process-math">\(\displaystyle I(f) = \int_{0}^1 f(x) \, dx\text{.}\)</span> Then <span class="process-math">\(I\)</span> is linear by standard facts about integration.</div></li>
 </ol></div></article><article class="definition definition-like" id="def-lvw"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-301">
+<div class="para logical" id="p-152">
 <div class="para">If <span class="process-math">\(V\)</span> and <span class="process-math">\(W\)</span> are vector spaces over a field <span class="process-math">\(\F\text{,}\)</span> we let <span class="process-math">\(L(V,W)\)</span> denote the set of all linear maps from <span class="process-math">\(V\)</span> to <span class="process-math">\(W\text{,}\)</span> so</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -769,7 +633,7 @@ L(V,W) = \setof{T:V\to W}{\text{$T$ is linear}}.
 </div></article><article class="lemma theorem-like" id="lem-lvw-vector-space"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.27</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-302">
+<div class="para logical" id="p-153">
 <div class="para">If <span class="process-math">\(V,W\)</span> are vector spaces over <span class="process-math">\(\F\)</span> then <span class="process-math">\(L(V,W)\)</span> is also a vector space over <span class="process-math">\(\F\)</span> when we define, for <span class="process-math">\(T,T'\in L(V,W)\)</span> and <span class="process-math">\(\l\in \F\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -777,7 +641,7 @@ L(V,W) = \setof{T:V\to W}{\text{$T$ is linear}}.
 T+T' : \v \mapsto T(\v)+T'(\v) \qquad \l T: \v \mapsto \l T(\v).
 \end{equation*}
 </div>
-</div></article><article class="hiddenproof" id="proof-7"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><div class="para logical" id="p-303">
+</div></article><article class="hiddenproof" id="proof-7"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><div class="para logical" id="p-154">
 <div class="para">The proof is straightforward definition checking. As a representative sample I'll prove that vector addition is associative. For <span class="process-math">\(R,S,T \in L(V,W)\)</span> and <span class="process-math">\(\v\in V\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -792,12 +656,12 @@ T+T' : \v \mapsto T(\v)+T'(\v) \qquad \l T: \v \mapsto \l T(\v).
 </div>
 <div class="para">where the central equality is associativity of vector addition in <span class="process-math">\(W\)</span> and everything else is the definition of addition in <span class="process-math">\(L(V,W)\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-304">The additive identity in <span class="process-math">\(L(V,W)\)</span> is the linear map <span class="process-math">\(Z:V\to W\)</span> that sends every vector <span class="process-math">\(v\in V\)</span> to <span class="process-math">\(\0_W\text{,}\)</span> the zero vector in <span class="process-math">\(W\text{,}\)</span> that is, <span class="process-math">\(Z(v)=0_W\)</span> for all <span class="process-math">\(v\in V\text{.}\)</span>
-</div> <div class="para" id="p-305">There are subspaces naturally associated to a linear map. We define them, then show they are subspaces in an upcoming result</div></article></div>
+</div> <div class="para" id="p-155">The additive identity in <span class="process-math">\(L(V,W)\)</span> is the linear map <span class="process-math">\(Z:V\to W\)</span> that sends every vector <span class="process-math">\(v\in V\)</span> to <span class="process-math">\(\0_W\text{,}\)</span> the zero vector in <span class="process-math">\(W\text{,}\)</span> that is, <span class="process-math">\(Z(v)=0_W\)</span> for all <span class="process-math">\(v\in V\text{.}\)</span>
+</div> <div class="para" id="p-156">There are subspaces naturally associated to a linear map. We define them, then show they are subspaces in an upcoming result</div></article></div>
 <article class="definition definition-like" id="def-range-nullspace"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-306">
+<div class="para logical" id="p-157">
 <div class="para">If <span class="process-math">\(T:V\to W\)</span> is a linear map we define the following subspaces associated to it.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -810,20 +674,20 @@ T(V) = \range(T) &amp;\defeq \setof{T(\v)}{\v\in V} \\
 </div></article><article class="example example-like" id="example-23"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.29</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-307">Examples of kernels:</div> <div class="para logical" id="p-308"><ol class="decimal"><li id="li-43">
-<div class="para" id="p-309">for <span class="process-math">\(T:\R^3\to \R\)</span> given by <span class="process-math">\(T((x, y, z)) = ax+by+cz\)</span> where not all of <span class="process-math">\(a,b,c\)</span> are zero yields that <span class="process-math">\(\ker(T)\)</span> is a plane passing through the origin (note that <span class="process-math">\((0.0,0)\)</span> is a particular solution to <span class="process-math">\(ax+by+cz=0\)</span>).</div>
-<div class="para" id="p-310">If <span class="process-math">\(A\in M_{m\by n}(\F)\)</span> the kernel of the linear map <span class="process-math">\(M_A:\F^n\to \F^m, M_A(\v) = A\v\)</span> is the set of solutions <span class="process-math">\(\x\)</span> to the <em class="emphasis">homogeneous</em> system of equations <span class="process-math">\(A\x=\0\text{.}\)</span>
+<div class="para" id="p-158">Examples of kernels:</div> <div class="para logical" id="p-159"><ol class="decimal"><li id="li-43">
+<div class="para" id="p-160">for <span class="process-math">\(T:\R^3\to \R\)</span> given by <span class="process-math">\(T((x, y, z)) = ax+by+cz\)</span> where not all of <span class="process-math">\(a,b,c\)</span> are zero yields that <span class="process-math">\(\ker(T)\)</span> is a plane passing through the origin (note that <span class="process-math">\((0.0,0)\)</span> is a particular solution to <span class="process-math">\(ax+by+cz=0\)</span>).</div>
+<div class="para" id="p-161">If <span class="process-math">\(A\in M_{m\by n}(\F)\)</span> the kernel of the linear map <span class="process-math">\(M_A:\F^n\to \F^m, M_A(\v) = A\v\)</span> is the set of solutions <span class="process-math">\(\x\)</span> to the <em class="emphasis">homogeneous</em> system of equations <span class="process-math">\(A\x=\0\text{.}\)</span>
 </div>
-<div class="para" id="p-311">If <span class="process-math">\(D:\R[X]\to \R[X]\)</span> is given by <span class="process-math">\(D(p)=\frac{d}{dX}(p)\)</span> then <span class="process-math">\(\ker(D)=R[X]_0=\{r\mid r\in \R\}\text{,}\)</span> the set of constant polynomials</div>
+<div class="para" id="p-162">If <span class="process-math">\(D:\R[X]\to \R[X]\)</span> is given by <span class="process-math">\(D(p)=\frac{d}{dX}(p)\)</span> then <span class="process-math">\(\ker(D)=R[X]_0=\{r\mid r\in \R\}\text{,}\)</span> the set of constant polynomials</div>
 </li></ol></div></article><article class="example example-like" id="example-24"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.30</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-312">Examples of kernels:</div> <div class="para" id="p-313">If <span class="process-math">\(T:C[0,1]\to \R\)</span> is given by <span class="process-math">\(T(f)=\int_{0}^1 f(x)dx\)</span> then the range of <span class="process-math">\(T\)</span> is <span class="process-math">\(\range(T) =\R\text{.}\)</span> To see this take any <span class="process-math">\(r\in\R\)</span> and consider the constant function <span class="process-math">\(f_r:[0,1]\to\R, f_r(x)=r\text{.}\)</span> Then <span class="process-math">\(f_r\in C[0,1]\)</span> and <span class="process-math">\(T(f_r)=\int_{0}^1 f_r(x) dx=\int_{0}^1 r dx= r\text{.}\)</span> In conclusion, every <span class="process-math">\(r\in \R\)</span> is in <span class="process-math">\(\range(T)\text{.}\)</span>
+<div class="para" id="p-163">Examples of kernels:</div> <div class="para" id="p-164">If <span class="process-math">\(T:C[0,1]\to \R\)</span> is given by <span class="process-math">\(T(f)=\int_{0}^1 f(x)dx\)</span> then the range of <span class="process-math">\(T\)</span> is <span class="process-math">\(\range(T) =\R\text{.}\)</span> To see this take any <span class="process-math">\(r\in\R\)</span> and consider the constant function <span class="process-math">\(f_r:[0,1]\to\R, f_r(x)=r\text{.}\)</span> Then <span class="process-math">\(f_r\in C[0,1]\)</span> and <span class="process-math">\(T(f_r)=\int_{0}^1 f_r(x) dx=\int_{0}^1 r dx= r\text{.}\)</span> In conclusion, every <span class="process-math">\(r\in \R\)</span> is in <span class="process-math">\(\range(T)\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-range-ker-subspaces"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.31</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-314">If <span class="process-math">\(T\in L(V,W)\)</span> then <span class="process-math">\(T(V)\)</span> is a subspace of <span class="process-math">\(W\)</span> and <span class="process-math">\(\ker(T)\)</span> is a subspace of <span class="process-math">\(V\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-8"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-8"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><div class="para logical" id="p-315">
+<div class="para" id="p-165">If <span class="process-math">\(T\in L(V,W)\)</span> then <span class="process-math">\(T(V)\)</span> is a subspace of <span class="process-math">\(W\)</span> and <span class="process-math">\(\ker(T)\)</span> is a subspace of <span class="process-math">\(V\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-8"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-8"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><div class="para logical" id="p-166">
 <div class="para">Consider first vectors <span class="process-math">\(T(\u),T(\v)\in T(V)\text{.}\)</span> For <span class="process-math">\(\l,\mu\in \F\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -842,46 +706,46 @@ T(\l\u+\mu\v) = \l T(\u) + \mu T(\v) = \l \0 + \mu \0 = \0+\0 = \0.
 <article class="example example-like" id="example-25"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.32</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-316">The set of constant polynomials is a subspace of <span class="process-math">\(\R[X]\)</span> as it is the kernel of the derivative map <span class="process-math">\(D:\R[X]\to \R[X]\)</span> is given by <span class="process-math">\(D(p)=\frac{d}{dX}(p)\text{.}\)</span>
-</div> <div class="para" id="p-317">We now see that we can use the notion of kernel and image to analyze properties of linear maps such as being injective or being surjective.</div></article><article class="definition definition-like" id="def-surjective"><h3 class="heading">
+<div class="para" id="p-167">The set of constant polynomials is a subspace of <span class="process-math">\(\R[X]\)</span> as it is the kernel of the derivative map <span class="process-math">\(D:\R[X]\to \R[X]\)</span> is given by <span class="process-math">\(D(p)=\frac{d}{dX}(p)\text{.}\)</span>
+</div> <div class="para" id="p-168">We now see that we can use the notion of kernel and image to analyze properties of linear maps such as being injective or being surjective.</div></article><article class="definition definition-like" id="def-surjective"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.33</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-318">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(f:A\to B\)</span> is a function, we say that <span class="process-math">\(f\)</span> is <em class="emphasis">surjective</em> provided that for each <span class="process-math">\(b\in B\)</span> there exists <span class="process-math">\(a\in A\)</span> such that <span class="process-math">\(f(a)=b\text{.}\)</span>
+<div class="para" id="p-169">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(f:A\to B\)</span> is a function, we say that <span class="process-math">\(f\)</span> is <em class="emphasis">surjective</em> provided that for each <span class="process-math">\(b\in B\)</span> there exists <span class="process-math">\(a\in A\)</span> such that <span class="process-math">\(f(a)=b\text{.}\)</span>
 </div></article><article class="example example-like" id="example-26"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.34</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-319">Surjective or not surjective?</div> <div class="para logical" id="p-320"><ol class="decimal">
-<li id="li-44"><div class="para" id="p-321">
+<div class="para" id="p-170">Surjective or not surjective?</div> <div class="para logical" id="p-171"><ol class="decimal">
+<li id="li-44"><div class="para" id="p-172">
 <span class="process-math">\(R:\R^2\to \R^2\)</span> where <span class="process-math">\(R\)</span> is a rotation as in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:rotation" missing or not unique]</code> is surjective</div></li>
-<li id="li-45"><div class="para" id="p-322">
+<li id="li-45"><div class="para" id="p-173">
 <span class="process-math">\(T:\R^2\to \R^2\)</span> where <span class="process-math">\(T\)</span> is a rotation as in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:reflection" missing or not unique]</code> is surjective</div></li>
-<li id="li-46"><div class="para" id="p-323">
+<li id="li-46"><div class="para" id="p-174">
 <span class="process-math">\(P:\R^2\to \R^2\)</span> where <span class="process-math">\(P\)</span> is a projection as in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:projection" missing or not unique]</code> is NOT surjective. However if we change the target of the map to be the line <span class="process-math">\(L\)</span> onto which we project then <span class="process-math">\(P:\R^2\to L\)</span> is surjective. The moral here is that whether a map is surjective or not depends on its codomain.</div></li>
-</ol></div></article><div class="para" id="p-324">Here is the relation between surjective and range.</div>
+</ol></div></article><div class="para" id="p-175">Here is the relation between surjective and range.</div>
 <article class="proposition theorem-like" id="prop-"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.35</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-325">A linear map <span class="process-math">\(T:V\to W\)</span> is surjective if and only if <span class="process-math">\(\range(T)=W\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-9"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><div class="para" id="p-326">According to Definition <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "def:kerrange" missing or not unique]</code>, <span class="process-math">\(\range(T)=\{T(\v)\mid v\in V\}\text{.}\)</span> Thus <span class="process-math">\(\range(T)=W\)</span> if and only if for every <span class="process-math">\(\w\in W\)</span> there exists <span class="process-math">\(\v\in V\)</span> so that <span class="process-math">\(\w=T(\v)\)</span> if and only if <span class="process-math">\(T\)</span> is surjective.</div></article></div>
-<div class="para" id="p-327">Now we switch to injective.</div>
+<div class="para" id="p-176">A linear map <span class="process-math">\(T:V\to W\)</span> is surjective if and only if <span class="process-math">\(\range(T)=W\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-9"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><div class="para" id="p-177">According to Definition <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "def:kerrange" missing or not unique]</code>, <span class="process-math">\(\range(T)=\{T(\v)\mid v\in V\}\text{.}\)</span> Thus <span class="process-math">\(\range(T)=W\)</span> if and only if for every <span class="process-math">\(\w\in W\)</span> there exists <span class="process-math">\(\v\in V\)</span> so that <span class="process-math">\(\w=T(\v)\)</span> if and only if <span class="process-math">\(T\)</span> is surjective.</div></article></div>
+<div class="para" id="p-178">Now we switch to injective.</div>
 <article class="definition definition-like" id="def-injective"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.36</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-328">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(f:A\to B\)</span> is a function, we say that <span class="process-math">\(f\)</span> is <em class="emphasis">injective</em> provided that whenever <span class="process-math">\(f(x)=f(y)\)</span> then <span class="process-math">\(x=y\text{.}\)</span>
+<div class="para" id="p-179">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets and <span class="process-math">\(f:A\to B\)</span> is a function, we say that <span class="process-math">\(f\)</span> is <em class="emphasis">injective</em> provided that whenever <span class="process-math">\(f(x)=f(y)\)</span> then <span class="process-math">\(x=y\text{.}\)</span>
 </div></article><article class="example example-like" id="example-27"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.37</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-329">Injective or not injective?</div> <div class="para logical" id="p-330"><ol class="decimal">
-<li id="li-47"><div class="para" id="p-331">
+<div class="para" id="p-180">Injective or not injective?</div> <div class="para logical" id="p-181"><ol class="decimal">
+<li id="li-47"><div class="para" id="p-182">
 <span class="process-math">\(D:\R[X]\to \R[X]\)</span> where <span class="process-math">\(D(p)=p'\)</span> is the derivative map is NOT injective. Indeed the constant polynomials <span class="process-math">\(p(x)=5\)</span> and <span class="process-math">\(q(x)=7\)</span> satisfy <span class="process-math">\(D(p)=D(q)=0\)</span> but of course <span class="process-math">\(p\neq q\text{.}\)</span>
 </div></li>
-<li id="li-48"><div class="para" id="p-332">the map <span class="process-math">\(C:\R[X]\to \R^\N\)</span> which takes a polynomial <span class="process-math">\(p(X)=a_0+a_1X+a_2X^2+\cdots a_dX^d\)</span> to its sequence of coefficients <span class="process-math">\(C(p)=(a_0,a_1,a_2,\ldots, a_d, 0, 0,0, \ldots)\)</span> is injective.</div></li>
-</ol></div></article><div class="para" id="p-333">There is a close relation between injective and kernel.</div>
+<li id="li-48"><div class="para" id="p-183">the map <span class="process-math">\(C:\R[X]\to \R^\N\)</span> which takes a polynomial <span class="process-math">\(p(X)=a_0+a_1X+a_2X^2+\cdots a_dX^d\)</span> to its sequence of coefficients <span class="process-math">\(C(p)=(a_0,a_1,a_2,\ldots, a_d, 0, 0,0, \ldots)\)</span> is injective.</div></li>
+</ol></div></article><div class="para" id="p-184">There is a close relation between injective and kernel.</div>
 <article class="theorem theorem-like" id="thm-injective-iff-trivial-kernel"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.38</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-334">A linear map <span class="process-math">\(T:V\to W\)</span> is injective if and only if <span class="process-math">\(\ker(T)=\{\0_V\}\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="para" id="p-335">Coming soon to an OER near you!</div></article></div></section></div>
+<div class="para" id="p-185">A linear map <span class="process-math">\(T:V\to W\)</span> is injective if and only if <span class="process-math">\(\ker(T)=\{\0_V\}\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="para" id="p-186">Coming soon to an OER near you!</div></article></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-vector-spaces-again.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-vector-spaces-linear-maps.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -11,41 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Consider the matrix <span class="process-math">\(A\in M_{3\times 3}(\R)\)</span> given by</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2].
-\end{equation*}
-</div>
-<div class="para">Define a function <span class="process-math">\(T: \R^3 \to \R^3\)</span> by</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\label{eqn:T}
-T((x, y, z)) = A \,  \mat[x\\ y\\ z] = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].
-\end{equation*}
-</div>
-<div class="para">Standard facts about matrix multiplication tell us that this is a linear map:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{aligned}
-T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \mat[x\\ y\\ z] + \mat[x'\\ y'\\ z']} = A \mat[x\\ y\\ z] + A \mat[x'\\ y'\\ z'] = 
-T((x, y, z)) + T((x', y', z')) \\
-T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \mat[x\\ y\\ z]} = \l\, A \mat[x\\ y\\ z] = \l \, T((x, y, z)) .
-\end{aligned}
-\end{equation*}
-</div>
-<div class="para">Not only that, but this linear map can be viewed as being constructed using linear combinations. We have</div>
-<div class="displaymath process-math">
-\begin{equation*}
-T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
-= x\cmat[1\\1\\2] + y\cmat[2\\1\\7] + z\cmat[-3\\-2\\-2].
-\end{equation*}
-</div>
-<div class="para">The result of computing <span class="process-math">\(T((x, y, z))\)</span> is the linear combination, using coefficients <span class="process-math">\(x, y\text{,}\)</span> and <span class="process-math">\(z\text{,}\)</span> of the <em class="emphasis">columns</em> of <span class="process-math">\(A\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="sec-linear-maps.html#p-199" class="internal">in-context</a></span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para">If three vectors form a linearly dependent set <span class="process-math">\(\{\u,\v, \w\}\)</span> it does not follow that one of them must be a scalar multiple of another. For example the set <span class="process-math">\((0,1), (1,0), (1,1)\}\)</span> is linearly dependent since <span class="process-math">\(1\, (0,1)+ 1\,(1,0)+ (-1)\, (1,1)=(0,0)\)</span> but no vector from this set is a scalar multiple of another.</div>
+<span class="incontext"><a href="sec-bases.html#p-199" class="internal">in-context</a></span>
 </body>
 </html>

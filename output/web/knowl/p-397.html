@@ -12,8 +12,15 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">A basis for <span class="process-math">\(\F^n\)</span> is given by the vectors <span class="process-math">\(\{\e_1,\ldots, \e_n\}\text{,}\)</span> ehere <span class="process-math">\(\e_i=(0, \ldots, 0,1, 0,\ldots, 0)\)</span> and <span class="process-math">\(\e_i\)</span> has its unique entry equal to 1 in position <span class="process-math">\(i\text{.}\)</span> This is called the <dfn class="terminology">standard basis</dfn>. Thus <span class="process-math">\(\dim(\F^n)=n\text{.}\)</span>
-</div>
-<span class="incontext"><a href="sec-bases.html#p-397" class="internal">in-context</a></span>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\sum_{i=1}^k \sum_{j \in C_i} \|\mathbf{x}_j - \boldsymbol{\mu}_i\|^2
+&amp;= \sum_{i=1}^k \sum_{j \in C_i} \sum_{m=1}^d (x_{jm} - \mu_{im})^2\\
+&amp;= \sum_{i=1}^k \sum_{m=1}^d \left[\sum_{j \in C_i} (x_{jm} - \mu_{im})^2\right].
+\end{aligned}
+\end{equation*}
+</div></div>
+<span class="incontext"><a href="sec-clustering.html#p-397" class="internal">in-context</a></span>
 </body>
 </html>

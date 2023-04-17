@@ -78,6 +78,7 @@
         \def\sign{{\operatorname{sign}}}
         \newcommand{\SL}{\operatorname{SL}}
         \def\Span{\operatorname{Span}}
+        \def\linspan{\operatorname{Span}}
         \def\Spec{\operatorname{Spec}}
         \def\Stab{\operatorname{Stab}} 
         \DeclareMathOperator{\Supp}{Supp}
@@ -245,6 +246,7 @@
         \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
         \def\th{^{th}} 
         \def\htpy{\simeq_{\mathrm{htpc}}} 
+        \def\wo{\setminus} 
         <!-- Math Text     -->
         \def\textand{ \, \text{and} \, } 
         \def\textor{ \, \text{or} \, } 
@@ -308,6 +310,7 @@
         \DeclarePairedDelimiter{\parens}{(}{)}
         \DeclarePairedDelimiter{\abs}{|}{|}
         \NewDocumentCommand\cmat{r[]}{\begin{bmatrix} #1 \end{bmatrix}}
+
     </macros>
 
     <!-- this is the default, but supresses a warning -->
@@ -376,14 +379,15 @@
 
     </frontmatter>
 
+    <!--
     <part xml:id="part-linear">
       <title>Linear Algebra</title>
 
-      <!--
+      <!-
       **************
       Linear Algebra
       **************
-      -->
+      ->
       
       <chapter xml:id="ch-matrices">
         <title>Matrices and Linear Systems</title>
@@ -1731,6 +1735,7 @@
       </chapter> 
 
     </part>
+  -->
 
     <part xml:id="part-theory">
       <title>Theory of Linear Transformations</title>
@@ -1750,6 +1755,27 @@
           <p>
             One of the first examples of vectors people encountered were <em>displacement vectors</em>, or as we'll call them, <em>steps</em>. A step in the plane is the process of moving a certain distance in a certain direction. For instance <m>(2,-1)</m> is the action of moving <m>2</m> units right and <m>1</m> unit down. So, using a bit of trigonometry, we see that the step moves you a distance <m>\sqrt{2^2+(-1)^2}</m> in the direction <m>\theta = \arctan(-1/2)</m> in polar coordinates. (See <xref ref="fig:firststep" />)
           </p>
+
+          <p>
+            \begin{figure}[ht]
+            \begin{center}
+            \begin{tikzpicture}[x=1.5cm, y=1.5cm]
+            \draw[help lines, step=1] (-1,-1) grid (4,4);
+            \draw[vector] (1,3) node[vx] --(3,2) node[midlabel] {$(2,-1)$} node[vx];
+            \path (2,1) coordinate (A) 
+            (0,1) coordinate (O)
+            (2,0) coordinate (B);
+            \draw[very thick,red] (O) to[above] node{$2$} (A) to[right] node{$1$} (B);
+            \draw[vector] (O) to[sloped, below] node{$(2,-1)$} (B);
+            \draw pic[draw, "$\theta$", angle eccentricity=0.8, angle radius=1.2cm] {angle=B--O--A};
+            \end{tikzpicture}
+            \end{center}
+            \caption{The step $(2,-1)$ in several places.} % Always put the caption before the label! It's \caption that incrememnts the counter
+            \label{fig:firststep}
+            \end{figure} 
+          </p>
+
+          
     
           <p>
             One important thing to notice is that the step <m>(2,-1)</m> might occur when moving from the point <m>(1,1)</m> to the point <m>(3,0)</m>, or when moving from the point <m>(7,10)</m> to the point <m>(9,9)</m>, or many other possibilities.
@@ -2094,12 +2120,12 @@
           <example>
             <p>
               Consider the matrix <m>A\in M_{3\times 3}(\R)</m> given by <me>A = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2].</me> Define a function <m>T: \R^3 \to \R^3</m> by <me>\label{eqn:T}
-              T((x, y, z)) = A \,  \mat[x\\ y\\ z] = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].</me> Standard facts about matrix multiplication tell us that this is a linear map: <me>\begin{aligned}
-              T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \mat[x\\ y\\ z] + \mat[x'\\ y'\\ z']} = A \mat[x\\ y\\ z] + A \mat[x'\\ y'\\ z'] = 
+              T((x, y, z)) = A \,  \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z].</me> Standard facts about matrix multiplication tell us that this is a linear map: <me>\begin{aligned}
+              T((x, y, z)+(x', y', z')) &amp;= A \parens[\Bigg]{ \begin{bmatrix} x\\ y\\ z \end{bmatrix} + \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix}} = A\begin{bmatrix} x\\ y\\ z \end{bmatrix} + A \begin{bmatrix} x'\\ y'\\ z' \end{bmatrix} = 
                   T((x, y, z)) + T((x', y', z')) \\
-              T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \mat[x\\ y\\ z]} = \l\, A \mat[x\\ y\\ z] = \l \, T((x, y, z)) .
+              T( \l (x, y, z)) &amp;= A \parens[\Bigg]{ \l \begin{bmatrix} x\\ y\\ z \end{bmatrix}} = \l\, A \begin{bmatrix} x\\ y\\ z \end{bmatrix} = \l \, T((x, y, z)) .
           
-      \end{aligned}</me> Not only that, but this linear map can be viewed as being constructed using linear combinations. We have <me>T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \mat[x\\ y\\ z]= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
+      \end{aligned}</me> Not only that, but this linear map can be viewed as being constructed using linear combinations. We have <me>T((x, y, z)) = \cmat[1&amp;2&amp;-3\\ 1&amp;1&amp;-2 \\ 2&amp;7&amp;-2] \, \begin{bmatrix} x\\ y\\ z \end{bmatrix}= \cmat[x+2y-3z\\ x+y-2z\\ 2x+7y-2z] 
                   = x\cmat[1\\1\\2] + y\cmat[2\\1\\7] + z\cmat[-3\\-2\\-2].</me> The result of computing <m>T((x, y, z))</m> is the linear combination, using coefficients <m>x, y</m>, and <m>z</m>, of the <em>columns</em> of <m>A</m>.
             </p>
           </example>
@@ -3334,7 +3360,10 @@
     
     <!-- div attr= class="definition"-->
             <p>
-              Suppose <m>V,W</m> are finite dimensional vector spaces over <m>\F</m> and <m>T:V\to W</m> is linear. Given (ordered) bases <m>B = \set{\vs}, B'=\set{\ws[m]}</m> for <m>V</m> and <m>W</m> respectively then <em>the matrix of <m>T</m> with respect to <m>B,B'</m></em> is the matrix <m>[T]_B^{B'}=A = [a_{ij}]_{i=1}^m\vphantom{[]}_{j=1}^n</m> such that for all <m>i\in [n]</m> we have <me>T(\v_i) = \sum_1^m a_{ji} \w_j.</me> Note that this determines the <m>a_{ij}</m> since <m>T(\v_i)</m> has a unique expression as a linear combination from <m>B'</m>. Note that once we've picked the basis <m>B</m> every vector in <m>v</m> can be thought of as specified by its coefficients with respect to <m>B</m>. If <m>\v=\Slv</m> then we can think of <m>\v</m> as corresponding to the column vector <m>\col{\l_1\\\l_2\\\vdots\\\l_n}</m>. Similarly the image <m>T(\v)</m> can be thought of a a column vector <m>\col{\mu_1\\\mu_2\\\vdots\\\mu_m}</m> if <m>T(\v) = \sum_1^m \mu_j \w_j</m>. The matrix <m>A</m> is chosen so that <me>\col{\mu_1\\\mu_2\\\vdots\\\mu_m} = A \col{\l_1\\\l_2\\\vdots\\\l_n}.</me>
+              Suppose <m>V,W</m> are finite dimensional vector spaces over <m>\F</m> and <m>T:V\to W</m> is linear. Given (ordered) bases <m>B = \set{\vs}, B'=\set{\ws[m]}</m> for <m>V</m> and <m>W</m> respectively then <em>the matrix of <m>T</m> with respect to <m>B,B'</m></em> is the matrix <m>[T]_B^{B'}=A = [a_{ij}]_{i=1}^m\vphantom{[]}_{j=1}^n</m> such that for all <m>i\in [n]</m> we have <me>T(\v_i) = \sum_1^m a_{ji} \w_j.</me> Note that this determines the <m>a_{ij}</m> since <m>T(\v_i)</m> has a unique expression as a linear combination from <m>B'</m>. Note that once we've picked the basis <m>B</m> every vector in <m>v</m> can be thought of as specified by its coefficients with respect to <m>B</m>. If <m>\v=\Slv</m> then we can think of <m>\v</m> as corresponding to the column vector <m>\begin{bmatrix} \l_1\\\l_2\\\vdots\\\l_n \end{bmatrix}</m>. Similarly the image <m>T(\v)</m> can be thought of a a column vector <m>\begin{bmatrix} \mu_1\\\mu_2\\\vdots\\\mu_m \end{bmatrix}</m> if <m>T(\v) = \sum_1^m \mu_j \w_j</m>. The matrix <m>A</m> is chosen so that 
+              <me>
+                \begin{bmatrix} \mu_1\\\mu_2\\\vdots\\\mu_m \end{bmatrix} = A \begin{bmatrix} \l_1 \\ \l_2 \\ \vdots \\ \l_n \end{bmatrix}.
+              </me>
             </p><!--</div attr= class="definition">-->
     
     <!-- div attr= class="example"-->
@@ -4265,7 +4294,7 @@
 				If <m>B:V\times V\to\F</m> is a bilinear form and <m>D=\set{\v_1,\v_2,\dots,\v_n}</m> is an ordered basis for <m>V</m> then the <em>matrix for <m>B</m> with respect to <m>D</m></em> is the <m>n\by n</m> matrix <m>[B]_D</m> with entries <me>([B]_D)_{ij} = B(\v_i,\v_j).</me> We have <me>\begin{aligned}
         B\left(\sum_1^n \lambda_i \v_i,\sum_1^n \mu_j \v_j\right)&amp;=\sum_{i=1}^n \sum_{j=1}^n \lambda_i\mu_j B(\v_i,\v_j)\\
         &amp;=\sum_{i,j=1}^n \lambda_i \,([B]_D)_{ij}\, \mu_j\\
-        &amp;=\row{\l_1 &amp; \l_2 &amp; \cdots &amp; \l_n}\, [B]_D \col{\mu_1\\ \mu_2\\ \vdots \\ \mu_n} . 
+        &amp;=\row{\l_1 &amp; \l_2 &amp; \cdots &amp; \l_n}\, [B]_D \begin{bmatrix} \mu_1\\ \mu_2\\ \vdots \\ \mu_n \end{bmatrix} . 
     
 \end{aligned}</me> In other words if we set <m>A=[B]_D</m> then <m>B</m> behaves like the bilinear map <m>B_A</m> in Example <xref ref="def:BA" />.
 			</p><!--</div attr= class="definition">-->
@@ -4310,7 +4339,7 @@
     
     <!-- div attr= class="example"-->
           <p>
-             Consider the matrix <me>A = \mat[1&amp;2&amp;-6\\2&amp;9&amp;8\\-6&amp;8&amp;-1] \in M_{3\by 3}(\R).</me> As in we may construct a bilinear form <me>B_A:\R^3\times \R^3\to \R, \quad B_A(\u,\v)=\u^TA\v.</me> which determines a quadratic function by the formula <m>Q(\v)=B(\v,\v)=\v^tA\v</m> for all <m>\v\in\R^3</m>. The matrix of <m>B</m> with respect to the standard basis <m>D=\{\e_1,\e_2,\e_3\}</m> is <m>[B]_D=A</m>. Let <m>\v=(x,y,z)</m>. Then <me>Q(x,y,z)=\begin{bmatrix} x &amp; y&amp; z \end{bmatrix}  \mat[1&amp;2&amp;-6\\2&amp;9&amp;8\\-6&amp;8&amp;-1]\begin{bmatrix} x \\ y \\ z \end{bmatrix}=x^2 + 9y^2 - z^2 + 4xy - 12xz + 16yz.</me>
+             Consider the matrix <me>A = \begin{bmatrix} 1&amp;2&amp;-6\\2&amp;9&amp;8\\-6&amp;8&amp;-1 \end{bmatrix} \in M_{3\by 3}(\R).</me> As in we may construct a bilinear form <me>B_A:\R^3\times \R^3\to \R, \quad B_A(\u,\v)=\u^TA\v.</me> which determines a quadratic function by the formula <m>Q(\v)=B(\v,\v)=\v^tA\v</m> for all <m>\v\in\R^3</m>. The matrix of <m>B</m> with respect to the standard basis <m>D=\{\e_1,\e_2,\e_3\}</m> is <m>[B]_D=A</m>. Let <m>\v=(x,y,z)</m>. Then <me>Q(x,y,z)=\begin{bmatrix} x &amp; y&amp; z \end{bmatrix}  \begin{bmatrix} 1&amp;2&amp;-6\\2&amp;9&amp;8\\-6&amp;8&amp;-1 \end{bmatrix}\begin{bmatrix} x \\ y \\ z \end{bmatrix}=x^2 + 9y^2 - z^2 + 4xy - 12xz + 16yz.</me>
           </p>
     
           <p>
@@ -4323,9 +4352,9 @@
           </p>
     
           <p>
-            This procedure of completing the square allows us to express any quadratic function on <m>\R^n</m> as a linear combination of squares of linear expressions. What this amounts to is that if we had taken a different basis <m>\set{\v_1,\v_2,\v_3}</m> for <m>\R^3</m> with the property that <me>(x,y,z) = (x+2y-6z) \v_1 + (y+4z) \v_2 + z \v_3,</me> then that basis<fn>			<p>
+            This procedure of completing the square allows us to express any quadratic function on <m>\R^n</m> as a linear combination of squares of linear expressions. What this amounts to is that if we had taken a different basis <m>\set{\v_1,\v_2,\v_3}</m> for <m>\R^3</m> with the property that <me>(x,y,z) = (x+2y-6z) \v_1 + (y+4z) \v_2 + z \v_3,</me> then that basis<fn>
             <m>\v_1=(1,0,0), \v_2=(-2,1,0),\v_3=(14,-4,1)</m>
-          </p></fn> would have the property that <m>Q(a\v_1+b\v_2+c\v_3) = a^2+5b^2-117c^2</m>. For the purposes of understanding <m>Q</m> this would be a much better basis. By choosing a different basis <m>D'=\set{\v_1,\v_2,\v_3}</m> we changed the matrix of <m>B</m> to <me>[B]_{D'}=   \mat[1&amp;0&amp;0\\0&amp;5&amp;0\\0&amp;0&amp;-117].</me> With respect to the basis <m>D''=\set{\v_1,\v_2/\sqrt5,\v_3/\sqrt{117}}</m> we have the matrix <me>[B]_{D''}=  \mat[1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;-1].</me>
+          </fn> would have the property that <m>Q(a\v_1+b\v_2+c\v_3) = a^2+5b^2-117c^2</m>. For the purposes of understanding <m>Q</m> this would be a much better basis. By choosing a different basis <m>D'=\set{\v_1,\v_2,\v_3}</m> we changed the matrix of <m>B</m> to <me>[B]_{D'}=   \begin{bmatrix} 1&amp;0&amp;0\\0&amp;5&amp;0\\0&amp;0&amp;-117 \end{bmatrix}.</me> With respect to the basis <m>D''=\set{\v_1,\v_2/\sqrt5,\v_3/\sqrt{117}}</m> we have the matrix <me>[B]_{D''}=  \begin{bmatrix} 1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;-1 \end{bmatrix}.</me>
           </p><!--</div attr= class="example">-->
     
           <p>
@@ -4660,7 +4689,7 @@
                  &amp;\vdots \\
         \alpha x_n +  \beta &amp;= y_n.
         \end{cases}
-    \end{aligned}</me> If we write <m>M</m> for the matrix <me>M=  \mat[x_1&amp;1\\x_2&amp;1\\\vdots&amp;\vdots\\x_N&amp;1]</me> we can write the system above in matrix form as given below <me>\label{eq:regression}
+    \end{aligned}</me> If we write <m>M</m> for the matrix <me>M=  \begin{bmatrix} x_1&amp;1\\x_2&amp;1\\\vdots&amp;\vdots\\x_N&amp;1 \end{bmatrix}</me> we can write the system above in matrix form as given below <me>\label{eq:regression}
     M\begin{bmatrix} \alpha \\ \beta \end{bmatrix}= \begin{bmatrix} y_1\\ \vdots \\ y_n \end{bmatrix}.</me>
           </p>
     
@@ -4671,14 +4700,14 @@
     </figure><!--</div attr= class="center">-->
     
           <p>
-            Of course typically it is not possible to solve <xref ref="eq:regression" />, meaning that this system has no solution <m>\alpha, \beta</m> because the points we started with are not actually on any line. So instead we wish to find the nearest thing in terms of minimizing distances. More formally, let's consider the actual <m>y</m>-coordinates of the <m>n</m> points on some line which correspond to <m>x_1, \ldots, x_n</m>. Say these <m>y</m>-values are <m>p_1,\ldots, p_n</m> and set <m>\vv{p}=\begin{bmatrix} p_1\\ \vdots\\ p_n\end{bmatrix}</m>. The vectors we can get in this way are exactly <m>\vv{p}=\alpha\x+\beta = M\col{\alpha \\ \beta}</m>. We are interested in minimizing the distance from <m>\vv{y}</m> to <m>\vv{p}</m>, that is <m>\norm{\vv{y}-\vv{p}}</m>. This is equivalent to minimizing <m>\norm{\vv{y}-\vv{p}}^2</m>.
+            Of course typically it is not possible to solve <xref ref="eq:regression" />, meaning that this system has no solution <m>\alpha, \beta</m> because the points we started with are not actually on any line. So instead we wish to find the nearest thing in terms of minimizing distances. More formally, let's consider the actual <m>y</m>-coordinates of the <m>n</m> points on some line which correspond to <m>x_1, \ldots, x_n</m>. Say these <m>y</m>-values are <m>p_1,\ldots, p_n</m> and set <m>\vv{p}=\begin{bmatrix} p_1\\ \vdots\\ p_n\end{bmatrix}</m>. The vectors we can get in this way are exactly <m>\vv{p}=\alpha\x+\beta = M\begin{bmatrix} \alpha \\ \beta \end{bmatrix}</m>. We are interested in minimizing the distance from <m>\vv{y}</m> to <m>\vv{p}</m>, that is <m>\norm{\vv{y}-\vv{p}}</m>. This is equivalent to minimizing <m>\norm{\vv{y}-\vv{p}}^2</m>.
           </p>
     
           <p>
             The least squares problem is then <me>\label{leastsquares}
     \begin{cases}
     \text{ minimize } \norm{\vv{y}-\vv{p}}^2=(y_1-p_1)^2+\cdots +(y_n-p_n)^2\\
-    \text{ subject to } \vv{p}\in \left\{  M\col{\alpha \\ \beta} \mid \alpha, \beta \in \R \right\}=:U.
+    \text{ subject to } \vv{p}\in \left\{  M\begin{bmatrix} \alpha \\ \beta \end{bmatrix} \mid \alpha, \beta \in \R \right\}=:U.
     \end{cases}</me>
           </p>
     
@@ -4878,12 +4907,15 @@
           </p><!--</div attr= class="proof">-->
     
           <p>
-            Returning to our example of fitting a straight line to our set <m>\set{(x_i,y_i)}_1^N</m> of points we see that <m>\vv{p}=\proj_{\range(M)}\vv{y}</m> is the closest point in <m>\range(M)</m> to <m>\vv{y}</m>. Thus to solve for <m>\alpha</m> and <m>B</m> we should solve <m>M\col{\alpha \\\beta } = \vv{p}</m>.
+            Returning to our example of fitting a straight line to our set <m>\set{(x_i,y_i)}_1^N</m> of points we see that <m>\vv{p}=\proj_{\range(M)}\vv{y}</m> is the closest point in <m>\range(M)</m> to <m>\vv{y}</m>. Thus to solve for <m>\alpha</m> and <m>B</m> we should solve <m>M\begin{bmatrix} \alpha \\\beta \end{bmatrix} = \vv{p}</m>.
           </p>
     
     <!-- div attr= class="theorem"-->
           <p>
-            The solution to the least squares problem in is <me>\col{\alpha \\ \beta} = (M\trans M)\inv M\trans \vv{y}.</me>
+            The solution to the least squares problem in is 
+            <me>
+              \begin{bmatrix} \alpha \\ \beta \end{bmatrix} = (M\trans M)\inv M\trans \vv{y}.
+            </me>
           </p><!--</div attr= class="theorem">-->
     
     <!-- div attr= class="proof"-->
@@ -4893,13 +4925,13 @@
     
           <p>
             The final piece of the puzzle is the fact that by <xref ref="thm:four_subspaces" /> we know exactly what <m>\range(T)\perp</m> is: it's just <m>\ker(T^*)</m> and over the real numbers <m>T^*(\w)=M^T\w</m>. Thus we can compute as follows using that <m>\vv{y}=\vv{p}+\vv{n}</m> with <m>\vv{n}\in \range(T)\perp</m>. <me>\begin{aligned}
-        M\col{A\\B} &amp;= \vv{p}\\
+        M\begin{bmatrix} A\\B \end{bmatrix} &amp;= \vv{p}\\
             &amp;= \vv{y}-\vv{n}\\
-        M\trans M \col{A\\B} &amp;= M\trans (\vv{y}-\vv{n}) \\
+        M\trans M \begin{bmatrix} A\\B \end{bmatrix}&amp;= M\trans (\vv{y}-\vv{n}) \\
             &amp;= M\trans\vv{y}.
         \intertext{By the previous lemma $M^TM$ is invertible so there is a unique solution}
-        \col{A\\B} &amp;= (M\trans M)\inv M\trans \vv{y}\\
-        \vv{p}= M\col{A\\B} &amp;= M (M\trans M)\inv M\trans \vv{y}.
+        \begin{bmatrix} A\\B \end{bmatrix} &amp;= (M\trans M)\inv M\trans \vv{y}\\
+        \vv{p}= M\begin{bmatrix} A\\B \end{bmatrix} &amp;= M (M\trans M)\inv M\trans \vv{y}.
     \end{aligned}</me>
           </p><!--</div attr= class="proof">-->
 
@@ -4916,20 +4948,27 @@
           <p>
             Here is a theorem we could have proved a long time ago.
           </p>
-    
-    <!-- div attr= class="theorem"-->
-          <p>
-             If <m>V,W</m> are finite dimensional and <m>T:V\to W</m> is linear then there are bases <m>B,B'</m> for <m>V,W</m> respectively such that the matrix of <m>T</m> has the form <me>[T]_B^{B'}=\mat[1\\&amp;1\\&amp;&amp;\ddots\\&amp;&amp;&amp;1&amp;\phantom{0}&amp;\phantom{0}&amp;\phantom{0}\\\\\\]</me> where all entries are <m>0</m> except for <m>r</m> <m>1</m>s on the main diagonal, where <me>r=\rank(T)=\dim(\range(T)).</me>
-          </p><!--</div attr= class="theorem">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
-            We already know the appropriate bases; they are those used in Theorem <xref ref="thm:ranknullity" />. There we took a basis <m>\set{\us[n-r]}</m> for <m>\ker(T)</m>, a basis <m>\set{\ws[r]}</m> for <m>\range(T)</m> and picked preimages <m>\v_i</m> such that <m>T(\v_i)=\w_i</m> for <m>i=1,2,\dots,r</m>. Extend <m>\set{\ws[r]}</m> (arbitrarily) to a basis <m>B'</m> of <m>W</m>, and set <m>B = \set{\vs[r],\us[n-r]}</m>. With respect to these bases the matrix of <m>T</m> has the form above. The fact that <m>T(\v_i)=\w_i</m> gives the first <m>r</m> columns and the fact the <m>T(\u_j)=\0</m> gives the next <m>n-r</m>.
-          </p><!--</div attr= class="proof">-->
-    
-          <p>
-            Though this theorem appears to completely answer the question of the simplest form of the matrix of an linear map (and in a beautiful way) it is actually substantially less valuable than it appears at first sight. The most natural cases of linear maps come from <m>L(V,V)</m>; linear maps from a space to itself. For these we want to think about only one basis for <m>V</m>, that is, we want to have <m>B=B'</m>, and use that basis to express both the input vector <m>\v</m> and the output vector <m>T(\v)</m>. It turns out the simple form in cannot always be achieved for <m>[T]_B^B</m>. This leads us into deeper waters, which we explore in this chapter.
-          </p>
+
+          <theorem xml:id="thm-simple-basis">
+            <statement>
+              <p>
+                If <m>V,W</m> are finite dimensional and <m>T:V\to W</m> is linear then there are bases <m>B,B'</m> for <m>V,W</m> respectively such that the matrix of <m>T</m> has the form 
+                <me>
+                  [T]_B^{B'}=\begin{bmatrix} 1\\&amp;1\\&amp;&amp;\ddots\\&amp;&amp;&amp;1&amp;\phantom{0}&amp;\phantom{0}&amp;\phantom{0}\\\\\\ \end{bmatrix}
+                </me> 
+                where all entries are <m>0</m> except for <m>r</m> <m>1</m>s on the main diagonal, where 
+                <me>
+                  r=\rank(T)=\dim(\range(T)).
+                </me>
+              </p>
+            </statement>
+
+            <proof>
+              <p>
+                We already know the appropriate bases; they are those used in Theorem <xref ref="thm-ranknullity" />. There we took a basis <m>\set{\us[n-r]}</m> for <m>\ker(T)</m>, a basis <m>\set{\ws[r]}</m> for <m>\range(T)</m> and picked preimages <m>\v_i</m> such that <m>T(\v_i)=\w_i</m> for <m>i=1,2,\dots,r</m>. Extend <m>\set{\ws[r]}</m> (arbitrarily) to a basis <m>B'</m> of <m>W</m>, and set <m>B = \set{\vs[r],\us[n-r]}</m>. With respect to these bases the matrix of <m>T</m> has the form above. The fact that <m>T(\v_i)=\w_i</m> gives the first <m>r</m> columns and the fact the <m>T(\u_j)=\0</m> gives the next <m>n-r</m>.
+              </p>
+            </proof>
+          </theorem>
 
         </section>
 
@@ -4939,174 +4978,269 @@
           <p>
             The most general tool we have to help us understand high powers of linear maps is the of eigenvectors.
           </p>
-    
-    <!-- div attr= class="definition"-->
-          <p>
-            For a vector space <m>V</m> we denote <m>L(V,V)</m> the vector space of linear maps <m>T:V\to V</m>. We call such a map a linear <em>operator</em> on <m>V</m>.
-          </p><!--</div attr= class="definition">-->
-    
-    <!-- div attr= class="example"-->
-          <p>
-            The identity map <m>I:V\to V</m>, <m>I(v)=v, \forall v\in V</m> is an element of <m>L(V,V)</m>.
-          </p><!--</div attr= class="example">-->
-    
-    <!-- div attr= class="definition"-->
-          <p>
-            If <m>V</m> is a vector space and <m>T\in L(V,V)</m> then we say that <m>\v\in V\wo\set{\0}</m> is an <em>eigenvector</em> of <m>T</m> if <m>T\v=\l \v</m> for some scalar <m>\l\in\F</m>. If <m>\v</m> is an eigenvector and <m>T\v=\l\v</m> we say that <m>\l</m> is the <em>eigenvalue</em> associated to <m>\v</m>.
-          </p><!--</div attr= class="definition">-->
-    
-    <!-- div attr= class="example"-->
-    <!-- div attr= class="compactenum"-->
-          <p>
-            If <m>V</m> is the vector space of infinitely differentiable functions from <m>\R\to \R</m> and <m>D:V\to V</m> mapping <m>f</m> to <m>f'</m> is the differentiation map then any exponential function <m>f(x) = Ab^x</m> is an eigenvector of <m>D</m> with eigenvalue <m>\ln(b)</m>.
-          </p>
-    
-          <p>
-            Consider the <em>left shift map</em> on <m>\R^\N</m> defined by <me>\begin{aligned}
-                L \colon \R^\N &amp;\to \R^\N \\
-                (a_i)_1^\infty &amp;\mapsto (a_{i+1})_{i=1}^\infty
-            
-    \end{aligned}</me> Again we have that exponential sequences are eigenvectors: if <m>a_i = Ab^{i-1}</m> then <m>(a_i)_1^\infty</m> is an eigenvector with eigenvalue <m>b</m>. Even <m>b=0</m> gives an eigenvector; <m>(1,0,0,\dots)\in \ker(L)</m> and is thus an eigenvector with eigenvalue <m>0</m>.
-          </p><!--</div attr= class="compactenum">--><!--</div attr= class="example">-->
+
+          <definition xml:id="def-linear-operator">
+            <statement>
+              <p>
+                For a vector space <m>V</m> we denote <m>L(V,V)</m> the vector space of linear maps <m>T:V\to V</m>. We call such a map a linear <em>operator</em> on <m>V</m>.
+              </p>
+            </statement>
+          </definition>
+
+          <example xml:id="ex-identity-operator">
+            <p>
+              The identity map <m>I:V\to V</m>, <m>I(v)=v, \forall v\in V</m> is an element of <m>L(V,V)</m>.
+            </p>
+          </example>
+
+          <definition xml:id="def-eigen">
+            <statement>
+              <p>
+                If <m>V</m> is a vector space and <m>T\in L(V,V)</m> then we say that <m>\v\in V\wo\set{\0}</m> is an <em>eigenvector</em> of <m>T</m> if <m>T\v=\l \v</m> for some scalar <m>\l\in\F</m>. If <m>\v</m> is an eigenvector and <m>T\v=\l\v</m> we say that <m>\l</m> is the <em>eigenvalue</em> associated to <m>\v</m>.
+              </p>
+            </statement>
+          </definition>
+
+          <example xml:id="ex-eigen-example">
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    If <m>V</m> is the vector space of infinitely differentiable functions from <m>\R\to \R</m> and <m>D:V\to V</m> mapping <m>f</m> to <m>f'</m> is the differentiation map then any exponential function <m>f(x) = Ab^x</m> is an eigenvector of <m>D</m> with eigenvalue <m>\ln(b)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Consider the <em>left shift map</em> on <m>\R^\N</m> defined by 
+                    <me>\begin{aligned}
+                        L \colon \R^\N &amp;\to \R^\N \\
+                        (a_i)_1^\infty &amp;\mapsto (a_{i+1})_{i=1}^\infty
+                      \end{aligned}
+                    </me> 
+                    Again we have that exponential sequences are eigenvectors: if <m>a_i = Ab^{i-1}</m> then <m>(a_i)_1^\infty</m> is an eigenvector with eigenvalue <m>b</m>. Even <m>b=0</m> gives an eigenvector; <m>(1,0,0,\dots)\in \ker(L)</m> and is thus an eigenvector with eigenvalue <m>0</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </example>
     
           <p>
             The following simple observation is surprisingly important in finding eigenvectors. It shifts the focus of attention away from the eigenvector onto the eigenvalue.
           </p>
-    
-    <!-- div attr= class="lemma"-->
-          <p>
-            For a linear map <m>T\in L(V,V)</m>, the following are equivalent:
-          </p>
-    
-    <!-- div attr= class="compactenum"-->
-          <p>
-            <m>T</m> has an eigenvector with eigenvalue <m>\l\in \F</m>
-          </p>
-    
-          <p>
-            <m>\ker(T-\l I) \not=\set{\0}</m>
-          </p>
-    
-          <p>
-            <m>T-\l I</m> is not injective.
-          </p><!--</div attr= class="compactenum">-->
-    
-          <p>
-            If the vector space <m>V</m> is finite dimensional then the statements above are further equivalent to
-          </p>
-    
-    <!-- div attr= class="compactenum"-->
-          <p>
-            <m>T-\l I</m> is not injective,
-          </p>
-    
-          <p>
-            <m>T-\l I</m> is not surjective.
-          </p><!--</div attr= class="compactenum">--><!--</div attr= class="lemma">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
-            We have <me>T\v = \l\v \quad\iff\quad T\v-\l \v = \0 \quad\iff\quad (T-\l I)\v  = \0 \quad\iff\quad \v\in \ker(T-\l I).</me> This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .
-          </p><!--</div attr= class="proof">-->
-    
-    <!-- div attr= class="example"-->
-          <p>
-            If <me>A = \mat[2&amp;1\\4&amp;-1]</me> then the map <m>T=M_A:\R^2\to \R^2</m> has an eigenvector of eigenvalue <m>\l</m> exactly if the matrix <me>A - \l I = \mat[2-\l&amp;1\\4&amp;-1-\l]</me> has rank less than <m>2</m>. We have a quick way of determining (this is a pun) whether the matrix <m>\mat[a&amp;b\\c&amp;d]</m> has rank less than <m>2</m>. This happens precisely when <m>ad-bc=0</m>. Thus <m>\l</m> is an eigenvalue of <m>T</m> exactly if <me>(2-\l)(-1-\l) - 4 = \l^2 - \l -6 = (\l-3)(\l+2) = 0.</me> Thus the eigenvalues of <m>T</m> are precisely <m>3,-2</m>. To find the corresponding eigenvectors we need to find <m>\ker(T-\l I)</m> for each of <m>\l=3,-2</m>. We have <me>\ker(A-3I) = \ker\mat[-1&amp;1\\4&amp;-4] = \linspan\set{\col{1\\1}} \qquad \ker(A+2I) = \ker\mat[4&amp;1\\4&amp;1] = \linspan\set{\col{1\\-4}}.</me> If we choose the basis <m>B=\{\v,\w\}</m> where <m>\v=\col{1\\1}</m> and <m>\w=\col{1\\-4}</m> then the matrices of <m>T</m> and <m>T^n</m> with respect to this basis are <me>[T]_B^B=    \mat[3&amp;0\\0&amp;-2] \qquad \text{and}  \qquad [T^n]_B^B= \mat[3^n&amp;0\\0&amp;(-2)^n]</me> respectively.
-          </p><!--</div attr= class="example">-->
-    
-    <!-- div attr= class="example"-->
-          <p>
-             Consider the <em>right shift map</em> on <m>\R^\N</m> defined by <me>\begin{aligned}
-            R \colon \R^\N &amp;\to \R^\N \\
-            (a_i)_{i=1}^\infty &amp;\mapsto \left(\begin{cases}
-                a_{i-1} &amp; i \ge 2 \\
-                0       &amp; i = 1
-            \end{cases} \right)_{i=1}^\infty
-        
-    \end{aligned}</me> This map has no eigenvectors. First consider <m>\l\not=0</m> and a solution to <m>R\v=\l\v</m>. If <m>\v=(v_i)_{i=1}^\infty \not=\0</m> then let <m>i</m> be minimal such <m>v_i\not=0</m>. We have <me>0 = (R\v)_i = \l v_i \not=0.</me> This contradiction establishes that <m>\v=\0</m>, or in other words that <m>\l</m> is not a eigenvalue of <m>R</m>. On the other hand if <m>\l=0</m> we'd be looking for <m>\v\in \ker(R)</m>. It is clear however that <m>\ker(R)=\set{\0}</m>; if <m>\v=(v_i)_{i=1}^\infty</m> has <m>v_i\not=0</m> then <m>(R\v)_{i+1} \not= 0</m>.
-          </p><!--</div attr= class="example">-->
+
+          <lemma xml:id="lem-eigen-equivalencies">
+            <statement>
+              <p>
+                For a linear map <m>T\in L(V,V)</m>, the following are equivalent:
+                <ol>
+                  <li>
+                    <p>
+                      <m>T</m> has an eigenvector with eigenvalue <m>\l\in \F</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>\ker(T-\l I) \not=\set{\0}</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>T-\l I</m> is not injective.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+
+              <p>
+                If the vector space <m>V</m> is finite dimensional then the statements above are further equivalent to
+
+                <ol>
+                  <li>
+                    <p>
+                      <m>T-\l I</m> is not injective,
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>T-\l I</m> is not surjective.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </statement>
+
+            <proof>
+              <p>
+                We have <me>T\v = \l\v \quad\iff\quad T\v-\l \v = \0 \quad\iff\quad (T-\l I)\v  = \0 \quad\iff\quad \v\in \ker(T-\l I).</me> This shows the equivalence of 1. and 2. For 2. and 3., see . For the equivalence of 3., 4., and 5. see .
+              </p>
+            </proof>
+          </lemma>
+
+          <example xml:id="ex-eigen-example-1">
+            <p>
+              If 
+              <me>
+                A = \begin{bmatrix} 2&amp;1\\4&amp;-1 \end{bmatrix}
+              </me> 
+              then the map <m>T=M_A:\R^2\to \R^2</m> has an eigenvector of eigenvalue <m>\l</m> exactly if the matrix 
+              <me>
+                A - \l I = \begin{bmatrix} 2-\l&amp;1\\4&amp;-1-\l \end{bmatrix}
+              </me> has rank less than <m>2</m>. We have a quick way of determining (this is a pun) whether the matrix <m> \begin{bmatrix} a&amp;b\\c&amp;d \end{bmatrix}</m> has rank less than <m>2</m>. This happens precisely when <m>ad-bc=0</m>. Thus <m>\l</m> is an eigenvalue of <m>T</m> exactly if 
+              <me>
+                (2-\l)(-1-\l) - 4 = \l^2 - \l -6 = (\l-3)(\l+2) = 0.
+              </me> 
+              Thus the eigenvalues of <m>T</m> are precisely <m>3,-2</m>. To find the corresponding eigenvectors we need to find <m>\ker(T-\l I)</m> for each of <m>\l=3,-2</m>. We have 
+              <me>
+                \begin{aligned}
+                \ker(A-3I) &amp;= \ker\begin{bmatrix} -1&amp;1\\4&amp;-4 \end{bmatrix} = \Span\left\{\begin{bmatrix} 1\\1 \end{bmatrix}\right\} \\
+                \ker(A+2I) &amp;= \ker\begin{bmatrix} 4&amp;1\\4&amp;1 \end{bmatrix} = \Span\left\{\begin{bmatrix} 1\\-4 \end{bmatrix}\right\}.
+                \end{aligned}
+              </me> 
+              If we choose the basis <m>B=\{\v,\w\}</m> where <m>\v=\begin{bmatrix} 1\\1 \end{bmatrix}</m> and <m>\w=\begin{bmatrix} 1\\-4 \end{bmatrix}</m> then the matrices of <m>T</m> and <m>T^n</m> with respect to this basis are 
+              <me>
+                [T]_B^B= \begin{bmatrix} 3&amp;0\\0&amp;-2 \end{bmatrix} \qquad \text{and}  \qquad [T^n]_B^B= \begin{bmatrix} 3^n&amp;0\\0&amp;(-2)^n \end{bmatrix}
+              </me> respectively.
+            </p>
+          </example>
+          
+          <example xml:id="ex-right-shift">
+            <p>
+              Consider the <em>right shift map</em> on <m>\R^\N</m> defined by 
+              <me>
+                \begin{aligned}
+                  R \colon \R^\N &amp;\to \R^\N \\
+                  (a_i)_{i=1}^\infty &amp;\mapsto \left(\begin{cases}
+                  a_{i-1} &amp; i \ge 2 \\
+                  0       &amp; i = 1
+                \end{cases} \right)_{i=1}^\infty
+                \end{aligned}
+              </me> This map has no eigenvectors. First consider <m>\l\not=0</m> and a solution to <m>R\v=\l\v</m>. If <m>\v=(v_i)_{i=1}^\infty \not=\0</m> then let <m>i</m> be minimal such <m>v_i\not=0</m>. We have <me>0 = (R\v)_i = \l v_i \not=0.</me> This contradiction establishes that <m>\v=\0</m>, or in other words that <m>\l</m> is not a eigenvalue of <m>R</m>. On the other hand if <m>\l=0</m> we'd be looking for <m>\v\in \ker(R)</m>. It is clear however that <m>\ker(R)=\set{\0}</m>; if <m>\v=(v_i)_{i=1}^\infty</m> has <m>v_i\not=0</m> then <m>(R\v)_{i+1} \not= 0</m>.
+           </p>
+          </example>
     
           <p>
             To compute eigenvalues it is very helpful to endow the vector space <m>L(V,V)</m> with extra structure.
           </p>
     
-    <!-- div attr= class="proposition"-->
-          <p>
-            Given a vector space <m>V</m> over a field <m>\F</m>, the set <me>L(V,V)=\{T:V\to V \mid T \text{ linear} \}</me> endowed with the operations of addition <m>(T+S)(\v)=T(\v)+S(\v)</m>, scalar multiplication <m>(\l T)(\v)=\lT(\v)</m>, and composition <m>(T\circ S)(\v)=T(S(\v))</m> (written from now on as multiplication <m>TS</m>) is a <m>\F</m>-<em>algebra</em> meaning that it satisfies:
-          </p>
-    
-    <!-- div attr= class="compactenum"-->
-          <p>
-            <m>L(V,V)</m> with its addition and scalar multiplication is a <m>\F</m>-vector space
-          </p>
-    
-          <p>
-            Composition is associative: <m>A (B C) = (AB)C</m> for all <m>A, B,C\in L(V,V)</m>
-          </p>
-    
-          <p>
-            Composition distributes over addition: <m>A(B+C) = AB+AC</m> and <m>(A+B)C = AC+BC</m> for all <m>A,B,C\in L(V,V)</m>
-          </p>
-    
-          <p>
-            Composition respects scalar multiplication: <m>(\l A)(\mu B) = (\l\mu) AB</m> for all <m>\l,\mu\in \F</m>, <m>A,B\in L(V,V)</m>.
-          </p><!--</div attr= class="compactenum">--><!--</div attr= class="proposition">-->
-    
-    <!-- div attr= class="definition"-->
-          <p>
-            Given any <m>T\in L(V,V)</m> and any polynomial <m>p\in \F[X], p(x)=a_0+a_1X+a_2X^2+\cdots a_dX^d</m> we can sensibly define <m>p(T)\in L(V,V)</m> in the following way: for <m>n\geq 0</m> set <m>T^n=T\circ T\circ \cdots \circ T</m> (<m>n</m> times) and define <me>p(T)=a_0+a_1T+a_2T^2+\cdots a_dT^d.</me>
-          </p><!--</div attr= class="definition">-->
-    
+          <proposition>
+            <statement>
+              <p>
+                Given a vector space <m>V</m> over a field <m>\F</m>, the set 
+                <me>
+                  L(V,V)=\{T:V\to V \mid T \text{ linear} \}
+                </me> 
+                endowed with the operations of addition <m>(T+S)(\v)=T(\v)+S(\v)</m>, scalar multiplication <m>(\l T)(\v)=\l T(\v)</m>, and composition <m>(T\circ S)(\v)=T(S(\v))</m> (written from now on as multiplication <m>TS</m>) is a <m>\F</m>-<em>algebra</em> meaning that it satisfies:
+                <ol>
+                  <li>
+                    <p>
+                      <m>L(V,V)</m> with its addition and scalar multiplication is a <m>\F</m>-vector space
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Composition is associative: <m>A (B C) = (AB)C</m> for all <m>A, B,C\in L(V,V)</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Composition distributes over addition: <m>A(B+C) = AB+AC</m> and <m>(A+B)C = AC+BC</m> for all <m>A,B,C\in L(V,V)</m>
+                    </p>
+                  </li>
+                  
+                  <li>
+                    <p>
+                      Composition respects scalar multiplication: <m>(\l A)(\mu B) = (\l\mu) AB</m> for all <m>\l,\mu\in \F</m>, <m>A,B\in L(V,V)</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </statement>
+          </proposition>
+
+          <definition>
+            <statement>
+              <p>
+                Given any <m>T\in L(V,V)</m> and any polynomial <m>p\in \F[X], p(x)=a_0+a_1X+a_2X^2+\cdots a_dX^d</m> we can sensibly define <m>p(T)\in L(V,V)</m> in the following way: for <m>n\geq 0</m> set <m>T^n=T\circ T\circ \cdots \circ T</m> (<m>n</m> times) and define <me>p(T)=a_0+a_1T+a_2T^2+\cdots a_dT^d.</me>
+              </p>
+            </statement>
+          </definition>
+
           <p>
             A very important fact about polynomials in <m>\C[X]</m> is the following.
           </p>
-    
-    <!-- div attr= class="theorem"-->
-          <p>
-            Any monic polynomial <m>p(X)\in \C[X]</m> of degree <m>k\geq 1</m> factors into linear factors; there exist <m>\l_1, \l_2, \ldots, \l_k</m> such that <me>p(X) = (X -\l_1)(X - \l_2) \cdots (X - \l_k).</me>
-          </p><!--</div attr= class="theorem">-->
+
+          <theorem xml:id="thm-fta">
+            <title>The Fundamental Theorem of Algebra</title>
+            
+            
+            <statement>
+              <p>
+                Any monic polynomial <m>p(X)\in \C[X]</m> of degree <m>k\geq 1</m> factors into linear factors; there exist <m>\l_1, \l_2, \ldots, \l_k</m> such that <me>p(X) = (X -\l_1)(X - \l_2) \cdots (X - \l_k).</me>
+              </p>
+            </statement>
+          </theorem>
     
           <p>
             The following theorem begins to explore the connection between eigenvalues of <m>T</m> and polynomials satisfied by <m>T</m>.
           </p>
-    
-    <!-- div attr= class="theorem"-->
-          <p>
-             If <m>V</m> is an <m>n</m>-dimensional <m>\C</m>-vector space and <m>T\in L(V,V)</m> then <m>T</m> has an eigenvector.
-          </p><!--</div attr= class="theorem">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
-            Since <m>\dim L(V,V) = n^2</m> the set <me>\set{I,T,T^2,\dots,T^{n^2}}</me> is linearly dependent. In other words there are scalars <m>(\mu_i)_{i=0}^k</m> with (without loss of generality) <m>\mu_k=1</m> such that <me>\sum_{i=0}^k \mu_i T^i = \0 \in L(V,V).</me> Consider then the polynomial <m>p = \sum_{i=0}^k \mu_i X^i \in \C[X]</m>. All monic polynomials (of degree at least <m>1</m>) over <m>\C</m> factor into linear factors; there exist <m>\l_1,\l_2,\dots,\l_k</m> such that <me>p = (X-\l_1)(X-\l_2)\dots(X-\l_k).</me> Thus <me>p(T) = (T-\l_1 I)(T-\l_2 I)\dots(T-\l_k I) = \0</me> Now if <m>\v</m> is <em>any</em> non-zero vector in <m>V</m> we have <m>p(T)\v=\0</m>. Let <m>j</m> be minimal such that <me>\w = (T-\l_{j+1} I)(T-\l_{j+2}I)\dots(T-\l_k I) \v \not= \0.</me> (Note that we might have <m>j=k</m>, but certainly <m>j&gt;0</m>.) Then by the minimality of <m>j</m> we have <me>(T-\l_{j}I) \w = \0,</me> so <m>\w</m> is an eigenvector of <m>T</m>, and <m>\l_{j}</m> is the corresponding eigenvalue.
-          </p><!--</div attr= class="proof">-->
-    
+
+          <theorem xml:id="thm-C-evec">
+            <statement>
+              <p>
+                If <m>V</m> is an <m>n</m>-dimensional <m>\C</m>-vector space and <m>T\in L(V,V)</m> then <m>T</m> has an eigenvector.
+              </p>
+            </statement>
+
+            <proof>
+              <p>
+                Since <m>\dim L(V,V) = n^2</m> the set <me>\set{I,T,T^2,\dots,T^{n^2}}</me> is linearly dependent. In other words there are scalars <m>(\mu_i)_{i=0}^k</m> with (without loss of generality) <m>\mu_k=1</m> such that <me>\sum_{i=0}^k \mu_i T^i = \0 \in L(V,V).</me> Consider then the polynomial <m>p = \sum_{i=0}^k \mu_i X^i \in \C[X]</m>. All monic polynomials (of degree at least <m>1</m>) over <m>\C</m> factor into linear factors; there exist <m>\l_1,\l_2,\dots,\l_k</m> such that <me>p = (X-\l_1)(X-\l_2)\dots(X-\l_k).</me> Thus <me>p(T) = (T-\l_1 I)(T-\l_2 I)\dots(T-\l_k I) = \0</me> Now if <m>\v</m> is <em>any</em> non-zero vector in <m>V</m> we have <m>p(T)\v=\0</m>. Let <m>j</m> be minimal such that <me>\w = (T-\l_{j+1} I)(T-\l_{j+2}I)\dots(T-\l_k I) \v \not= \0.</me> (Note that we might have <m>j=k</m>, but certainly <m>j&gt;0</m>.) Then by the minimality of <m>j</m> we have <me>(T-\l_{j}I) \w = \0,</me> so <m>\w</m> is an eigenvector of <m>T</m>, and <m>\l_{j}</m> is the corresponding eigenvalue.
+              </p>
+            </proof>
+          </theorem>
+          
           <p>
             It is quite possible, as the following example shows, to have an operator on <m>\C^n</m> with only one eigenvector (up to scalar multiples).
           </p>
-    
-    <!-- div attr= class="example"-->
-          <p>
-             Consider the map (whose matrix with respect to the usual basis has <m>1</m>s on the diagonal immediately above the main diagonal and <m>0</m>s everywhere else) <me>\begin{aligned}
-            S \colon \C^n &amp;\to \C^n \\
-            (a_i)_1^{n} &amp;\mapsto \left( \begin{cases}
+
+          <example xml:id="ex-nilpotent">
+            <p>
+              Consider the map (whose matrix with respect to the usual basis has <m>1</m>s on the diagonal immediately above the main diagonal and <m>0</m>s everywhere else) 
+              <me>
+                \begin{aligned}
+                S \colon \C^n &amp;\to \C^n \\
+                (a_i)_1^{n} &amp;\mapsto \left( \begin{cases}
                 a_{i+1} &amp; i &lt; n \\
                 0 &amp; i=n .
-            \end{cases} \right)_{i=1}^n
-        
-    \end{aligned}</me> The action of <m>S</m> on the basis vectors <m>\e_1,\e_2,\dots,\e_n</m> is to map <me>\e_n\mapsto \e_{n-1} \mapsto \e_{n-2} \mapsto \dots \mapsto \e_2 \mapsto \e_1 \mapsto \0.</me> Clearly <m>\e_1=(1,0,\dots,0)</m> is an eigenvector with eigenvalue <m>0</m>. The only eigenvectors of <m>S</m> are multiples of <m>\e_1</m>. To see this note that, by an argument precisely analogous to that in <xref ref="ex:right_shift" />, there are no non-zero eigenvalues. If <m>\v=(v_i)_1^n\in \ker(S)</m> then <m>S\v = \0</m> implies <m>v_2=v_3=\dots=v_n=0</m>; in other words <m>\ker(S)=\linspan(\e_1)</m>.
-          </p><!--</div attr= class="example">-->
-    
+                \end{cases} \right)_{i=1}^n   
+                \end{aligned}
+              </me> 
+              The action of <m>S</m> on the basis vectors <m>\e_1,\e_2,\dots,\e_n</m> is to map 
+              <me>
+                \e_n\mapsto \e_{n-1} \mapsto \e_{n-2} \mapsto \dots \mapsto \e_2 \mapsto \e_1 \mapsto \0.
+              </me> 
+              Clearly <m>\e_1=(1,0,\dots,0)</m> is an eigenvector with eigenvalue <m>0</m>. The only eigenvectors of <m>S</m> are multiples of <m>\e_1</m>. To see this note that, by an argument precisely analogous to that in <xref ref="ex-right-shift" />, there are no non-zero eigenvalues. If <m>\v=(v_i)_1^n\in \ker(S)</m> then <m>S\v = \0</m> implies <m>v_2=v_3=\dots=v_n=0</m>; in other words <m>\ker(S)=\linspan(\e_1)</m>.
+           </p>
+          </example>
+
           <p>
-            We are not able, in light of <xref ref="ex:nilpotent" />, to prove that every linear map <m>T:V\to V</m> on a finite dimensional <m>\C</m>-vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.
+            We are not able, in light of <xref ref="ex-nilpotent" />, to prove that every linear map <m>T:V\to V</m> on a finite dimensional <m>\C</m>-vector space is diagonalizable. The closest we can come in general is a situation somewhat similar to that example.
           </p>
-    
-    <!-- div attr= class="theorem"-->
-          <p>
-            If <m>V</m> is a finite-dimensional <m>\C</m>-vector space and <m>T\in L(V,V)</m> then <m>V</m> has a basis <m>\set{\vs}</m> with respect to which the matrix of <m>T</m> is upper triangular.
-          </p><!--</div attr= class="theorem">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
+
+          <theorem>
+            <statement>
+              <p>
+                If <m>V</m> is a finite-dimensional <m>\C</m>-vector space and <m>T\in L(V,V)</m> then <m>V</m> has a basis <m>\set{\vs}</m> with respect to which the matrix of <m>T</m> is upper triangular.
+              </p>
+            </statement>
+
+            <proof>
+              <p>
             The result is trivially true for <m>\dim(V)=1</m>. Suppose then that <m>\dim(V)&gt;1</m>. Let <m>\v_1</m> be an eigenvector of <m>T</m> with eigenvalue <m>\l</m> and set <m>W=\linspan\set{\v_1}</m>. Consider the map <me>\begin{aligned}
             \tilde{T}\colon V/W &amp;\to V/W \\
             \v+W &amp;\mapsto T\v+W
@@ -5117,32 +5251,42 @@
             T\v_j &amp;= a_{1j}\v_1 + \sum_{i=2}^n a_{ij} \v_i.
         
     \end{aligned}</me> Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of <m>\tilde{T}</m> is upper triangular, we have that the matrix of <m>T</m> is upper triangular.
-          </p><!--</div attr= class="proof">-->
-    
-    <!-- div attr= class="theorem"-->
-          <p>
-             If <m>T:V\to V</m> is linear and <m>\vs[k]</m> are eigenvectors with corresponding distinct eigenvalues <m>\ls[k]</m> then the <m>\v_i</m> are linearly independent.
-          </p><!--</div attr= class="theorem">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
-            If there are non-trivial linear combinations of the <m>\v_i</m> that are zero take one, say <m>\sum_1^k \mu_i \v_i = \0</m>, with the fewest possible non-zero coefficients. Without loss of generality we may suppose that <m>\mu_1\not=0</m>. Now apply the linear map <m>T-\l_1I</m>. We have <me>\0 = (T-\l_1I) \sum_1^k \mu_i \v_i = \sum_1^k \mu_i(\l_i-\l_1) \v_i.</me> This linear combination of the <m>\v_i</m> has fewer non-zero coefficients than the original (since the coefficient of <m>\v_1</m> is now <m>0</m>) so all the coefficients must be <m>0</m>. But then all of the original coefficients must have been <m>0</m> except <m>\mu_1</m>. But <m>\mu_1\v_1\not= \0</m> since <m>\mu_1\not=0</m> and <m>\v_1\not=\0</m> (it is an eigenvector). This contradiction proves that the <m>\v_i</m> are linearly independent.
-          </p><!--</div attr= class="proof">-->
-    
+          </p>
+            </proof>
+          </theorem>
+
+          <theorem xml:id="thm-distinct">
+            <statement>
+              <p>
+                If <m>T:V\to V</m> is linear and <m>\vs[k]</m> are eigenvectors with corresponding distinct eigenvalues <m>\ls[k]</m> then the <m>\v_i</m> are linearly independent.
+              </p>
+            </statement>
+
+            <proof>
+              <p>
+                If there are non-trivial linear combinations of the <m>\v_i</m> that are zero take one, say <m>\sum_1^k \mu_i \v_i = \0</m>, with the fewest possible non-zero coefficients. Without loss of generality we may suppose that <m>\mu_1\not=0</m>. Now apply the linear map <m>T-\l_1I</m>. We have <me>\0 = (T-\l_1I) \sum_1^k \mu_i \v_i = \sum_1^k \mu_i(\l_i-\l_1) \v_i.</me> This linear combination of the <m>\v_i</m> has fewer non-zero coefficients than the original (since the coefficient of <m>\v_1</m> is now <m>0</m>) so all the coefficients must be <m>0</m>. But then all of the original coefficients must have been <m>0</m> except <m>\mu_1</m>. But <m>\mu_1\v_1\not= \0</m> since <m>\mu_1\not=0</m> and <m>\v_1\not=\0</m> (it is an eigenvector). This contradiction proves that the <m>\v_i</m> are linearly independent.
+              </p>
+            </proof>
+          </theorem>
+          
           <p>
             The following corollary says that sometimes this is enough to show that <m>T</m> is diagonalizable.
           </p>
-    
-    <!-- div attr= class="corollary"-->
-          <p>
-            Suppose that <m>T:V\to V</m> is linear and that <m>V</m> has dimensional <m>n&lt;\infty</m>. If <m>T</m> has <m>n</m> distinct eigenvalues <m>\ls</m> then <m>T</m> is diagonalizable.
-          </p><!--</div attr= class="corollary">-->
-    
-    <!-- div attr= class="proof"-->
-          <p>
-            Let <m>B = \set{\vs}</m> where each <m>\v_i</m> is an eigenvector with eigenvalue <m>\l_i</m>. By <xref ref="thm:distinct" /> we know <m>B</m> is linearly independent, and since it has the correct size it must be a basis.
-          </p><!--</div attr= class="proof">-->
-    
+
+          <corollary>
+            <statement>
+              <p>
+                Suppose that <m>T:V\to V</m> is linear and that <m>V</m> has dimensional <m>n&lt;\infty</m>. If <m>T</m> has <m>n</m> distinct eigenvalues <m>\ls</m> then <m>T</m> is diagonalizable.
+              </p>
+            </statement>
+
+            <proof>
+              <p>
+                Let <m>B = \set{\vs}</m> where each <m>\v_i</m> is an eigenvector with eigenvalue <m>\l_i</m>. By <xref ref="thm:distinct" /> we know <m>B</m> is linearly independent, and since it has the correct size it must be a basis.
+              </p>
+            </proof>
+          </corollary>
+
           <p>
             We have seen a few ways of looking for eigenvalues. Considering <m>ad-bc</m> worked well for <m>2\by 2</m> matrices. We can find eigenvalues for <m>T:\C^n\to \C^n</m> also by solving polynomial equations. We will turn now to an alternative avenue.
           </p>

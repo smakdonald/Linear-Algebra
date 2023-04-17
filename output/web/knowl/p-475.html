@@ -11,15 +11,54 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(T_i\)</span> be a one-dimensional vector space over <span class="process-math">\(\R\)</span> whose basis vector we call <span class="process-math">\(X^i\text{.}\)</span> In short <span class="process-math">\(T_i=\R X^i\text{.}\)</span> Then we have</div>
+<div class="para">We start with the basis <span class="process-math">\(\b_1=1, \b_2=X, \b_3=X^2\text{.}\)</span> Then we set</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\R[X] = \Dsum_{i=0}^\infty T_i.
+\v_1=\frac{\b_1}{\norm{\b_1}}=1.
 \end{equation*}
 </div>
+<div class="para">Further</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{\v}_2=\b_2-\langle \b_2, \v_1\rangle \cdot \v_1= X-  \definite X dx{0}1 \cdot 1=X-\frac{1}{2},
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-direct-sums.html#p-475" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+\norm{\hat{\v}_2}= \definite( X-\frac{1}{2})^2dx{0}1=\frac{1}{3} (X-\frac{1}{2})^3\mid_0^1=\frac{1}{12},
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\v_2=\sqrt{12}(X-\frac{1}{2}).
+\end{equation*}
+</div>
+<div class="para">In the next step we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\hat{\v}_3 &amp;=&amp; \b_3-\langle \b_3, \v_1\rangle \cdot \v_1 - \langle \b_3, \v_2\rangle \cdot \v_2\\
+&amp;=&amp; X^2-  \definite X^2 dx{0}1 \cdot 1 - \definite X^2 \sqrt{12}(X-\frac{1}{2}) dx{0}1 \cdot \sqrt{12}(X-\frac{1}{2})\\
+&amp;=&amp;X^2-\frac{1}{3}-12 \definite (X^3-\frac{1}{2}X^2) dx{0}1 \cdot (X-\frac{1}{2})\\
+&amp;=&amp;X^2-\frac{1}{3}- (X-\frac{1}{2})=X^2-X+\frac{1}{6}.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\norm{\hat{\v}_3}=180
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\v_3=\sqrt{180}(X^2-X+\frac{1}{6}).
+\end{equation*}
+</div>
+<div class="para">The desired <span class="process-math">\(ONB\)</span> is <span class="process-math">\(\{1, \sqrt{12}(X-\frac{1}{2}), \sqrt{180}(X^2-X+\frac{1}{6})\}\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-475" class="internal">in-context</a></span>
 </body>
 </html>

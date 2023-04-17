@@ -12,7 +12,21 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">We can give an algebraic version of the Rank-Nullity Theorem that says more than the equality of two numbers; it gives the isomorphism of two vector spaces.</div>
-<span class="incontext"><a href="sec-quotients.html#p-509" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Consider the vector spaces <span class="process-math">\(\C^n\)</span> and <span class="process-math">\(\C^m\)</span> with their standard inner product . The adjoint of the linear map <span class="process-math">\(M_A:\C^n\to \C^m, M_A(\x)=A\x\)</span> is the linear map <span class="process-math">\(M_{A^*}:\C^m\to \C^n, M_{A^*}:(\x)=A^*\x\text{.}\)</span> To see this note that for <span class="process-math">\(\v\in \C^n\)</span> and <span class="process-math">\(\w\in \C^m\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\ip{M_A(\v),\w} &amp;= \ip{A\v,\w} \\
+&amp;= (A\v)\trans \overline{ \w} \\
+&amp;= \v\trans A\trans \overline{ \w}\\
+&amp;= \v\trans \overline{\overline{A\trans}\w}\\
+&amp;= \ip{\v,\overline{A\trans} \w}.
+\end{aligned}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-adjoints.html#p-509" class="internal">in-context</a></span>
 </body>
 </html>

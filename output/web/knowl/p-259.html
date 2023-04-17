@@ -13,13 +13,32 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">All inverses are unique. For <span class="process-math">\(x\in \F\text{,}\)</span> <span class="process-math">\(y\in\F\wo\set{0}\text{,}\)</span> and <span class="process-math">\(\v\in V\)</span> there are unique elements <span class="process-math">\(-x, y\inv \in \F\)</span> and <span class="process-math">\(-\v\in V\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="para">The uniqueness is clear since if <span class="process-math">\(\v\in V\)</span> is written as a linear combination from <span class="process-math">\(B\text{,}\)</span> so <span class="process-math">\(\v =\sum_1^n\l_i \b_i\text{,}\)</span> then we must have that</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-x+(-x) = 0 \qquad y y\inv = 1 \qquad \v+(-\v) = \0.
+\label{eq:Tdef}
+T(\v) = \sum_1^n \l_i T(\b_i) = \sum_1^n \l_i f(\b_i).
+\end{equation*}
+</div>
+<div class="para">Thus to prove existence we simply need to show that (<code class="code-inline tex2jax_ignore">[cross-reference to target(s) "eq:Tdef" missing or not unique]</code>) defines a linear map. Consider <span class="process-math">\(\v,\w\in V\)</span> and <span class="process-math">\(\l,\mu\in \F\text{.}\)</span> We'll need to express <span class="process-math">\(\v,\w\)</span> as linear combinations from <span class="process-math">\(B\text{;}\)</span> let <span class="process-math">\(\set{\vecs{\b}{n}}\)</span> be collection of all vectors from <span class="process-math">\(B\)</span> that appear in either representation. Suppose</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\v = \sum_1^n \l_i \b_i \qquad \w = \sum_1^n \mu_i \b_i.
+\end{equation*}
+</div>
+<div class="para">[Notice that some of the <span class="process-math">\(\l_i,\mu_i\)</span> might be <span class="process-math">\(0\text{.}\)</span>] Now we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\l\v + \mu\w = \sum_1^n (\l\l_i+\mu\mu_i) \b_i,
+\end{equation*}
+</div>
+<div class="para">and this is the unique representation of <span class="process-math">\(\l\v+\mu \w\)</span> using the basis <span class="process-math">\(B\text{,}\)</span> except that some of the <span class="process-math">\(\l\l_i+\mu\mu_i\)</span> might be <span class="process-math">\(0\text{.}\)</span> Thus</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+T(\l\v+\mu \w) = \sum_1^n (\l\l_i+\mu\mu_i) f(\b_i) = \l\sum_1^n \l_i f(\b_i) + \mu\sum_1^n \mu_i f(\b_i) = \l T(\v)+\mu T(\w).
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec-vector-spaces-again.html#p-259" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-rep-linear-maps-matrices.html#p-259" class="internal">in-context</a></span>
 </body>
 </html>

@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -722,44 +586,44 @@ window.MathJax = {
 <section class="section" id="sec-fields"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Fields</span>
 </h2>
-<div class="para" id="p-211">We start by discussing where our <em class="emphasis">scalars</em> can come from. Scalars are the numbers that we use to scale vectors. So far we have used only real numbers for our scalars. But there are other possibilities.</div>
+<div class="para" id="p-62">We start by discussing where our <em class="emphasis">scalars</em> can come from. Scalars are the numbers that we use to scale vectors. So far we have used only real numbers for our scalars. But there are other possibilities.</div>
 <article class="definition definition-like" id="def-field"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-212">A <em class="emphasis">field</em> is a collection of objects (that we think of as numbers) that satisfy the same algebraic properties as <span class="process-math">\(\R\)</span> with respect to multiplication and addition.</div> <div class="para" id="p-213">Here then is an explicit list of what we require in order to say that a collection of numbers, equipped with definitions of <span class="process-math">\(+\)</span> and <span class="process-math">\(\times\text{,}\)</span> is a field:</div> <div class="para" id="p-214">A <em class="emphasis">field</em> is a set <span class="process-math">\(\F\)</span> (that we think of as numbers) together with definitions of <span class="process-math">\(+\)</span> and <span class="process-math">\(\times\)</span> (in other words, together with functions <span class="process-math">\(+,\times:\F\times \F \to \F\)</span>) such all the following properties hold:</div> <div class="para logical" id="p-215"><ol class="decimal">
-<li id="li-4"><div class="para" id="p-216">Addition is commutative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x+y=y+x\)</span>
+<div class="para" id="p-63">A <em class="emphasis">field</em> is a collection of objects (that we think of as numbers) that satisfy the same algebraic properties as <span class="process-math">\(\R\)</span> with respect to multiplication and addition.</div> <div class="para" id="p-64">Here then is an explicit list of what we require in order to say that a collection of numbers, equipped with definitions of <span class="process-math">\(+\)</span> and <span class="process-math">\(\times\text{,}\)</span> is a field:</div> <div class="para" id="p-65">A <em class="emphasis">field</em> is a set <span class="process-math">\(\F\)</span> (that we think of as numbers) together with definitions of <span class="process-math">\(+\)</span> and <span class="process-math">\(\times\)</span> (in other words, together with functions <span class="process-math">\(+,\times:\F\times \F \to \F\)</span>) such all the following properties hold:</div> <div class="para logical" id="p-66"><ol class="decimal">
+<li id="li-4"><div class="para" id="p-67">Addition is commutative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x+y=y+x\)</span>
 </div></li>
-<li id="li-5"><div class="para" id="p-217">Addition is associative: for all <span class="process-math">\(x, y, z\in \F\)</span> we have <span class="process-math">\(x+(y+z) = (x+y)+z\)</span>
+<li id="li-5"><div class="para" id="p-68">Addition is associative: for all <span class="process-math">\(x, y, z\in \F\)</span> we have <span class="process-math">\(x+(y+z) = (x+y)+z\)</span>
 </div></li>
-<li id="li-6"><div class="para" id="p-218">There is an additive identity: there is a special number <span class="process-math">\(0\in \F\)</span> such that for all <span class="process-math">\(x\in \F\)</span> we have <span class="process-math">\(0+x = x\)</span>
+<li id="li-6"><div class="para" id="p-69">There is an additive identity: there is a special number <span class="process-math">\(0\in \F\)</span> such that for all <span class="process-math">\(x\in \F\)</span> we have <span class="process-math">\(0+x = x\)</span>
 </div></li>
-<li id="li-7"><div class="para" id="p-219">There are additive inverses: for all <span class="process-math">\(x\in \F\)</span> there is an element that we denote <span class="process-math">\(-x\)</span> such that <span class="process-math">\(x+(-x)=0\text{.}\)</span>
+<li id="li-7"><div class="para" id="p-70">There are additive inverses: for all <span class="process-math">\(x\in \F\)</span> there is an element that we denote <span class="process-math">\(-x\)</span> such that <span class="process-math">\(x+(-x)=0\text{.}\)</span>
 </div></li>
-</ol></div> <div class="para logical" id="p-220"><ol class="decimal">
-<li id="li-8"><div class="para" id="p-221">Multiplication is commutative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x y=y x\)</span>
+</ol></div> <div class="para logical" id="p-71"><ol class="decimal">
+<li id="li-8"><div class="para" id="p-72">Multiplication is commutative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x y=y x\)</span>
 </div></li>
-<li id="li-9"><div class="para" id="p-222">Multiplication is associative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x(y z)=(x y)z\)</span>
+<li id="li-9"><div class="para" id="p-73">Multiplication is associative: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x(y z)=(x y)z\)</span>
 </div></li>
-<li id="li-10"><div class="para" id="p-223">There is a multiplicative identity: there is a special number <span class="process-math">\(1\in \F\)</span> such that for all <span class="process-math">\(x\in \F\)</span> we have <span class="process-math">\(1x = x\)</span>
+<li id="li-10"><div class="para" id="p-74">There is a multiplicative identity: there is a special number <span class="process-math">\(1\in \F\)</span> such that for all <span class="process-math">\(x\in \F\)</span> we have <span class="process-math">\(1x = x\)</span>
 </div></li>
-<li id="li-11"><div class="para" id="p-224">There are multiplicative inverse for non-zero numbers: for all <span class="process-math">\(x\in \F\wo\set{0}\)</span> there is an element that we denote <span class="process-math">\(x\inv\)</span> such that <span class="process-math">\(xx\inv=1\)</span>
+<li id="li-11"><div class="para" id="p-75">There are multiplicative inverse for non-zero numbers: for all <span class="process-math">\(x\in \F\wo\set{0}\)</span> there is an element that we denote <span class="process-math">\(x\inv\)</span> such that <span class="process-math">\(xx\inv=1\)</span>
 </div></li>
-</ol></div> <div class="para" id="p-225">If you have seen such things before (and do not worry if you haven't) we're just stating that <span class="process-math">\((\F,+)\)</span> and <span class="process-math">\((\F\wo\set{0},\times)\)</span> are Abelian groups.</div> <div class="para logical" id="p-226"><ol class="decimal">
-<li id="li-12"><div class="para" id="p-227">Multiplication distributes over addition: for all <span class="process-math">\(x, y, z\in \F\)</span> we have <span class="process-math">\(x(y+z) = x y+x z\text{.}\)</span>
+</ol></div> <div class="para" id="p-76">If you have seen such things before (and do not worry if you haven't) we're just stating that <span class="process-math">\((\F,+)\)</span> and <span class="process-math">\((\F\wo\set{0},\times)\)</span> are Abelian groups.</div> <div class="para logical" id="p-77"><ol class="decimal">
+<li id="li-12"><div class="para" id="p-78">Multiplication distributes over addition: for all <span class="process-math">\(x, y, z\in \F\)</span> we have <span class="process-math">\(x(y+z) = x y+x z\text{.}\)</span>
 </div></li>
-<li id="li-13"><div class="para" id="p-228"><span class="process-math">\(\displaystyle 1\not = 0\)</span></div></li>
+<li id="li-13"><div class="para" id="p-79"><span class="process-math">\(\displaystyle 1\not = 0\)</span></div></li>
 </ol></div></article><article class="remark remark-like" id="remark-1"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-229">The fact that the operations of addition and multiplication are functions <span class="process-math">\(+,\times:\F\times \F \to \F\)</span> implicity gives the following additional properties:</div> <div class="para logical" id="p-230"><ol class="decimal">
-<li id="li-14"><div class="para" id="p-231">Closure under addition: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x+y\in \F\text{.}\)</span>
+<div class="para" id="p-80">The fact that the operations of addition and multiplication are functions <span class="process-math">\(+,\times:\F\times \F \to \F\)</span> implicity gives the following additional properties:</div> <div class="para logical" id="p-81"><ol class="decimal">
+<li id="li-14"><div class="para" id="p-82">Closure under addition: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x+y\in \F\text{.}\)</span>
 </div></li>
-<li id="li-15"><div class="para" id="p-232">Closure under addition: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x\times y\in \F\text{.}\)</span>
+<li id="li-15"><div class="para" id="p-83">Closure under addition: for all <span class="process-math">\(x, y\in \F\)</span> we have <span class="process-math">\(x\times y\in \F\text{.}\)</span>
 </div></li>
-</ol></div> <div class="para" id="p-233">The most important examples of fields are <span class="process-math">\(\R\)</span> and <span class="process-math">\(\C\)</span> but there are others that we will seriously consider.</div></article><article class="example example-like" id="example-14"><h3 class="heading">
+</ol></div> <div class="para" id="p-84">The most important examples of fields are <span class="process-math">\(\R\)</span> and <span class="process-math">\(\C\)</span> but there are others that we will seriously consider.</div></article><article class="example example-like" id="example-14"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-234">
+<div class="para logical" id="p-85">
 <div class="para">The <em class="emphasis">complex numbers</em> are the numbers of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -781,13 +645,13 @@ window.MathJax = {
 i^2=i\times i=(0+1i)\times(0+1i)=-1+0i=-1.
 \end{equation*}
 </div>
-</div> <div class="para" id="p-235">We can think of <span class="process-math">\(\R\)</span> as a subset of <span class="process-math">\(\C\)</span> by identifying <span class="process-math">\(r\in \R\)</span> with <span class="process-math">\(r=r+0i\in\C\text{.}\)</span> This makes <span class="process-math">\(\R\)</span> as subfield of <span class="process-math">\(\C\text{.}\)</span> A <em class="emphasis">subfield</em> is a subset of a field which is itself a field with respect to the operations on the larger set.</div></article><article class="example example-like" id="example-15"><h3 class="heading">
+</div> <div class="para" id="p-86">We can think of <span class="process-math">\(\R\)</span> as a subset of <span class="process-math">\(\C\)</span> by identifying <span class="process-math">\(r\in \R\)</span> with <span class="process-math">\(r=r+0i\in\C\text{.}\)</span> This makes <span class="process-math">\(\R\)</span> as subfield of <span class="process-math">\(\C\text{.}\)</span> A <em class="emphasis">subfield</em> is a subset of a field which is itself a field with respect to the operations on the larger set.</div></article><article class="example example-like" id="example-15"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-236">The rational numbers <span class="process-math">\(\Q\)</span> are a field, indeed they are a subfield of <span class="process-math">\(\R\)</span> (simply meaning that <span class="process-math">\(\Q\of \R\)</span> and the field operations for <span class="process-math">\(\Q\)</span> are the same whether you think of elements of <span class="process-math">\(\Q\)</span> as rational numbers or real numbers). This fact means that conditions A1-A2, M1-M2, and C1 are trivially satisfied, since they're true for real numbers, not just rationals. Since the special real numbers <span class="process-math">\(0,1\)</span> are in fact in <span class="process-math">\(\Q\)</span> we also get A3, M3, and C2 for free. This only leaves A4 and M4; given <span class="process-math">\(x\in \Q\)</span> we know that there are real numbers <span class="process-math">\(-x\)</span> and <span class="process-math">\(x\inv\)</span> such that <span class="process-math">\(x+(-x)=0\)</span> and <span class="process-math">\(xx\inv=1\text{,}\)</span> but what we need to know is that there are rational numbers with these properties <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a>. Fortunately it is that case that if <span class="process-math">\(x\)</span> is rational then so are <span class="process-math">\(-x\)</span> and <span class="process-math">\(x\inv\text{.}\)</span> Thus <span class="process-math">\(\Q\)</span> is a field.</div></article><article class="example example-like" id="example-16"><h3 class="heading">
+<div class="para" id="p-87">The rational numbers <span class="process-math">\(\Q\)</span> are a field, indeed they are a subfield of <span class="process-math">\(\R\)</span> (simply meaning that <span class="process-math">\(\Q\of \R\)</span> and the field operations for <span class="process-math">\(\Q\)</span> are the same whether you think of elements of <span class="process-math">\(\Q\)</span> as rational numbers or real numbers). This fact means that conditions A1-A2, M1-M2, and C1 are trivially satisfied, since they're true for real numbers, not just rationals. Since the special real numbers <span class="process-math">\(0,1\)</span> are in fact in <span class="process-math">\(\Q\)</span> we also get A3, M3, and C2 for free. This only leaves A4 and M4; given <span class="process-math">\(x\in \Q\)</span> we know that there are real numbers <span class="process-math">\(-x\)</span> and <span class="process-math">\(x\inv\)</span> such that <span class="process-math">\(x+(-x)=0\)</span> and <span class="process-math">\(xx\inv=1\text{,}\)</span> but what we need to know is that there are rational numbers with these properties <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a>. Fortunately it is that case that if <span class="process-math">\(x\)</span> is rational then so are <span class="process-math">\(-x\)</span> and <span class="process-math">\(x\inv\text{.}\)</span> Thus <span class="process-math">\(\Q\)</span> is a field.</div></article><article class="example example-like" id="example-16"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-237">
+<div class="para logical" id="p-88">
 <div class="para">The <em class="emphasis">field with two elements</em>, <span class="process-math">\(\F_2\text{,}\)</span> has as its only elements the two residue classes modulo <span class="process-math">\(2\text{,}\)</span> with addition and multiplication defined modulo <span class="process-math">\(2\text{.}\)</span> To be specific, we have the following addition and multiplication tables.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -809,7 +673,7 @@ i^2=i\times i=(0+1i)\times(0+1i)=-1+0i=-1.
 </div></article><article class="definition definition-like" id="def-field-abbreviations"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-238">
+<div class="para logical" id="p-89">
 <div class="para">We make some standard abbreviations when computing in fields. We write</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -832,11 +696,11 @@ n \defeq \underbrace{1+1+\dots+1}_{\text{$n$ summands}} \in \F.
 </div></article><article class="remark remark-like" id="remark-2"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-239">Above we have defined elements <span class="process-math">\(1,2,3,\dots\)</span> in any field <span class="process-math">\(\F\text{.}\)</span> In <span class="process-math">\(\Z_7\)</span> we have <span class="process-math">\(10=3=-4\text{,}\)</span> and in <span class="process-math">\(\Z_{29}\)</span> we have <span class="process-math">\(59=30=1\text{.}\)</span>
-</div> <div class="para" id="p-240">You might think it would be confusing that <span class="process-math">\(287\)</span> is simultaneously the name of an integer and a field element, particularly in fields <span class="process-math">\(\F_{7}\)</span> or <span class="process-math">\(\F_{41}\)</span> where <span class="process-math">\(287=0\text{,}\)</span> but context resolves all such confusions, usually without anyone noticing.</div> <div class="para" id="p-241">The following rules of arithmetic hold in any field.</div></article><article class="lemma theorem-like" id="lem-field-arithmetic"><h3 class="heading">
+<div class="para" id="p-90">Above we have defined elements <span class="process-math">\(1,2,3,\dots\)</span> in any field <span class="process-math">\(\F\text{.}\)</span> In <span class="process-math">\(\Z_7\)</span> we have <span class="process-math">\(10=3=-4\text{,}\)</span> and in <span class="process-math">\(\Z_{29}\)</span> we have <span class="process-math">\(59=30=1\text{.}\)</span>
+</div> <div class="para" id="p-91">You might think it would be confusing that <span class="process-math">\(287\)</span> is simultaneously the name of an integer and a field element, particularly in fields <span class="process-math">\(\F_{7}\)</span> or <span class="process-math">\(\F_{41}\)</span> where <span class="process-math">\(287=0\text{,}\)</span> but context resolves all such confusions, usually without anyone noticing.</div> <div class="para" id="p-92">The following rules of arithmetic hold in any field.</div></article><article class="lemma theorem-like" id="lem-field-arithmetic"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-242">
+<div class="para logical" id="p-93">
 <div class="para">If <span class="process-math">\(\F\)</span> is a field an <span class="process-math">\(x, y\in \F\wo\set{0}\)</span> then for For all <span class="process-math">\(n, m\in \Z\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}

@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -721,11 +585,11 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-direct-sums"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Direct Sum of Vector Spaces</span>
 </h2>
-<section class="introduction" id="introduction-48"><div class="para" id="p-463">We introduce now two constructions of new vector spaces from old.</div></section><section class="subsection" id="internal-direct-sum"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-4"><div class="para" id="p-314">We introduce now two constructions of new vector spaces from old.</div></section><section class="subsection" id="internal-direct-sum"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Internal direct sum</span>
 </h3>
-<div class="para" id="p-464">Let's first notice that we can add and scale subspaces of a vector space just like we add and scale vectors. To add two subspaces we will in fact adding together elements from the subspaces in all possible ways. Our notation is as follows.</div>
-<div class="para logical" id="p-465">
+<div class="para" id="p-315">Let's first notice that we can add and scale subspaces of a vector space just like we add and scale vectors. To add two subspaces we will in fact adding together elements from the subspaces in all possible ways. Our notation is as follows.</div>
+<div class="para logical" id="p-316">
 <div class="para">If <span class="process-math">\(A,B\)</span> are subsets of a vector space <span class="process-math">\(V\)</span> over <span class="process-math">\(\F\)</span> and <span class="process-math">\(\l \in \F\)</span> we define</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -735,22 +599,22 @@ A+B = \setof{\vv{a}+\b}{\vv{a}\in A, \b\in B} \qquad \l A = \setof{\l \vv{a}}{\v
 <div class="para">We make corresponding definitions for more complicated expressions such as <span class="process-math">\(A+B+(-12)C\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-466">If <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> and <span class="process-math">\(\l \in \F\)</span> then <span class="process-math">\(U+V\)</span> and <span class="process-math">\(\l U\)</span> are subspaces of <span class="process-math">\(W\text{.}\)</span>
+<div class="para" id="p-317">If <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> and <span class="process-math">\(\l \in \F\)</span> then <span class="process-math">\(U+V\)</span> and <span class="process-math">\(\l U\)</span> are subspaces of <span class="process-math">\(W\text{.}\)</span>
 </div>
-<div class="para" id="p-467">That <span class="process-math">\(U+V\)</span> is a subspace was proven on homework. Since <span class="process-math">\(U\)</span> is a subspace <span class="process-math">\(\l U=U\)</span> if <span class="process-math">\(\l\neq 0\)</span> and <span class="process-math">\(0U=\{\0_W\}\text{.}\)</span> In either case <span class="process-math">\(\l U\)</span> is a subspace of <span class="process-math">\(W\text{.}\)</span>
+<div class="para" id="p-318">That <span class="process-math">\(U+V\)</span> is a subspace was proven on homework. Since <span class="process-math">\(U\)</span> is a subspace <span class="process-math">\(\l U=U\)</span> if <span class="process-math">\(\l\neq 0\)</span> and <span class="process-math">\(0U=\{\0_W\}\text{.}\)</span> In either case <span class="process-math">\(\l U\)</span> is a subspace of <span class="process-math">\(W\text{.}\)</span>
 </div>
-<div class="para" id="p-468">By induction, it follows that any linear combination of subspaces of <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(W\text{.}\)</span>
+<div class="para" id="p-319">By induction, it follows that any linear combination of subspaces of <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(W\text{.}\)</span>
 </div>
-<div class="para" id="p-469">Recall that we introduced the idea of vectors <span class="process-math">\(\v_1, \ldots, \v_n\)</span> being linearly independent to model the fact that ever vector isn <span class="process-math">\(\linspan\{\v_1, \ldots, \v_n\}\)</span> can we written <em class="emphasis">uniquely</em> as a linear combination of <span class="process-math">\(\v_1, \ldots, \v_n\text{.}\)</span> Now we want to define a notion similar to linear independence for subspaces.</div>
-<div class="para" id="p-470">If <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> we say that <span class="process-math">\(U+V\)</span> is an <em class="emphasis">internal direct sum</em> and we denote <span class="process-math">\(U\oplus V=U+V\)</span> if every vector <span class="process-math">\(\w\in U+V\)</span> can be written uniquely as <span class="process-math">\(\w=\u+\v\)</span> with <span class="process-math">\(\u\in U\)</span> and <span class="process-math">\(\v\in V\text{.}\)</span>
+<div class="para" id="p-320">Recall that we introduced the idea of vectors <span class="process-math">\(\v_1, \ldots, \v_n\)</span> being linearly independent to model the fact that ever vector isn <span class="process-math">\(\linspan\{\v_1, \ldots, \v_n\}\)</span> can we written <em class="emphasis">uniquely</em> as a linear combination of <span class="process-math">\(\v_1, \ldots, \v_n\text{.}\)</span> Now we want to define a notion similar to linear independence for subspaces.</div>
+<div class="para" id="p-321">If <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> we say that <span class="process-math">\(U+V\)</span> is an <em class="emphasis">internal direct sum</em> and we denote <span class="process-math">\(U\oplus V=U+V\)</span> if every vector <span class="process-math">\(\w\in U+V\)</span> can be written uniquely as <span class="process-math">\(\w=\u+\v\)</span> with <span class="process-math">\(\u\in U\)</span> and <span class="process-math">\(\v\in V\text{.}\)</span>
 </div>
-<div class="para" id="p-471">More generally, if <span class="process-math">\(V_1,\ldots, V_n\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> we say that <span class="process-math">\(V_1+\cdots+ V_n\)</span> is an <em class="emphasis">internal direct sum</em> and we denote it <span class="process-math">\(V_1\oplus \cdots \oplus V_n\)</span> if every vector <span class="process-math">\(\w\in V_1+\cdots+ V_n\)</span> can be written uniquely as <span class="process-math">\(\w=\v_1+\cdots+\v_n\)</span> with <span class="process-math">\(\v_i\in V_i\text{.}\)</span>
+<div class="para" id="p-322">More generally, if <span class="process-math">\(V_1,\ldots, V_n\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> we say that <span class="process-math">\(V_1+\cdots+ V_n\)</span> is an <em class="emphasis">internal direct sum</em> and we denote it <span class="process-math">\(V_1\oplus \cdots \oplus V_n\)</span> if every vector <span class="process-math">\(\w\in V_1+\cdots+ V_n\)</span> can be written uniquely as <span class="process-math">\(\w=\v_1+\cdots+\v_n\)</span> with <span class="process-math">\(\v_i\in V_i\text{.}\)</span>
 </div>
-<div class="para" id="p-472">We can even have infinite direct sums: suppose that <span class="process-math">\((V_i)_{i\in I}\)</span> is a family of subspaces of a vector space <span class="process-math">\(W\)</span> and any vector <span class="process-math">\(\w=\v_1+\cdots+\v_n\)</span> with <span class="process-math">\(\v_i\in V_i\)</span> can be written uniquely in this form we say we have a direct sum <span class="process-math">\(\bigoplus_{i\in I} V_i\text{.}\)</span>
+<div class="para" id="p-323">We can even have infinite direct sums: suppose that <span class="process-math">\((V_i)_{i\in I}\)</span> is a family of subspaces of a vector space <span class="process-math">\(W\)</span> and any vector <span class="process-math">\(\w=\v_1+\cdots+\v_n\)</span> with <span class="process-math">\(\v_i\in V_i\)</span> can be written uniquely in this form we say we have a direct sum <span class="process-math">\(\bigoplus_{i\in I} V_i\text{.}\)</span>
 </div>
-<div class="para" id="p-473">Let <span class="process-math">\(W=\R^3\)</span> and let <span class="process-math">\(U=\{(x,y,0)\mid x,y\in \R\}\)</span> and <span class="process-math">\(V=\{(0,0,0,z)\mid z\in \R\}\text{.}\)</span> Then <span class="process-math">\(\R^3=U\oplus V\text{.}\)</span>
+<div class="para" id="p-324">Let <span class="process-math">\(W=\R^3\)</span> and let <span class="process-math">\(U=\{(x,y,0)\mid x,y\in \R\}\)</span> and <span class="process-math">\(V=\{(0,0,0,z)\mid z\in \R\}\text{.}\)</span> Then <span class="process-math">\(\R^3=U\oplus V\text{.}\)</span>
 </div>
-<div class="para logical" id="p-474">
+<div class="para logical" id="p-325">
 <div class="para">Let <span class="process-math">\(W=M_{n\times n} (\R)\)</span> and let <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> be the subspaces of symmetric and antisymmetric matrices respectively. In detail <span class="process-math">\(A\in U\)</span> if and only if <span class="process-math">\(A=A^T\)</span> and <span class="process-math">\(A\in V\)</span> if and only if <span class="process-math">\(A=-A^T\text{,}\)</span> where <span class="process-math">\(T\)</span> denotes transpose. Then <span class="process-math">\(W=U\oplus V\)</span> as we can write</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -769,7 +633,7 @@ A^T&amp;=B-C
 <div class="para">we obtain <span class="process-math">\(B=\frac{1}{2}(A+A^T)\)</span> and <span class="process-math">\(C=\frac{1}{2}(A-A^T)\text{.}\)</span>
 </div>
 </div>
-<div class="para logical" id="p-475">
+<div class="para logical" id="p-326">
 <div class="para">Let <span class="process-math">\(T_i\)</span> be a one-dimensional vector space over <span class="process-math">\(\R\)</span> whose basis vector we call <span class="process-math">\(X^i\text{.}\)</span> In short <span class="process-math">\(T_i=\R X^i\text{.}\)</span> Then we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -777,15 +641,15 @@ A^T&amp;=B-C
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-476">Let <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> be subspaces of a vector space <span class="process-math">\(W\text{.}\)</span> Then <span class="process-math">\(U+V\)</span> is a direct sum if and only if <span class="process-math">\(U\cap V=\{\0_W\}\text{.}\)</span>
+<div class="para" id="p-327">Let <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> be subspaces of a vector space <span class="process-math">\(W\text{.}\)</span> Then <span class="process-math">\(U+V\)</span> is a direct sum if and only if <span class="process-math">\(U\cap V=\{\0_W\}\text{.}\)</span>
 </div>
-<div class="para" id="p-477">Suppose <span class="process-math">\(U+V\)</span> is a direct sum and let <span class="process-math">\(\w\in U\cap V\text{.}\)</span> Then <span class="process-math">\(\w=\0+\w=\w+\0\)</span> are two different ways of writing <span class="process-math">\(\w\)</span> as a sum of a vector in <span class="process-math">\(U\)</span> and a vector in <span class="process-math">\(V\)</span> unless <span class="process-math">\(\w=\0\text{.}\)</span>
+<div class="para" id="p-328">Suppose <span class="process-math">\(U+V\)</span> is a direct sum and let <span class="process-math">\(\w\in U\cap V\text{.}\)</span> Then <span class="process-math">\(\w=\0+\w=\w+\0\)</span> are two different ways of writing <span class="process-math">\(\w\)</span> as a sum of a vector in <span class="process-math">\(U\)</span> and a vector in <span class="process-math">\(V\)</span> unless <span class="process-math">\(\w=\0\text{.}\)</span>
 </div>
-<div class="para" id="p-478">Suppose <span class="process-math">\(U\cap V=\{\0_W\}\text{.}\)</span> If <span class="process-math">\(\u+\v=\u'+\v'\)</span> with <span class="process-math">\(\u,\u'\in U\)</span> and <span class="process-math">\(\v, \v'\in V\)</span> then <span class="process-math">\(\u-\u'=\v'-\v\text{.}\)</span> The left hand side is in <span class="process-math">\(U\)</span> and the right hand side is in <span class="process-math">\(V\text{.}\)</span> So we must have <span class="process-math">\(\u-\u'=\v'-\v\in U\cap V\text{,}\)</span> therefore <span class="process-math">\(\u-\u'=\v'-\v=\0\text{.}\)</span> So <span class="process-math">\(\u=\u'\)</span> and <span class="process-math">\(\v=\v'\text{.}\)</span>
+<div class="para" id="p-329">Suppose <span class="process-math">\(U\cap V=\{\0_W\}\text{.}\)</span> If <span class="process-math">\(\u+\v=\u'+\v'\)</span> with <span class="process-math">\(\u,\u'\in U\)</span> and <span class="process-math">\(\v, \v'\in V\)</span> then <span class="process-math">\(\u-\u'=\v'-\v\text{.}\)</span> The left hand side is in <span class="process-math">\(U\)</span> and the right hand side is in <span class="process-math">\(V\text{.}\)</span> So we must have <span class="process-math">\(\u-\u'=\v'-\v\in U\cap V\text{,}\)</span> therefore <span class="process-math">\(\u-\u'=\v'-\v=\0\text{.}\)</span> So <span class="process-math">\(\u=\u'\)</span> and <span class="process-math">\(\v=\v'\text{.}\)</span>
 </div>
-<div class="para" id="p-479">One place where we (silently) thought about an internal direct sum was in the proof of <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:ranknullity" missing or not unique]</code>. Looking at that proof we see that we really showed that if <span class="process-math">\(T:V \to W\)</span> then <span class="process-math">\(V\)</span> is the internal direct sum of <span class="process-math">\(\ker(T)\)</span> and <span class="process-math">\(\linspan(\set{\vs[\ell]})\text{.}\)</span>
+<div class="para" id="p-330">One place where we (silently) thought about an internal direct sum was in the proof of <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:ranknullity" missing or not unique]</code>. Looking at that proof we see that we really showed that if <span class="process-math">\(T:V \to W\)</span> then <span class="process-math">\(V\)</span> is the internal direct sum of <span class="process-math">\(\ker(T)\)</span> and <span class="process-math">\(\linspan(\set{\vs[\ell]})\text{.}\)</span>
 </div>
-<div class="para logical" id="p-480">
+<div class="para logical" id="p-331">
 <div class="para">Let <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> be subspaces of a vector space <span class="process-math">\(W\text{.}\)</span> If <span class="process-math">\(B\)</span> is a basis for <span class="process-math">\(U\)</span> and <span class="process-math">\(B'\)</span> is a basis for <span class="process-math">\(V\)</span> then <span class="process-math">\(B\cup B'\)</span> is a basis for <span class="process-math">\(U\oplus V\text{.}\)</span> In particular,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -793,15 +657,15 @@ A^T&amp;=B-C
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-481">The last part follows from the formula <span class="process-math">\(\dim U + V=\dim U+\dim V-\dim (U\cap V)\)</span> proven on the homework and which gives <span class="process-math">\(U\cap V=\{\0\}\)</span> so that <span class="process-math">\(\dim (U\cap V)=0\text{.}\)</span>
+<div class="para" id="p-332">The last part follows from the formula <span class="process-math">\(\dim U + V=\dim U+\dim V-\dim (U\cap V)\)</span> proven on the homework and which gives <span class="process-math">\(U\cap V=\{\0\}\)</span> so that <span class="process-math">\(\dim (U\cap V)=0\text{.}\)</span>
 </div>
-<div class="para" id="p-482">Let <span class="process-math">\(U\)</span> is a subspace of a vector space <span class="process-math">\(W\)</span> then there exists a subspace <span class="process-math">\(V\)</span> of <span class="process-math">\(W\)</span> so that <span class="process-math">\(U\oplus V=W\text{.}\)</span>
+<div class="para" id="p-333">Let <span class="process-math">\(U\)</span> is a subspace of a vector space <span class="process-math">\(W\)</span> then there exists a subspace <span class="process-math">\(V\)</span> of <span class="process-math">\(W\)</span> so that <span class="process-math">\(U\oplus V=W\text{.}\)</span>
 </div>
-<div class="para" id="p-483">Let <span class="process-math">\(B_U\)</span> be a basis for <span class="process-math">\(U\text{.}\)</span> Since <span class="process-math">\(B_U\)</span> is an independent set, there exists a basis <span class="process-math">\(B\)</span> of <span class="process-math">\(W\)</span> so that <span class="process-math">\(B_u\subseteq B\text{.}\)</span> Set <span class="process-math">\(B_V=B\setminus B_U\)</span> and <span class="process-math">\(V=\linspan{B_V}\text{.}\)</span> Then <span class="process-math">\(V\)</span> is a subspce of <span class="process-math">\(W\text{.}\)</span>
+<div class="para" id="p-334">Let <span class="process-math">\(B_U\)</span> be a basis for <span class="process-math">\(U\text{.}\)</span> Since <span class="process-math">\(B_U\)</span> is an independent set, there exists a basis <span class="process-math">\(B\)</span> of <span class="process-math">\(W\)</span> so that <span class="process-math">\(B_u\subseteq B\text{.}\)</span> Set <span class="process-math">\(B_V=B\setminus B_U\)</span> and <span class="process-math">\(V=\linspan{B_V}\text{.}\)</span> Then <span class="process-math">\(V\)</span> is a subspce of <span class="process-math">\(W\text{.}\)</span>
 </div>
-<div class="para" id="p-484">Any <span class="process-math">\(\w\in W\)</span> can be written as <span class="process-math">\(\w=\l_1\b_1+\cdots+\l_n\b_n\)</span> for some <span class="process-math">\(\l_1,\ldots, \l_n\in \F\)</span> and <span class="process-math">\(\b_1,\ldots, \b_n\in B\text{.}\)</span> After renumbering we may assume <span class="process-math">\(\b_1,\ldots, b_t\in B_U\)</span> and <span class="process-math">\(\b_{t+1},\ldots, b_n\in B_V\)</span> so that <span class="process-math">\(\w=\u+\v\)</span> where <span class="process-math">\(\u=\l_1\b_1+\cdots+\l_t\b_t\in U\)</span> and <span class="process-math">\(\v=\l_1\b_{t+1}+\cdots+\l_n\b_n\in V\text{.}\)</span> We have shown <span class="process-math">\(W=U+V\text{.}\)</span>
+<div class="para" id="p-335">Any <span class="process-math">\(\w\in W\)</span> can be written as <span class="process-math">\(\w=\l_1\b_1+\cdots+\l_n\b_n\)</span> for some <span class="process-math">\(\l_1,\ldots, \l_n\in \F\)</span> and <span class="process-math">\(\b_1,\ldots, \b_n\in B\text{.}\)</span> After renumbering we may assume <span class="process-math">\(\b_1,\ldots, b_t\in B_U\)</span> and <span class="process-math">\(\b_{t+1},\ldots, b_n\in B_V\)</span> so that <span class="process-math">\(\w=\u+\v\)</span> where <span class="process-math">\(\u=\l_1\b_1+\cdots+\l_t\b_t\in U\)</span> and <span class="process-math">\(\v=\l_1\b_{t+1}+\cdots+\l_n\b_n\in V\text{.}\)</span> We have shown <span class="process-math">\(W=U+V\text{.}\)</span>
 </div>
-<div class="para logical" id="p-485">
+<div class="para logical" id="p-336">
 <div class="para">Now suppose <span class="process-math">\(\w\in U\cap V\text{.}\)</span> Then <span class="process-math">\(\w=\l_1\b_1+\cdots+\l_t\b_t\)</span> for some <span class="process-math">\(\b_1,\ldots, b_t\in B_U\)</span> and also <span class="process-math">\(\w=\l_1\b_{t+1}+\cdots+\l_n\b_n\)</span> for some <span class="process-math">\(\b_{t+1},\ldots, b_n\in B_V\text{.}\)</span> Therefore we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -811,13 +675,13 @@ A^T&amp;=B-C
 <div class="para">with <span class="process-math">\(\b_1,\ldots, \b_n\in B\)</span> distinct. Since <span class="process-math">\(B\)</span> is linearly independent we conclude <span class="process-math">\(\l_i=0\)</span> for all <span class="process-math">\(1\leq i\leq n\)</span> whence <span class="process-math">\(\w=\0\text{.}\)</span> We have shown that <span class="process-math">\(U\cap V=\{\0\}\)</span> and it follows from that <span class="process-math">\(W=U\oplus V\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-486">The subspace <span class="process-math">\(V\)</span> in the above theorem is not unique. For example set <span class="process-math">\(U=\{(x,0,0)\mid x\in \R\}\subseteq W=\R^3\text{.}\)</span> Then both <span class="process-math">\(V=\{(0,y,z)\mid y,z\in \R\}\)</span> and <span class="process-math">\(V'=\{(x,x,z)\mid x,z\in \R\}\)</span> satisfy <span class="process-math">\(U\oplus V=U\oplus V'=\R^3\text{.}\)</span>
+<div class="para" id="p-337">The subspace <span class="process-math">\(V\)</span> in the above theorem is not unique. For example set <span class="process-math">\(U=\{(x,0,0)\mid x\in \R\}\subseteq W=\R^3\text{.}\)</span> Then both <span class="process-math">\(V=\{(0,y,z)\mid y,z\in \R\}\)</span> and <span class="process-math">\(V'=\{(x,x,z)\mid x,z\in \R\}\)</span> satisfy <span class="process-math">\(U\oplus V=U\oplus V'=\R^3\text{.}\)</span>
 </div></section><section class="subsection" id="external-direct-sum-and-direct-product"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">External direct sum and direct product</span>
 </h3>
-<div class="para" id="p-487">Suppose that <span class="process-math">\((V_i)_{i\in I}\)</span> is a family of vector spaces over a field <span class="process-math">\(\F\text{.}\)</span> We would like to exhibit a vector space <span class="process-math">\(W\)</span> that contains (copies of) each of the <span class="process-math">\(V_i\)</span> without assuming that they are subspaces of the same vector field to begin with. Since <span class="process-math">\(W\)</span>contains the <span class="process-math">\(V_i\)</span> it must of course also contain linear combinations of vector from the <span class="process-math">\(V_i\text{.}\)</span> We will arrange that these linear combinations cannot “accidentally” produce any sort of cancellation. In particular for instance we want it to be the case that if <span class="process-math">\(\v\in V_i\)</span> and <span class="process-math">\(\w\in V_j\)</span> then the only way to have <span class="process-math">\(\v+\w=\0\)</span> is for each of <span class="process-math">\(\v\)</span> and <span class="process-math">\(\w\)</span> to be <span class="process-math">\(\0\text{.}\)</span>
+<div class="para" id="p-338">Suppose that <span class="process-math">\((V_i)_{i\in I}\)</span> is a family of vector spaces over a field <span class="process-math">\(\F\text{.}\)</span> We would like to exhibit a vector space <span class="process-math">\(W\)</span> that contains (copies of) each of the <span class="process-math">\(V_i\)</span> without assuming that they are subspaces of the same vector field to begin with. Since <span class="process-math">\(W\)</span>contains the <span class="process-math">\(V_i\)</span> it must of course also contain linear combinations of vector from the <span class="process-math">\(V_i\text{.}\)</span> We will arrange that these linear combinations cannot “accidentally” produce any sort of cancellation. In particular for instance we want it to be the case that if <span class="process-math">\(\v\in V_i\)</span> and <span class="process-math">\(\w\in V_j\)</span> then the only way to have <span class="process-math">\(\v+\w=\0\)</span> is for each of <span class="process-math">\(\v\)</span> and <span class="process-math">\(\w\)</span> to be <span class="process-math">\(\0\text{.}\)</span>
 </div>
-<div class="para logical" id="p-488">
+<div class="para logical" id="p-339">
 <div class="para">We define</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -839,7 +703,7 @@ A^T&amp;=B-C
 </div>
 <div class="para">It is easy to check that with these operations <span class="process-math">\(\Dsum_{i\in I} V_i\)</span> is a vector space.</div>
 </div>
-<div class="para logical" id="p-489">
+<div class="para logical" id="p-340">
 <div class="para">It is sometimes desirable to eliminate the restriction that only finitely many of the <span class="process-math">\(\v_i\)</span> are non-zero. Then we get the direct product.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -847,8 +711,8 @@ A^T&amp;=B-C
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-490">In both <span class="process-math">\(\Dsum_{i\in I} V_i\)</span> and <span class="process-math">\(\prod_{i\in I} V_i\)</span> there is a copy of <span class="process-math">\(V_i\text{.}\)</span> We can identify <span class="process-math">\(V_i\)</span> with the set of vectors that are <span class="process-math">\(\0\)</span> everywhere except in the <span class="process-math">\(i^{\text{th}}\)</span> component. The direct sum is spanned by the union of these copies of the <span class="process-math">\(V_i\text{,}\)</span> but (at least when <span class="process-math">\(I\)</span> is infinite) the direct product is not.</div>
-<div class="para logical" id="p-491">
+<div class="para" id="p-341">In both <span class="process-math">\(\Dsum_{i\in I} V_i\)</span> and <span class="process-math">\(\prod_{i\in I} V_i\)</span> there is a copy of <span class="process-math">\(V_i\text{.}\)</span> We can identify <span class="process-math">\(V_i\)</span> with the set of vectors that are <span class="process-math">\(\0\)</span> everywhere except in the <span class="process-math">\(i^{\text{th}}\)</span> component. The direct sum is spanned by the union of these copies of the <span class="process-math">\(V_i\text{,}\)</span> but (at least when <span class="process-math">\(I\)</span> is infinite) the direct product is not.</div>
+<div class="para logical" id="p-342">
 <div class="para">In the cases where our two definitions of direct sum both apply (i.e., when considering <span class="process-math">\(U+W\)</span> where <span class="process-math">\(U,W\)</span> are subspaces of <span class="process-math">\(V\)</span>) the two definitions agree. In particular with the external direct sum on the left and the internal direct sum on the right the following map is an isomorphism:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -859,7 +723,7 @@ S \colon U\dsum W &amp;\to U\dsum W \\
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-492">The fact that <span class="process-math">\(\range(S)\)</span> is all of <span class="process-math">\(U+W\)</span> is clear. To prove that <span class="process-math">\(\ker(S)=\set{(\0,\0)}\)</span> consider a pair <span class="process-math">\((\u,\w)\in U \dsum W\)</span> such that <span class="process-math">\(\u+\w=\0\text{.}\)</span> We need to show that <span class="process-math">\(\u=\w=\0\text{.}\)</span> Well, since <span class="process-math">\(\u=-\w\)</span> we have <span class="process-math">\(\u\in U\cap W=\set{\0}\)</span> so <span class="process-math">\(\u=0\)</span> and hence <span class="process-math">\(\w=\0\text{.}\)</span>
+<div class="para" id="p-343">The fact that <span class="process-math">\(\range(S)\)</span> is all of <span class="process-math">\(U+W\)</span> is clear. To prove that <span class="process-math">\(\ker(S)=\set{(\0,\0)}\)</span> consider a pair <span class="process-math">\((\u,\w)\in U \dsum W\)</span> such that <span class="process-math">\(\u+\w=\0\text{.}\)</span> We need to show that <span class="process-math">\(\u=\w=\0\text{.}\)</span> Well, since <span class="process-math">\(\u=-\w\)</span> we have <span class="process-math">\(\u\in U\cap W=\set{\0}\)</span> so <span class="process-math">\(\u=0\)</span> and hence <span class="process-math">\(\w=\0\text{.}\)</span>
 </div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-constructions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-quotients.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

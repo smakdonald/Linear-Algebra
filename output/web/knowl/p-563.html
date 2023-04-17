@@ -11,9 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Exaluating non-linear maps though, for example polynomials is not a bilinear map. Specifically the map <span class="process-math">\((p,x)\mapsto p(x)\)</span> from <span class="process-math">\(\R[X]\times \R\)</span> to <span class="process-math">\(\R\)</span> is <em class="emphasis">not</em> bilinear. It is linear in <span class="process-math">\(p\text{,}\)</span> but not in <span class="process-math">\(x\)</span> since, for example, if <span class="process-math">\(p=X^2\)</span> then <span class="process-math">\(4=p(1+1) \not= p(1)+p(1)=2\text{.}\)</span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">If there are non-trivial linear combinations of the <span class="process-math">\(\v_i\)</span> that are zero take one, say <span class="process-math">\(\sum_1^k \mu_i \v_i = \0\text{,}\)</span> with the fewest possible non-zero coefficients. Without loss of generality we may suppose that <span class="process-math">\(\mu_1\not=0\text{.}\)</span> Now apply the linear map <span class="process-math">\(T-\l_1I\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\0 = (T-\l_1I) \sum_1^k \mu_i \v_i = \sum_1^k \mu_i(\l_i-\l_1) \v_i.
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-bilinear-functions.html#p-563" class="internal">in-context</a></span>
+<div class="para">This linear combination of the <span class="process-math">\(\v_i\)</span> has fewer non-zero coefficients than the original (since the coefficient of <span class="process-math">\(\v_1\)</span> is now <span class="process-math">\(0\)</span>) so all the coefficients must be <span class="process-math">\(0\text{.}\)</span> But then all of the original coefficients must have been <span class="process-math">\(0\)</span> except <span class="process-math">\(\mu_1\text{.}\)</span> But <span class="process-math">\(\mu_1\v_1\not= \0\)</span> since <span class="process-math">\(\mu_1\not=0\)</span> and <span class="process-math">\(\v_1\not=\0\)</span> (it is an eigenvector). This contradiction proves that the <span class="process-math">\(\v_i\)</span> are linearly independent.</div>
+</div>
+<span class="incontext"><a href="sec-eigen-again.html#p-563" class="internal">in-context</a></span>
 </body>
 </html>

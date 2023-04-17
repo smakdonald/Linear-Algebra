@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
+<div class="para logical">
+<div class="para">The result is trivially true for <span class="process-math">\(\dim(V)=1\text{.}\)</span> Suppose then that <span class="process-math">\(\dim(V)&gt;1\text{.}\)</span> Let <span class="process-math">\(\v_1\)</span> be an eigenvector of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(\l\)</span> and set <span class="process-math">\(W=\linspan\set{\v_1}\text{.}\)</span> Consider the map</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\tilde{T}\colon V/W &amp;\to V/W \\
+\v+W &amp;\mapsto T\v+W
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">This map is well defined since whenever <span class="process-math">\(\v-\v'\in W\)</span> there is some <span class="process-math">\(\mu \in \C\)</span> such that <span class="process-math">\(\v-\v'=\mu\v_1\text{.}\)</span> Thus</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T\v - T\v' = T(\v-\v') = T(\mu\v_1) = \mu T\v_1 = \mu\l \v_1 \in W,
+\end{equation*}
+</div>
+<div class="para">thus <span class="process-math">\(T\v+W = T\v'+W\text{.}\)</span> Pick <span class="process-math">\(\set{\v_2,\v_3,\dots,\v_n}\)</span> such that <span class="process-math">\(\set{\v_2+W,\v_3+W,\dots,\v_n+W}\)</span> is a basis for <span class="process-math">\(V/W\)</span> with respect to which the basis of <span class="process-math">\(\tilde{T}\)</span> is upper triangular. Now consider the basis <span class="process-math">\(\set{\v_1,\v_2,\dots,\v_n}\)</span> of <span class="process-math">\(V\text{.}\)</span> With respect to this basis the matrix of <span class="process-math">\(\tilde{T}\)</span> with respect to <span class="process-math">\(\set{\v_2+W,\v_3+W,\dots,\v_n+W}\)</span> appears in the lower right hand corner. This is because if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+T\v_j + W = \tilde{T}(\v_j+W) &amp;= \sum_{i=2}^n a_{ij} (\v_i+W) = \left(\sum_{i=2}^n a_{ij} \v_i \right) + W\\
+\intertext{then for some $a_{1j}\in \C$ we have}
+T\v_j &amp;= a_{1j}\v_1 + \sum_{i=2}^n a_{ij} \v_i.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Since the first column of the matrix only has a non-zero entry in the first row and, by assumption, the matrix of <span class="process-math">\(\tilde{T}\)</span> is upper triangular, we have that the matrix of <span class="process-math">\(T\)</span> is upper triangular.</div>
+</div></article><span class="incontext"><a href="sec-eigen-again.html#proof-14" class="internal">in-context</a></span>
+</body>
+</html>

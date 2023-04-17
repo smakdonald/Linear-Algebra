@@ -227,6 +227,7 @@ window.MathJax = {
 \def\sign{{\operatorname{sign}}}
 \newcommand{\SL}{\operatorname{SL}}
 \def\Span{\operatorname{Span}}
+\def\linspan{\operatorname{Span}}
 \def\Spec{\operatorname{Spec}}
 \def\Stab{\operatorname{Stab}} 
 \DeclareMathOperator{\Supp}{Supp}
@@ -394,6 +395,7 @@ window.MathJax = {
 \newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
 \def\th{^{th}} 
 \def\htpy{\simeq_{\mathrm{htpc}}} 
+\def\wo{\setminus} 
 
 \def\textand{ \, \text{and} \, } 
 \def\textor{ \, \text{or} \, } 
@@ -467,145 +469,7 @@ window.MathJax = {
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-linear.html" class="internal"><span class="codenumber">I</span> <span class="title">Linear Algebra</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Matrices and Linear Systems</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-systems-matrix-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems and Matrix Equations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-matrix-basics" class="internal"><span class="title">Matrix Basics</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#subsec-encoding-linear-systems" class="internal"><span class="title">Encoding Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-linear-systems-matrix-equations.html#exercises-1" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-matrix-arithmetic.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Matrix Arithmetic</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-addition-scalar-mult" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#subsec-invertibility" class="internal"><span class="title">Invertibility of Square Matrices</span></a></div></li>
-<li><div class="toc-item"><a href="sec-matrix-arithmetic.html#exercises-2" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-solving-linear-systems.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Linear Systems</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-gaussian-elimination" class="internal"><span class="title">Gaussian Elimination</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-homogeneous-systems" class="internal"><span class="title">Solving Homogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#subsec-inhomogeneous-systems" class="internal"><span class="title">Solving Inhomogeneous Linear Systems</span></a></div></li>
-<li><div class="toc-item"><a href="sec-solving-linear-systems.html#exercises-3" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-intro-determinants.html" class="internal"><span class="codenumber">2</span> <span class="title">Introduction to Determinants</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-computing-dets.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Computing Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-computing-dets.html#exercises-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-det-properties.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Properties of Determinants</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-det-properties.html#exercises-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-vector-spaces.html" class="internal"><span class="codenumber">3</span> <span class="title">Vector Spaces</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-vector-space-basics.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vector Space Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-vector-space-basics.html#exercises-6" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-subspaces.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subspaces, Sums, and Direct Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-subspaces.html#exercises-7" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-bases.html" class="internal"><span class="codenumber">4</span> <span class="title">Span and Bases</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-span.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Span</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-span.html#exercises-8" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="linear-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Linear Independence</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="linear-independence.html#exercises-9" class="internal"><span class="codenumber">4.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="basis-basics.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Basis Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="basis-basics.html#exercises-10" class="internal"><span class="codenumber">4.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="vs-dim.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Dimension of Vector Spaces</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="vs-dim.html#exercises-11" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-linear-maps.html" class="internal"><span class="codenumber">5</span> <span class="title">Linear Maps</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-linear-map-basics.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear Map Basics</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-linear-map-basics.html#exercises-12" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="nullspace-and-range.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Nullspace and Range</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-nullspace" class="internal"><span class="title">Nullspace</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#subsec-range" class="internal"><span class="title">Range</span></a></div></li>
-<li><div class="toc-item"><a href="nullspace-and-range.html#exercises-13" class="internal"><span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="rank-nullity.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Rank-Nullity Theorem</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="rank-nullity.html#exercises-14" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-eigen.html" class="internal"><span class="codenumber">6</span> <span class="title">Eigenvectors, Eigenvalues, Diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-eigen.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Eigenvectors and Eigenvalues</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-eigen.html#exercises-15" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-charpoly.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Characteristic Polynomial</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-charpoly.html#exercises-16" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-diagonal-matrices.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Diagonal Matrices</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-diagonal-matrices.html#exercises-17" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="ch-orthogonality.html" class="internal"><span class="codenumber">7</span> <span class="title">Orthogonality</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="sec-inner-products.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Inner Products</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-inner-products.html#exercises-18" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-orthogonal-sets-projections.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Orthogonal Sets and Projections</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-orthogonal-sets-projections.html#exercises-19" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Gram Schmidt and Least Squares</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-gram-shcmidt-least-squares.html#exercises-20" class="internal"><span class="codenumber">7.3</span> <span class="title">Exercises</span></a></div></li></ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">II</span> <span class="title">Theory of Linear Transformations</span></a></div>
+<div class="toc-item"><a href="part-theory.html" class="internal"><span class="codenumber">I</span> <span class="title">Theory of Linear Transformations</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
@@ -722,7 +586,7 @@ window.MathJax = {
 <section class="section" id="sec-isomorphisms"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Isomorphisms</span>
 </h2>
-<div class="para logical" id="p-414">
+<div class="para logical" id="p-265">
 <div class="para">There is a sense in which the vector space <span class="process-math">\(V_{d}\)</span> of polynomials of degree at most <span class="process-math">\(d\)</span> and <span class="process-math">\(\R^{d+1}\)</span> are similar: each polynomial <span class="process-math">\(c_0+c_1X+\cdots+c_dX^d\)</span> is determined by its coefficient vector <span class="process-math">\((c_0,c_1, \ldots, c_d)\in   \R^{d+1}\text{.}\)</span> More formally, as we have seen in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex:iso" missing or not unique]</code>, there is a linear transformation <span class="process-math">\(T:\R^{d+1}\to V_d\)</span>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="">
@@ -732,16 +596,16 @@ T((c_0,\ldots, c_{d}))=c_0+c_1X+\cdots+c_{d}X^{d}.
 </div>
 <div class="para">This linear map has the property that for every <span class="process-math">\(p\in V_d\)</span> there exists a unique <span class="process-math">\(\vv{c}\in\R^{d+1}\)</span> (the vector of coefficients of <span class="process-math">\(p\)</span>) so that <span class="process-math">\(T(\vv{c})=p\text{.}\)</span> This makes <span class="process-math">\(T\)</span> a bijection.</div>
 </div>
-<div class="para" id="p-415">A function <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-6" id="fn-6"><sup> 2 </sup></a> is called a <dfn class="terminology">bijection</dfn> if it is both injective and surjective.</div>
-<div class="para" id="p-416">It is a standard fact that a function <span class="process-math">\(T:V\to W\)</span> is a bijection if and only if there exists a function <span class="process-math">\(S:W\to V\)</span> termed the <em class="emphasis">inverse</em> of <span class="process-math">\(T\)</span> which satisfies <span class="process-math">\(S(T(\v))=\v\)</span> for all <span class="process-math">\(\v\in V\)</span> and <span class="process-math">\(T(S(\w))=\w\)</span> for all <span class="process-math">\(\w\in W\text{.}\)</span>
+<div class="para" id="p-266">A function <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-6" id="fn-6"><sup> 2 </sup></a> is called a <dfn class="terminology">bijection</dfn> if it is both injective and surjective.</div>
+<div class="para" id="p-267">It is a standard fact that a function <span class="process-math">\(T:V\to W\)</span> is a bijection if and only if there exists a function <span class="process-math">\(S:W\to V\)</span> termed the <em class="emphasis">inverse</em> of <span class="process-math">\(T\)</span> which satisfies <span class="process-math">\(S(T(\v))=\v\)</span> for all <span class="process-math">\(\v\in V\)</span> and <span class="process-math">\(T(S(\w))=\w\)</span> for all <span class="process-math">\(\w\in W\text{.}\)</span>
 </div>
-<div class="para" id="p-417">Let <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> be vector spaces over the same field <span class="process-math">\(\F\)</span> and let <span class="process-math">\(T:V\to W\)</span> be a linear map. We say that <span class="process-math">\(T\)</span> is an <dfn class="terminology">isomorphism</dfn> if there exists a linear map <span class="process-math">\(S:W\to V\)</span> so that <span class="process-math">\(S(T(\v))=\v\)</span> for all <span class="process-math">\(\v\in V\)</span> and <span class="process-math">\(T( S(\w))=\w\)</span> for all <span class="process-math">\(\w\in W\text{.}\)</span>
+<div class="para" id="p-268">Let <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> be vector spaces over the same field <span class="process-math">\(\F\)</span> and let <span class="process-math">\(T:V\to W\)</span> be a linear map. We say that <span class="process-math">\(T\)</span> is an <dfn class="terminology">isomorphism</dfn> if there exists a linear map <span class="process-math">\(S:W\to V\)</span> so that <span class="process-math">\(S(T(\v))=\v\)</span> for all <span class="process-math">\(\v\in V\)</span> and <span class="process-math">\(T( S(\w))=\w\)</span> for all <span class="process-math">\(\w\in W\text{.}\)</span>
 </div>
-<div class="para" id="p-418">We say that vector spaces <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> are <dfn class="terminology">isomorphic</dfn> and write <span class="process-math">\(V\cong W\)</span> if there exists an <dfn class="terminology">isomorphism</dfn> <span class="process-math">\(T:V\to W\)</span> or <span class="process-math">\(T:W\to V\text{.}\)</span>
+<div class="para" id="p-269">We say that vector spaces <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> are <dfn class="terminology">isomorphic</dfn> and write <span class="process-math">\(V\cong W\)</span> if there exists an <dfn class="terminology">isomorphism</dfn> <span class="process-math">\(T:V\to W\)</span> or <span class="process-math">\(T:W\to V\text{.}\)</span>
 </div>
-<div class="para" id="p-419">It turns out (it's a small miracle) that a linear function being an isomorphism is the same as being a bijection.</div>
-<div class="para" id="p-420">Let <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> be vector spaces over the same field <span class="process-math">\(\F\)</span> and let <span class="process-math">\(T:V\to W\)</span> be a linear map. Then <span class="process-math">\(T\)</span> is invertible if and only if <span class="process-math">\(T\)</span> is a bijection.</div>
-<div class="para logical" id="p-421">
+<div class="para" id="p-270">It turns out (it's a small miracle) that a linear function being an isomorphism is the same as being a bijection.</div>
+<div class="para" id="p-271">Let <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> be vector spaces over the same field <span class="process-math">\(\F\)</span> and let <span class="process-math">\(T:V\to W\)</span> be a linear map. Then <span class="process-math">\(T\)</span> is invertible if and only if <span class="process-math">\(T\)</span> is a bijection.</div>
+<div class="para logical" id="p-272">
 <div class="para">By Remark <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "rem:inverse" missing or not unique]</code> <span class="process-math">\(T:V\to W\)</span> is a bijection if and only if there exists a function <span class="process-math">\(S:W\to V\)</span> which satisfies <span class="process-math">\(S(T(\v))=\v\)</span> for all <span class="process-math">\(\v\in V\)</span> and <span class="process-math">\(T(S(\w))=\w\)</span> for all <span class="process-math">\(\w\in W\text{.}\)</span> To conclude that <span class="process-math">\(T\)</span> is an isomorphism we still have to show that the inverse of <span class="process-math">\(T\text{,}\)</span> <span class="process-math">\(S\)</span> is a linear map. Consider <span class="process-math">\(\u,\w\in W\)</span> and <span class="process-math">\(\l,\mu\in \F\text{.}\)</span> Then</div>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
@@ -750,10 +614,10 @@ T(S(\l\u+\mu\w))= \l\u+\mu\w=\l T(S(\u))+ \mu T( S(\w))=T(\l S(\u)+\mu S(\w)).
 </div>
 <div class="para">Since <span class="process-math">\(T\)</span> is injective we conclude that <span class="process-math">\(S(\l\u+\mu\w)=\l S(\u)+\mu S(\w)\)</span> so <span class="process-math">\(S\)</span> is a linear map.</div>
 </div>
-<div class="para" id="p-422">We have seen a lot of example of vector spaces. It turns out that up to isomorphism finite-dimensional vectors spaces are quite simple. Moreover, the isomorphism class of a finite dimensional vector space is completely determined by its dimension.</div>
-<div class="para" id="p-423">If <span class="process-math">\(V\)</span> is a finite dimensional vector space over <span class="process-math">\(\F\text{,}\)</span> of dimension <span class="process-math">\(n\)</span> say, then <span class="process-math">\(V\iso \F^n\text{.}\)</span>
+<div class="para" id="p-273">We have seen a lot of example of vector spaces. It turns out that up to isomorphism finite-dimensional vectors spaces are quite simple. Moreover, the isomorphism class of a finite dimensional vector space is completely determined by its dimension.</div>
+<div class="para" id="p-274">If <span class="process-math">\(V\)</span> is a finite dimensional vector space over <span class="process-math">\(\F\text{,}\)</span> of dimension <span class="process-math">\(n\)</span> say, then <span class="process-math">\(V\iso \F^n\text{.}\)</span>
 </div>
-<div class="para logical" id="p-424">
+<div class="para logical" id="p-275">
 <div class="para">Let <span class="process-math">\(\set{\v_1, \v_2, \dots, \v_{n}}\)</span> be a basis for <span class="process-math">\(V\text{.}\)</span> Define <span class="process-math">\(T:\F^n \to V\)</span> by</div>
 <div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
@@ -762,11 +626,11 @@ T((\l_i)_1^n) = \sum_1^n \l_i\v_i.
 </div>
 <div class="para">This is clearly a linear map. The kernel of <span class="process-math">\(T\)</span> is <span class="process-math">\(\set{\0}\text{,}\)</span> since if <span class="process-math">\(\sum_1^n \l_i\v_i = \0\)</span> then by the linear independence of the <span class="process-math">\(\v_i\)</span> all of the scalars must be <span class="process-math">\(0\text{.}\)</span> Thus <span class="process-math">\(T\)</span> is injective by <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:injker" missing or not unique]</code>. Similarly <span class="process-math">\(\range(T)=V\)</span> since every vector in <span class="process-math">\(V\)</span> can be expressed as a linear combination of the <span class="process-math">\(\v_i\text{.}\)</span> Thus, by <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:iso" missing or not unique]</code>, <span class="process-math">\(T\)</span> is invertible, meaning exactly that <span class="process-math">\(V\)</span> and <span class="process-math">\(\F^n\)</span> are isomorphic.</div>
 </div>
-<div class="para" id="p-425">If <span class="process-math">\(V, W\)</span> are finite dimensional vector spaces over the same field <span class="process-math">\(\F\)</span> then <span class="process-math">\(V\cong W\)</span> if and only if <span class="process-math">\(\dim(V)=\dim(W)\text{.}\)</span>
+<div class="para" id="p-276">If <span class="process-math">\(V, W\)</span> are finite dimensional vector spaces over the same field <span class="process-math">\(\F\)</span> then <span class="process-math">\(V\cong W\)</span> if and only if <span class="process-math">\(\dim(V)=\dim(W)\text{.}\)</span>
 </div>
-<div class="para" id="p-426">Homework.</div>
-<div class="para" id="p-427">Earlier we have seen that linear maps between vector spaces are represented by matrices. More formally we have:</div>
-<div class="para logical" id="p-428">
+<div class="para" id="p-277">Homework.</div>
+<div class="para" id="p-278">Earlier we have seen that linear maps between vector spaces are represented by matrices. More formally we have:</div>
+<div class="para logical" id="p-279">
 <div class="para">Let <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\)</span> be vector spaces over the same field <span class="process-math">\(\F\)</span> with <span class="process-math">\(\dim V=n, \dim W=m\text{.}\)</span> Then there is a vector space isomorphism</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -774,12 +638,12 @@ L(V,W)\cong M_{m\times n}(\F).
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-429">
+<div class="para" id="p-280">
 <em class="emphasis">Proof Idea.</em> Fix bases <span class="process-math">\(B, B'\)</span> for <span class="process-math">\(V\)</span> and <span class="process-math">\(W\)</span> respectively. The map <span class="process-math">\(\Theta:L(V,W)\to M_{m\times n}(\F)\)</span> that takes a linear map <span class="process-math">\(T:V\to W\)</span> to the matrix of <span class="process-math">\(T\)</span> with respect to <span class="process-math">\(B,B'\)</span> is an isomorphism (check!).</div>
-<div class="para" id="p-430">We can say more about how the isomorphism above interacts with composition of maps.</div>
-<div class="para" id="p-431">Let <span class="process-math">\(T:U\to V\)</span> and <span class="process-math">\(S:V\to W\)</span> be linear maps and let <span class="process-math">\(B, B', B''\)</span> be bases for <span class="process-math">\(U, V, W\)</span> respectively. Then</div>
-<div class="para" id="p-432">The function <span class="process-math">\(S\circ T\)</span> given by <span class="process-math">\((S\circ T)(\u)=S(T(\u))\)</span> is a linear map.</div>
-<div class="para logical" id="p-433">
+<div class="para" id="p-281">We can say more about how the isomorphism above interacts with composition of maps.</div>
+<div class="para" id="p-282">Let <span class="process-math">\(T:U\to V\)</span> and <span class="process-math">\(S:V\to W\)</span> be linear maps and let <span class="process-math">\(B, B', B''\)</span> be bases for <span class="process-math">\(U, V, W\)</span> respectively. Then</div>
+<div class="para" id="p-283">The function <span class="process-math">\(S\circ T\)</span> given by <span class="process-math">\((S\circ T)(\u)=S(T(\u))\)</span> is a linear map.</div>
+<div class="para logical" id="p-284">
 <div class="para">If <span class="process-math">\([S]_B^{B'}, [T]_{B'}^{B''}\)</span> are the matrices representing <span class="process-math">\(S\)</span> and <span class="process-math">\(T\)</span> with respect to the given bases then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -787,9 +651,9 @@ L(V,W)\cong M_{m\times n}(\F).
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-434">If you know about rings: the set <span class="process-math">\(L(V,W)\)</span> is actually a ring with respect to the operations of addition of functions and composition of functions <span class="process-math">\((S\circ T)(\v)=S(T(\v))\text{.}\)</span> The above lemma says that the map <span class="process-math">\(T\mapsto [T]_B^{B'}\)</span> defined in the proof of <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:lintransfisomatrices" missing or not unique]</code> is also a <em class="emphasis">ring isomorphism</em>.</div>
-<div class="para" id="p-435">If you know about commutative diagrams: We may put together Remarks <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:isoF^n" missing or not unique]</code> and <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:lintransfisomatrices" missing or not unique]</code> in the following way: fix bases <span class="process-math">\(B\)</span> for <span class="process-math">\(V\)</span> and <span class="process-math">\(B'\)</span> for <span class="process-math">\(W\)</span> and let <span class="process-math">\(\phi_V:\F^n\to V\)</span> and <span class="process-math">\(\phi_W:\F^m\to W\)</span> be the maps constructed as in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:isoF^n" missing or not unique]</code> based on <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{.}\)</span> Then the following diagram commutes</div>
-<div class="para logical" id="p-436"><div class="displaymath process-math">
+<div class="para" id="p-285">If you know about rings: the set <span class="process-math">\(L(V,W)\)</span> is actually a ring with respect to the operations of addition of functions and composition of functions <span class="process-math">\((S\circ T)(\v)=S(T(\v))\text{.}\)</span> The above lemma says that the map <span class="process-math">\(T\mapsto [T]_B^{B'}\)</span> defined in the proof of <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:lintransfisomatrices" missing or not unique]</code> is also a <em class="emphasis">ring isomorphism</em>.</div>
+<div class="para" id="p-286">If you know about commutative diagrams: We may put together Remarks <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:isoF^n" missing or not unique]</code> and <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:lintransfisomatrices" missing or not unique]</code> in the following way: fix bases <span class="process-math">\(B\)</span> for <span class="process-math">\(V\)</span> and <span class="process-math">\(B'\)</span> for <span class="process-math">\(W\)</span> and let <span class="process-math">\(\phi_V:\F^n\to V\)</span> and <span class="process-math">\(\phi_W:\F^m\to W\)</span> be the maps constructed as in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "thm:isoF^n" missing or not unique]</code> based on <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{.}\)</span> Then the following diagram commutes</div>
+<div class="para logical" id="p-287"><div class="displaymath process-math">
 \begin{equation*}
 \begin{tikzcd}
 \F^n \arrow{r}{\phi_V} \arrow{d}[swap]{\Theta(T)=[T]_B^{B'}}  &amp; V \arrow{d}{T} \\

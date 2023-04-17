@@ -11,9 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">If <span class="process-math">\(U\)</span> and <span class="process-math">\(V\)</span> are subspaces of a vector space <span class="process-math">\(W\)</span> and <span class="process-math">\(\l \in \F\)</span> then <span class="process-math">\(U+V\)</span> and <span class="process-math">\(\l U\)</span> are subspaces of <span class="process-math">\(W\text{.}\)</span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">For i from 1 to <span class="process-math">\(n-1\)</span> set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}
+\label{GS}
+\hat{\v}_{i+1} &amp;=&amp;\b_{i+1}-\langle \b_{i+1},\v_1\rangle\cdot \v_1-\cdots -\langle \b_{i+1},\v_i\rangle\cdot \v_i\\
+\v_{i+1} &amp;=&amp; \hat{\v}_{i+1} /\norm{\hat{\v}_{i+1} } \nonumber .
+\end{aligned}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-direct-sums.html#p-466" class="internal">in-context</a></span>
+<div class="para">Then <span class="process-math">\(\{\v_1,\ldots, \v_n\}\)</span> is a ONB for <span class="process-math">\(V\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-inner-product-ortho.html#p-466" class="internal">in-context</a></span>
 </body>
 </html>
